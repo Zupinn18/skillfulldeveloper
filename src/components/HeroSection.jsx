@@ -39,7 +39,7 @@ const HeroSection = ({toggle, setToggle}) => {
         {/* 436850 */}
         <p className={` text-md ${toggle === false ? "text-[#436850]" : "text-[#adbc9f]"} `} >Empower Your Future: Master Essential Skills with Us and <br/> Achieve 100% Guaranteed Job Placement Success.</p>
 
-        <p className={` text-lg font-bold uppercase mt-3 ${toggle === false ? "text-[#436850]" : "text-[#adbc9f]"} `}>100% Placement</p>
+        <p className={` text-lg font-bold uppercase mt-3 ${toggle === false ? "text-[#436850]" : "text-[#adbc9f]"} `}>100% Placement Guarantee (100% Refundable)</p>
 
         <div>
         <button style={{

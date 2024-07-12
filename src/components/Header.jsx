@@ -26,16 +26,17 @@ const Header = ({toggle, setToggle}) => {
             <p className={` text-2xl font-bold ${toggle === false ? "text-[#12372A]" : "text-[#fbfada]" } `} >Skillfull Developer</p>
         </div>
 
-        <div className=' flex items-center gap-4 font-semibold ' >
-            <Link to="/" >
-                <p className={` text-md ${toggle === false ? "text-[#436850]" : "text-[#adbc9f]"} `} >Course</p>
+        <div className=' flex items-center gap-7 font-semibold ' >
+        <Link to="/" >
+                <p className={` text-xl ${toggle === false ? "text-[#436850]" : "text-[#adbc9f]"} `}>About us</p>
             </Link>
             <Link to="/" >
-                <p className={` text-md ${toggle === false ? "text-[#436850]" : "text-[#adbc9f]"} `}>Placement</p>
+                <p className={` text-xl ${toggle === false ? "text-[#436850]" : "text-[#adbc9f]"} `} >Course</p>
             </Link>
             <Link to="/" >
-                <p className={` text-md ${toggle === false ? "text-[#436850]" : "text-[#adbc9f]"} `}>About us</p>
+                <p className={` text-xl ${toggle === false ? "text-[#436850]" : "text-[#adbc9f]"} `}>Placement</p>
             </Link>
+            
         </div>
 
         <div className='flex items-center gap-5  ' >
@@ -52,7 +53,7 @@ const Header = ({toggle, setToggle}) => {
             }
             <button onClick={togglePopup} className=' font-semibold px-3 py-1 rounded-lg bg-green-500 transition-all duration-300
              border-2 text-white cursor-pointer hover:bg-green-600 border-none '
-            >Constancy</button>
+            >1:1 Career counseling</button>
             <button className=' font-semibold px-3 py-1 rounded-lg bg-[#436850] transition-all duration-300
              border-2 text-white cursor-pointer hover:bg-[#12372A] border-none '
             >Login</button>
