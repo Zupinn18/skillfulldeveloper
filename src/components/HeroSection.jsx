@@ -27,8 +27,8 @@ const HeroSection = ({toggle, setToggle}) => {
   }, []);
 
   return (
-    <div className='w-full flex justify-between items-center gap-[30px] ' >
-      <div className='w-full mx-auto flex flex-col gap-4 mt-[20px] ml-[70px] ' >
+    <div className='w-full flex justify-center items-center gap-[150px] ' >
+      <div className='w-full mx-auto flex flex-col gap-4 mt-[50px] ml-[150px] ' >
         <div className='flex ' >
           {/* #12372A */}
             <p className={`text-[26px] md:text-[36px] lg:text-[50px] font-semibold
@@ -52,7 +52,7 @@ const HeroSection = ({toggle, setToggle}) => {
         </div>
         
       </div>
-      <img src={img} className='w-[35%]' />
+      <img src={img} className='w-[40%]' />
     </div>
   )
 }

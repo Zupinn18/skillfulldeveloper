@@ -30,30 +30,30 @@ return (
 }
 
 function InfiniteLoopSliderRight({ children, speed = 4 }) {
-  const baseX = useMotionValue(0);
+  const baseX = useMotionValue(-100); // Start at -100 to ensure the initial placement is correct
 
   useAnimationFrame((t, delta) => {
     // Adjust the speed here by changing the multiplier
     baseX.set(baseX.get() + (delta / 1000) * speed);
-    if (baseX.get() >= 100) {
-      baseX.set(0);
+    if (baseX.get() >= 0) {
+      baseX.set(-100);
     }
   });
 
-const x = useTransform(baseX, (v) => `${v}%`);
+  const x = useTransform(baseX, (v) => `${v}%`);
 
-return (
-  <div className="overflow-hidden whitespace-nowrap ">
-    <motion.div className="inline-block text-wrap " style={{ x }}>
-      {children}
-    </motion.div>
-    <motion.div className="inline-block text-wrap" style={{ x }}>
-      {children}
-    </motion.div>
-
-  </div>
-);
+  return (
+    <div className="overflow-hidden whitespace-nowrap">
+      <motion.div className="inline-block text-wrap" style={{ x }}>
+        {children}
+      </motion.div>
+      <motion.div className="inline-block text-wrap" style={{ x }}>
+        {children}
+      </motion.div>
+    </div>
+  );
 }
+
 
 const Testimonials = ({toggle, setToggle}) => {
     const people1 = [
