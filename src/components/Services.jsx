@@ -9,25 +9,29 @@ const Services = ({toggle, setToggle}) => {
         {/* #12372A */}
         <h1 className={`text-[52px] font-semibold text-center ${ toggle === false ? "text-[#12372A]" : "text-[#fbfada]" } `} >How it works</h1>
         {/* 436850 */}
-        <p className={` text-xl text-center ${ toggle === false ? "text-[#436850]" : "text-[#adbc9f]" } `} > Skillfull Developer: Learn essential skills, develop your expertise, and secure your future with guaranteed job placement. Your path to success starts here.</p>
+        <p className={` text-lg text-center ${ toggle === false ? "text-[#436850]" : "text-[#adbc9f]" } `} > Skillfull Developer: Learn essential skills, develop your expertise, and secure your future with guaranteed job placement. Your path to success starts here.</p>
 
         <div className=' w-10/12 mx-auto grid grid-cols-1 lg:grid-cols-3 gap-10 items-center justify-center ' >
-            <div className='flex flex-col justify-center items-center gap-2 ' >
-                <img src={img1} className=' w-[260px] ' />
+            <div className='flex flex-col gap-1 items-center ' >
+                <img src={img1} className=' mt-[-50px] w-[260px] h-[200px] object-cover ' />
                 {/* 12372A */}
-                <p className={`text-xl ${ toggle === false ? "text-[#12372A]" : "text-[#fbfada]" } `} >Learn</p>
-                {/* 436850 */}
-                <p className={`text-center ${ toggle === false ? "text-[#436850]" : "text-[#adbc9f]" } `} >Gain essential skills with our expertise  to prepare you for a successful career.</p>
+                <div className=' flex flex-col gap-2 items-center ' >
+                    <p className={`text-xl font-bold ${ toggle === false ? "text-[#12372A]" : "text-[#fbfada]" } `} >Learn</p>
+                    {/* 436850 */}
+                    <p className={` text-center font-semibold ${ toggle === false ? "text-[#436850]" : "text-[#adbc9f]" } `} >Gain essential skills with our expertise  to prepare you for a successful career.</p>
+                </div>
             </div>
-            <div className='flex flex-col justify-center items-center gap-2 '>
-                <img src={img2} className=' w-[400px] ' />
-                <p className={`text-xl mt-9 ${ toggle === false ? "text-[#12372A]" : "text-[#fbfada]" } `}>Development</p>
-                <p className={`text-center ${ toggle === false ? "text-[#436850]" : "text-[#adbc9f]" } `}>Enhance your expertise through hands-on projects and real-world experience, building the confidence needed to excel in your field.</p>
+            <div className='flex flex-col gap-1 items-center'>
+                <img src={img2} className=' w-[300px] h-[200px] object-cover ' />
+                <div  className=' flex flex-col gap-2 items-center '>
+                <p className={`text-xl font-bold ${ toggle === false ? "text-[#12372A]" : "text-[#fbfada]" } `}>Development</p>
+                <p className={`text-center font-semibold ${ toggle === false ? "text-[#436850]" : "text-[#adbc9f]" } `}>Enhance your expertise through hands-on projects and real-world experience, building the confidence needed to excel in your field.</p>
+                </div>
             </div>
-            <div className='flex flex-col justify-center items-center gap-2 '>
-                <img src={img3}  className=' w-[300px] '/>
-                <p className={`text-xl ${ toggle === false ? "text-[#12372A]" : "text-[#fbfada]" } `}>Placement</p>
-                <p className={`text-center ${ toggle === false ? "text-[#436850]" : "text-[#adbc9f]" } `}>Secure your dream job with our 100% placement guarantee, connecting you to top employers ready to hire skilled professionals.</p>
+            <div className='flex flex-col items-center gap-1'>
+                <img src={img3}  className=' h-[200px] object-cover '/>
+                <p className={`text-xl font-bold ${ toggle === false ? "text-[#12372A]" : "text-[#fbfada]" } `}>Placement</p>
+                <p className={`text-center font-semibold ${ toggle === false ? "text-[#436850]" : "text-[#adbc9f]" } `}>Secure your dream job with our 100% placement guarantee, connecting you to top employers ready to hire skilled professionals.</p>
             </div>
         </div>
 

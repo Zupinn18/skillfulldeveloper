@@ -1,6 +1,8 @@
 import React from 'react'
 import { Carousel } from "flowbite-react";
 import { motion, useMotionValue, useTransform, useAnimationFrame } from "framer-motion";
+import { Splide, SplideSlide } from "@splidejs/react-splide";
+import { AutoScroll } from "@splidejs/splide-extension-auto-scroll";
 
 function InfiniteLoopSlider({ children, speed = 4 }) {
   const baseX = useMotionValue(0);
@@ -48,6 +50,7 @@ return (
     <motion.div className="inline-block text-wrap" style={{ x }}>
       {children}
     </motion.div>
+
   </div>
 );
 }
@@ -180,7 +183,7 @@ const Testimonials = ({toggle, setToggle}) => {
     <InfiniteLoopSliderRight duration={20}>
        {people2.map(person => (
             <li key={person.twitterPseudo} className="w-[200px] h-[250px]
-            col-span-full sm:col-span-3 lg:col-span-2 py-6 px-4 rounded-xl shadow-lg bg-white 
+             sm:col-span-3 lg:col-span-2 py-6 px-4 rounded-xl shadow-lg bg-white 
             inline-block mx-5 mb-4
             ">
               {/* ::Card header */}

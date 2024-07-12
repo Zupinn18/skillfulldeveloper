@@ -2,10 +2,19 @@ import React, { useState } from 'react'
 import { LuSun } from "react-icons/lu";
 import { FaMoon } from "react-icons/fa";
 import logoImg from "../assets/logo.png";
+import Form from './Form/Form';
+import { Link } from 'react-router-dom';
 
 const Header = ({toggle, setToggle}) => {
+    const [showPopup, setShowPopup] = useState(false);
+
+  const togglePopup = () => {
+    setShowPopup(!showPopup);
+  };
+
   return (
     // bg-gray-50
+    <>
     <div className={` w-full pt-3 pb-3 border-b-2 border-b-[#ADBC9F] backdrop-blur-sm 
     ${toggle === false && "bg-gray-50 border-b-[#12372A] "}
     `} >
@@ -15,6 +24,18 @@ const Header = ({toggle, setToggle}) => {
             {/* 12372A */}
             <img src={logoImg} className=' w-[50px] ' />
             <p className={` text-2xl font-bold ${toggle === false ? "text-[#12372A]" : "text-[#fbfada]" } `} >Skillfull Developer</p>
+        </div>
+
+        <div className=' flex items-center gap-4 font-semibold ' >
+            <Link to="/" >
+                <p className={` text-md ${toggle === false ? "text-[#436850]" : "text-[#adbc9f]"} `} >Course</p>
+            </Link>
+            <Link to="/" >
+                <p className={` text-md ${toggle === false ? "text-[#436850]" : "text-[#adbc9f]"} `}>Placement</p>
+            </Link>
+            <Link to="/" >
+                <p className={` text-md ${toggle === false ? "text-[#436850]" : "text-[#adbc9f]"} `}>About us</p>
+            </Link>
         </div>
 
         <div className='flex items-center gap-5  ' >
@@ -29,16 +50,19 @@ const Header = ({toggle, setToggle}) => {
                 className=' text-2xl cursor-pointer font-semibold
                 hover:font-bold transition-all text-white duration-200 hover:text-[#fbfada]' />
             }
-            <button className=' font-semibold bg-[#adbc9f] px-3 py-1 rounded-lg border-[#12372A] border-2 transition-all duration-300 
-            hover:text-[#436850] hover:border-[#436850]
-             '
-            >Login</button>
+            <button onClick={togglePopup} className=' font-semibold px-3 py-1 rounded-lg bg-green-500 transition-all duration-300
+             border-2 text-white cursor-pointer hover:bg-green-600 border-none '
+            >Constancy</button>
             <button className=' font-semibold px-3 py-1 rounded-lg bg-[#436850] transition-all duration-300
-             border-2 text-white cursor-pointer hover:bg-[#12372A] '
-            >SignUp</button>
+             border-2 text-white cursor-pointer hover:bg-[#12372A] border-none '
+            >Login</button>
         </div>
         </div>
     </div>
+      <div>
+        <Form showPopup={showPopup} setShowPopup={setShowPopup} />
+      </div>
+    </>
   )
 }
 

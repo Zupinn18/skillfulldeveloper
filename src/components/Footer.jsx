@@ -1,11 +1,12 @@
 import React from 'react'
 import Logo from "../assets/logo.png";
-
+import {Link} from "react-router-dom";
+ 
 const Footer = ({toggle, setToggle}) => {
   return (
     // bg-gray-50
-    <section class="py-10  sm:pt-16 lg:pt-24">
-    <div class="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
+    <section className={` py-10  sm:pt-16 lg:pt-24 mt-10   ${ toggle === false ? "border-t-2 bg-gray-50 border-t-[#ADBC9F] " : "" } `}>
+    <div class="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl  ">
         <div class="grid grid-cols-2 md:col-span-3 lg:grid-cols-6 gap-y-16 gap-x-12">
             <div class="col-span-2 md:col-span-3 lg:col-span-2 lg:pr-8">
             <div className=' flex items-center gap-5 ' >
@@ -15,7 +16,7 @@ const Footer = ({toggle, setToggle}) => {
         </div>
 
                 {/* text-gray-600 */}
-                <p class={`text-base leading-relaxed mt-7 ${toggle === false ? "text-gray-600" : "text-[#adbc9f]" } `}  >Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+                <p class={`text-base leading-relaxed text-justify mt-7 ${toggle === false ? "text-gray-600" : "text-[#adbc9f]" } `}  >Skillfull Developer focuses mainly on the initiatives that are made to develop learners in order to equip them with the fundamental knowledge that prevails in the technological world. The developer provides solution enhancing training for people in the software development field ranging from novice to experienced developers with a team of experienced professionals.</p>
 
                 <ul class="flex items-center space-x-3 mt-9">
                     <li>
@@ -64,7 +65,7 @@ const Footer = ({toggle, setToggle}) => {
 
             <div>
                 {/* text-gray-400 */}
-                <p class="text-sm font-semibold tracking-widest text-[#fbfada] uppercase">Company</p>
+                <p className={`text-sm font-semibold tracking-widest uppercase ${toggle === false ? "text-green-900" :"text-[#fbfada]" } `}>Company</p>
 
                 <ul class="mt-6 space-y-4">
                     <li>
@@ -87,7 +88,7 @@ const Footer = ({toggle, setToggle}) => {
             </div>
 
             <div>
-                <p class="text-sm font-semibold tracking-widest text-[#fbfada] uppercase">Help</p>
+                <p className={`text-sm font-semibold tracking-widest uppercase ${toggle === false ? "text-green-900" :"text-[#fbfada]" } `} >Help</p>
 
                 <ul class="mt-6 space-y-4">
                     <li>
@@ -95,7 +96,7 @@ const Footer = ({toggle, setToggle}) => {
                     </li>
 
                     <li>
-                        <a href="#" title=""class={`flex text-base  transition-all duration-200 ${toggle === false ? "text-black hover:text-green-700 focus:text-green-700" : "text-[#adbc9f] hover:text-green-300 focus:text-green-300 " } `}> Delivery Details </a>
+                        <Link to="/refund" title=""class={`flex text-base  transition-all duration-200 ${toggle === false ? "text-black hover:text-green-700 focus:text-green-700" : "text-[#adbc9f] hover:text-green-300 focus:text-green-300 " } `}>Fee Refund</Link>
                     </li>
 
                     <li>
@@ -109,7 +110,7 @@ const Footer = ({toggle, setToggle}) => {
             </div>
 
             <div class="col-span-2 md:col-span-1 lg:col-span-2 lg:pl-8">
-                <p class="text-sm font-semibold tracking-widest text-[#fbfada] uppercase">Subscribe to newsletter</p>
+                <p className={`text-sm font-semibold tracking-widest uppercase ${toggle === false ? "text-green-900" :"text-[#fbfada]" } `}>Subscribe to newsletter</p>
 
                 <form action="#" method="POST" class="mt-6">
                     <div>

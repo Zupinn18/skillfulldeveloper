@@ -1,6 +1,7 @@
-import React, { useEffect, useRef } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import Typed from 'typed.js';
-import img from "../assets/hero.gif";
+import img from "../assets/home1.gif";
+import Form from './Form/Form';
 
 const HeroSection = ({toggle, setToggle}) => {
     const el = useRef(null);
@@ -24,6 +25,7 @@ const HeroSection = ({toggle, setToggle}) => {
       typed.destroy();
     };
   }, []);
+
   return (
     <div className='w-full flex justify-between items-center gap-[30px] ' >
       <div className='w-full mx-auto flex flex-col gap-4 mt-[20px] ml-[70px] ' >
@@ -37,12 +39,14 @@ const HeroSection = ({toggle, setToggle}) => {
         {/* 436850 */}
         <p className={` text-md ${toggle === false ? "text-[#436850]" : "text-[#adbc9f]"} `} >Empower Your Future: Master Essential Skills with Us and <br/> Achieve 100% Guaranteed Job Placement Success.</p>
 
+        <p className={` text-lg font-bold uppercase mt-3 ${toggle === false ? "text-[#436850]" : "text-[#adbc9f]"} `}>100% Placement</p>
+
         <div>
         <button style={{
         "cursor":"pointer",
         }}
         className='cursor-pointer font-semibold px-8 py-3 rounded-lg bg-[#436850] transition-all duration-300
-             border-2 text-white hover:bg-[#12372A] mt-5
+             border-2 text-white hover:bg-[#12372A] mt-5 border-none
              '
         >Join us</button>
         </div>
