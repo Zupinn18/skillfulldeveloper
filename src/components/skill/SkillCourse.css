@@ -1,0 +1,63 @@
+
+.skills{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2rem;
+}
+
+.blob-style{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: -6;
+    animation: blobstyle 3s linear infinite;
+    transform: translate(-50%,-50%);
+}
+
+@keyframes blobstyle {
+    50%{
+        top: 54%;
+        left: 46%;
+    }
+}
+
+.skills-logo{
+    width: 100px;
+    height: 100px;
+    transition: all 0.5s;
+}
+
+.skills-logo:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+
+@media screen and (max-width: 768px) {
+    .skills{
+        margin-left: 0;
+    }
+    .skills-logo{
+        width: 80px;
+        transition: all 0.5s;
+    }
+    
+    .skills-logo:hover{
+        transform: scale(1.5);
+    }
+  }
+
+  @media screen and (max-width: 350px) {
+    .skills-logo{
+        width: 40px;
+        transition: all 0.5s;
+    }
+    
+    .skills-logo:hover{
+        transform: scale(1.5);
+    }
+  }

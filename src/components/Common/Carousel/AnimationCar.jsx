@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import img1 from "../../../assets/skills/React.png";
 import img2 from "../../../assets/skills/Bash.png";
 import img3 from "../../../assets/skills/Bootstrap.png";
-import img4 from "../../../assets/skills/Git.png";
+import img4 from "../../../assets/skills/git.png";
 import img5 from "../../../assets/skills/Github.png";
 import img6 from "../../../assets/skills/NodeJs.png";
 import img7 from "../../../assets/skills/MongoDB.png";
@@ -16,6 +16,7 @@ import img13 from "../../../assets/skills/C.png";
 import img14 from "../../../assets/skills/C++.png";
 import img15 from "../../../assets/skills/js.png";
 import img16 from "../../../assets/skills/mysql.png";
+import { Link } from 'react-router-dom';
 
 const AnimationCar = ({ toggle, setToggle }) => {
   return (
@@ -30,9 +31,11 @@ const AnimationCar = ({ toggle, setToggle }) => {
         <p className={`text-base font-semibold md:text-lg my-4 md:my-6 ${toggle === false ? "text-[#436850]" : "text-[#adbc9f]"}`}>
           Realize your career ambitions with our 100% placement promise, connecting you to top employers in need of skilled professionals.
         </p>
+        <Link to="/course" onClick={() => window.scrollTo(0, 0)} >
         <button className="bg-[#12372A] text-white font-medium py-2 px-4 rounded transition-all hover:bg-[#0c251c] active:scale-95">
           Find a course
         </button>
+        </Link>
       </div>
       <ShuffleGrid />
     </section>

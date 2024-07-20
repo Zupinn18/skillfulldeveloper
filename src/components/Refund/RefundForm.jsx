@@ -1,17 +1,11 @@
-import React, { useState } from 'react'
-import Header from '../Header'
-import Footer from '../Footer';
+import React from 'react'
 import FormRefund from './FormRefund';
 
 
-const RefundForm = () => {
-  const [toggle, setToggle] = useState(false);
-  
+const RefundForm = ({toggle}) => {
   return (
-    <div className={`w-full h-full flex flex-col font-poppins ${toggle === true ? "main" : "main-light"}  `}  >
-      <Header  toggle={toggle} setToggle={setToggle}  />
-      <FormRefund toggle={toggle} setToggle={setToggle} />
-      <Footer toggle={toggle} setToggle={setToggle}/>
+    <div className={`w-full h-full flex flex-col font-poppins mb-10 `}  >
+      <FormRefund toggle={toggle} />
     </div>
   )
 }

@@ -5,7 +5,7 @@ import {Link} from "react-router-dom";
 const Footer = ({toggle, setToggle}) => {
   return (
     // bg-gray-50
-    <section className={` py-10  sm:pt-16 lg:pt-24 mt-10   ${ toggle === false ? "border-t-2 bg-gray-50 border-t-[#ADBC9F] " : "" } `}>
+    <section className={` py-10  sm:pt-16 lg:pt-24   ${ toggle === false ? "border-t-2 bg-gray-50 border-t-[#ADBC9F] " : "" } `}>
     <div class="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl  ">
         <div class="grid grid-cols-2 md:col-span-3 lg:grid-cols-6 gap-y-16 gap-x-12">
             <div class="col-span-2 md:col-span-3 lg:col-span-2 lg:pr-8">
@@ -72,7 +72,9 @@ const Footer = ({toggle, setToggle}) => {
                         {/* text-black */}
                         <a href="#" title="" class={`flex text-base  transition-all duration-200 ${toggle === false ? "text-black hover:text-green-700 focus:text-green-700" : "text-[#adbc9f] hover:text-green-300 focus:text-green-300 " } `}> About </a>
                     </li>
-
+                    <li>
+                    <Link to="/contact-us" onClick={() => window.scrollTo(0, 0)} title=""class={`flex text-base  transition-all duration-200 ${toggle === false ? "text-black hover:text-green-700 focus:text-green-700" : "text-[#adbc9f] hover:text-green-300 focus:text-green-300 " } `}> Contact Us </Link>
+                    </li>
                     <li>
                         <a href="#" title=""class={`flex text-base  transition-all duration-200 ${toggle === false ? "text-black hover:text-green-700 focus:text-green-700" : "text-[#adbc9f] hover:text-green-300 focus:text-green-300 " } `}> Features </a>
                     </li>
@@ -96,12 +98,13 @@ const Footer = ({toggle, setToggle}) => {
                     </li>
 
                     <li>
-                        <Link to="/refund" title=""class={`flex text-base  transition-all duration-200 ${toggle === false ? "text-black hover:text-green-700 focus:text-green-700" : "text-[#adbc9f] hover:text-green-300 focus:text-green-300 " } `}>Fee Refund</Link>
+                        <Link to="/refund" onClick={() => window.scrollTo(0, 0)} title=""class={`flex text-base  transition-all duration-200 ${toggle === false ? "text-black hover:text-green-700 focus:text-green-700" : "text-[#adbc9f] hover:text-green-300 focus:text-green-300 " } `}>Fee Refund</Link>
                     </li>
 
                     <li>
-                        <a href="#" title=""class={`flex text-base  transition-all duration-200 ${toggle === false ? "text-black hover:text-green-700 focus:text-green-700" : "text-[#adbc9f] hover:text-green-300 focus:text-green-300 " } `}> Terms & Conditions </a>
+                        <Link to="/terms-and-conditions" onClick={() => window.scrollTo(0, 0)} title=""class={`flex text-base  transition-all duration-200 ${toggle === false ? "text-black hover:text-green-700 focus:text-green-700" : "text-[#adbc9f] hover:text-green-300 focus:text-green-300 " } `}> Terms & Conditions </Link>
                     </li>
+
 
                     <li>
                         <a href="#" title=""class={`flex text-base  transition-all duration-200 ${toggle === false ? "text-black hover:text-green-700 focus:text-green-700" : "text-[#adbc9f] hover:text-green-300 focus:text-green-300 " } `}> Privacy Policy </a>
@@ -125,7 +128,7 @@ const Footer = ({toggle, setToggle}) => {
 
         <hr class="mt-16 mb-10 border-gray-200" />
 
-        <p class="text-sm text-center text-gray-600">© Copyright 2024, All Rights Reserved by SkillFull Developer</p>
+        <p className={`text-sm text-center ${toggle === false ? " text-gray-600" :"text-[#fbfada]" }`} >© Copyright 2024, All Rights Reserved by SkillFull Developer</p>
     </div>
 </section>
 

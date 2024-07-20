@@ -28,7 +28,7 @@ const HeroSection = ({toggle, setToggle}) => {
 
   return (
     <div className='w-full flex justify-center items-center gap-[150px] ' >
-      <div className='w-full mx-auto flex flex-col gap-4 mt-[50px] ml-[150px] ' >
+      <div className='w-full mx-auto flex flex-col gap-4 ml-[100px] ' >
         <div className='flex ' >
           {/* #12372A */}
             <p className={`text-[26px] md:text-[36px] lg:text-[50px] font-semibold
@@ -37,9 +37,7 @@ const HeroSection = ({toggle, setToggle}) => {
         </div>
 
         {/* 436850 */}
-        <p className={` text-md ${toggle === false ? "text-[#436850]" : "text-[#adbc9f]"} `} >Empower Your Future: Master Essential Skills with Us and <br/> Achieve 100% Guaranteed Job Placement Success.</p>
-
-        <p className={` text-lg font-bold uppercase mt-3 ${toggle === false ? "text-[#436850]" : "text-[#adbc9f]"} `}>100% Placement Guarantee (100% Refundable)</p>
+        <p className={` text-xl font-extrabold ${toggle === false ? "text-red-500" : "text-red-400"} `} >Guaranteed job placement or Full Fee refundable</p>
 
         <div>
         <button style={{
@@ -48,7 +46,7 @@ const HeroSection = ({toggle, setToggle}) => {
         className='cursor-pointer font-semibold px-8 py-3 rounded-lg bg-[#436850] transition-all duration-300
              border-2 text-white hover:bg-[#12372A] mt-5 border-none
              '
-        >Join us</button>
+        >Enroll Now</button>
         </div>
         
       </div>

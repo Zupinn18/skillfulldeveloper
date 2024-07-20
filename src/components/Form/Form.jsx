@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './Form.css';
-import formImg from "../../assets/form.gif";
+import formImg from "../../assets/form.avif";
 import { RxCross2 } from "react-icons/rx";
 
 const Form = ({showPopup,setShowPopup}) => {
@@ -9,15 +9,17 @@ const Form = ({showPopup,setShowPopup}) => {
     <div className=" w-full flex items-center justify-center font-poppins ">
 
       {showPopup && (
-        <div className="fixed top-0 left-0 flex items-center justify-center w-full h-full bg-black bg-opacity-60">
-          <div className="p-6 bg-white rounded-lg shadow-xl z-[150] ">
-            <div className=' flex flex-col items-center justify-center mb-2 ' >
-                <div className=' flex items-center gap-1 ' >
+        <div className="fixed z-[1000] top-0 left-0 flex items-center justify-center w-full h-full bg-black bg-opacity-60">
+          <div className=' w-full mx-auto flex justify-center rounded-md ' >
+          <img src={formImg} className=' w-[36%] rounded-tl-md rounded-bl-md ' />
+          <div className="p-6 bg-white rounded-tr-md rounded-br-md ">
+            <div className=' flex flex-col items-center justify-center mb-4 ' >
+                <div className=' flex items-center gap-1 mb-2 ' >
                 <img src="https://fancytailwind.com/static/avatar-1-7bc2ffc3e63774cda6a41a4869604ebb.png" className=' w-[30px] ' />
                 <img src="https://fancytailwind.com/static/avatar-2-a0aa9c1384e34144e1a683fed8612642.png" className=' w-[30px] ' />
                 <img src="https://fancytailwind.com/static/avatar-3-005377e606b29854c3ff1c525ddd8ec4.png" className=' w-[30px] ' />
                 </div>
-            <h2 className="mb-2 text-2xl font-semibold ">Contact Form</h2>
+            <h2 className="mb-2 text-2xl font-semibold ">Unlock Your Coding Potential Today!</h2>
             </div>
             <form >
              <div className='flex flex-col text-sm gap-2 ' >
@@ -26,7 +28,7 @@ const Form = ({showPopup,setShowPopup}) => {
                     Name:
                 </label>
                 <input
-                    className="px-2 py-1 border border-gray-300 rounded-md outline-none "
+                    className=" w-full px-2 py-1 border border-gray-300 rounded-md outline-none "
                     type="text"
                     placeholder="Enter Your Name"
                     id="name"
@@ -39,7 +41,7 @@ const Form = ({showPopup,setShowPopup}) => {
                     Email:
                 </label>
                 <input
-                    className="px-2 py-1 border border-gray-300 rounded-md outline-none "
+                    className=" w-full px-2 py-1 border border-gray-300 rounded-md outline-none "
                     type="email"
                     placeholder="Enter Your Email"
                     id="email"
@@ -53,7 +55,7 @@ const Form = ({showPopup,setShowPopup}) => {
                     Mobile:
                 </label>
                 <input
-                    className="px-2 py-1 border border-gray-300 rounded-md outline-none "
+                    className=" w-full px-2 py-1 border border-gray-300 rounded-md outline-none "
                     type="number"
                     placeholder="Enter Your Mobile Number"
                     id="mobile"
@@ -67,7 +69,7 @@ const Form = ({showPopup,setShowPopup}) => {
                     State:
                 </label>
                 <input
-                    className="px-2 py-1 border border-gray-300 rounded-md outline-none "
+                    className=" w-full px-2 py-1 border border-gray-300 rounded-md outline-none "
                     type="text"
                     placeholder="Enter Your State"
                     id="state"
@@ -81,7 +83,7 @@ const Form = ({showPopup,setShowPopup}) => {
                     Course:
                 </label>
                 <input
-                    className="px-2 py-1 border border-gray-300 rounded-md outline-none "
+                    className=" w-full px-2 py-1 border border-gray-300 rounded-md outline-none "
                     type="text"
                     placeholder="Enter Your Course Name"
                     id="course"
@@ -90,10 +92,6 @@ const Form = ({showPopup,setShowPopup}) => {
                 />
              </div>
              </div>
-
-              
-
-
         
         <div class=" mt-5 relative group cursor-pointer">
             <div
@@ -112,11 +110,12 @@ const Form = ({showPopup,setShowPopup}) => {
             </form>
 
             <button
-              className=" absolute px-1  py-1 top-[22%] right-[40%] text-white bg-red-500 rounded-full hover:bg-red-400 text-sm font-bold "
+              className=" absolute px-1  py-1 top-[21%] right-[16%] text-white bg-red-500 rounded-full hover:bg-red-400 text-md font-bold "
               onClick={()=>setShowPopup(!showPopup)}
             >
               <RxCross2 />
             </button>
+          </div>
           </div>
         </div>
       )}

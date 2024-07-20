@@ -1,7 +1,7 @@
 import React from 'react'
 import ContactImg from "../../assets/contact.gif";
 
-const FormRefund = ({toggle, setToggle}) => {
+const FormRefund = ({toggle}) => {
     
   return (
     <div className=' w-11/12 mx-auto font-poppins ' >
@@ -16,7 +16,7 @@ const FormRefund = ({toggle, setToggle}) => {
             <div>
               <label for="name" className={`block mb-2 text-sm font-semibold ${toggle === true ? "text-[#adbc9f]" : "text-[#436850]" }`}> Name</label>
               <input type="text" id="name" className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light
-               outline-none " placeholder="John Toe" required />
+               outline-none " placeholder="Ram Sharma" required />
           </div>
           <div>
               <label for="email" className={`block mb-2 text-sm font-semibold ${toggle === true ? "text-[#adbc9f]" : "text-[#436850]" }`}> Email</label>
@@ -36,7 +36,7 @@ const FormRefund = ({toggle, setToggle}) => {
           <div>
               <label for="course" className={`block mb-2 text-sm font-semibold ${toggle === true ? "text-[#adbc9f]" : "text-[#436850]" }`}> Course</label>
               <input type="text" id="course" className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light
-               outline-none " placeholder="name@skillfulldeveloper.com" required />
+               outline-none " placeholder="Enter your Course" required />
           </div>
           <div>
               <label for="reason" className={`block mb-2 text-sm font-semibold ${toggle === true ? "text-[#adbc9f]" : "text-[#436850]" }`}>Reason</label>

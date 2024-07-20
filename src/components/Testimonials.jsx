@@ -1,8 +1,10 @@
 import React from 'react'
-import { Carousel } from "flowbite-react";
 import { motion, useMotionValue, useTransform, useAnimationFrame } from "framer-motion";
-import { Splide, SplideSlide } from "@splidejs/react-splide";
-import { AutoScroll } from "@splidejs/splide-extension-auto-scroll";
+import Girl1 from "../assets/testimonials/girl1.png";
+import Girl2 from "../assets/testimonials/girl2.png";
+import Girl3 from "../assets/testimonials/girl3.jpg";
+import Boy1 from "../assets/testimonials/boy1.jpg";
+import Boy2 from "../assets/testimonials/boy2.jpg";
 
 function InfiniteLoopSlider({ children, speed = 4 }) {
   const baseX = useMotionValue(0);
@@ -59,65 +61,65 @@ const Testimonials = ({toggle, setToggle}) => {
     const people1 = [
         {
           name: "Priya Sharma",
-          avatar: "https://fancytailwind.com/static/avatar-1-7bc2ffc3e63774cda6a41a4869604ebb.png",
+          avatar: Girl1,
           testimony: "Skillfull Developer transformed my career. The training was thorough, and I secured a fantastic job within weeks of completing the course.",
           twitterPseudo: "@priyasharma"
         },
         {
           name: "Rajesh Kumar",
-          avatar: "https://fancytailwind.com/static/avatar-2-a0aa9c1384e34144e1a683fed8612642.png",
+          avatar: Boy1,
           testimony: "Thanks to Skillfull Developer, I gained the skills and confidence needed to land my dream job. Highly recommend it!",
           twitterPseudo: "@rajeshkumar"
         },
         {
           name: "Ayesha Khan",
-          avatar: "https://fancytailwind.com/static/avatar-3-005377e606b29854c3ff1c525ddd8ec4.png",
+          avatar: Girl2,
           testimony: "The hands-on projects and expert guidance at Skillfull Developer were invaluable. I now work at a leading tech company!",
           twitterPseudo: "@ayeshakhan"
         },
         {
           name: "Vikram Patel",
-          avatar: "https://fancytailwind.com/static/avatar-2-a0aa9c1384e34144e1a683fed8612642.png",
+          avatar: Boy2,
           testimony: "From learning to placement, Skillfull Developer exceeded my expectations. Their 100% placement promise is real!",
           twitterPseudo: "@vikrampatel"
         },
         {
           name: "Sneha Reddy",
-          avatar: "https://fancytailwind.com/static/avatar-3-005377e606b29854c3ff1c525ddd8ec4.png",
+          avatar:Girl3,
           testimony: "Skillfull Developer's comprehensive program helped me develop crucial skills and secure a great job. I'm grateful for their support.",
           twitterPseudo: "@snehareddy"
         },
       ]
       const people2 = [
         {
-          name: "John Smith",
-          avatar: "https://fancytailwind.com/static/avatar-1-7bc2ffc3e63774cda6a41a4869604ebb.png",
+          name: "Geeta Rana",
+          avatar: Girl2,
           testimony: "Skillfull Developer provided top-notch training and placement assistance. I now work in a role I love, thanks to their team.",
-          twitterPseudo: "@johnsmith"
+          twitterPseudo: "@geeta_rana"
         },
         {
-          name: "Emily Johnson",
-          avatar: "https://fancytailwind.com/static/avatar-2-a0aa9c1384e34144e1a683fed8612642.png",
+          name: "Vikas Sharma",
+          avatar: Boy2,
           testimony: "The skill development and job placement process at Skillfull Developer were seamless. I highly recommend their programs.",
-          twitterPseudo: "@emilyjohnson"
+          twitterPseudo: "@vikassharma"
         },
         {
-          name: "Carlos Garcia",
-          avatar: "https://fancytailwind.com/static/avatar-3-005377e606b29854c3ff1c525ddd8ec4.png",
+          name: "Priya Rawat",
+          avatar: Girl1,
           testimony: "Skillfull Developer's training was exceptional, and their placement support ensured I found a great job quickly.",
-          twitterPseudo: "@carlosgarcia"
+          twitterPseudo: "@priyarawat"
         },
         {
-          name: "Maria Martinez",
-          avatar: "https://fancytailwind.com/static/avatar-2-a0aa9c1384e34144e1a683fed8612642.png",
+          name: "Saurabh Singh",
+          avatar: Boy1,
           testimony: "I am thrilled with the skills I gained and the job I landed through Skillfull Developer. Their program truly works!",
-          twitterPseudo: "@mariamartinez"
+          twitterPseudo: "@saurabhrawat"
         },
         {
-          name: "Liam Brown",
-          avatar: "https://fancytailwind.com/static/avatar-3-005377e606b29854c3ff1c525ddd8ec4.png",
+          name: "Pawan Negi",
+          avatar: Boy2,
           testimony: "Skillfull Developer's expert-led training and guaranteed placement made all the difference. I secured a job at a top company.",
-          twitterPseudo: "@liambrown"
+          twitterPseudo: "@pawan_negi"
         },
       ]
       const parters = [
@@ -133,16 +135,16 @@ const Testimonials = ({toggle, setToggle}) => {
   return (
     // bg-[#12372a]
     <>
-       <div className=" relative mx-auto px-4 w-full  text-green-900">
+       <div className=" relative mx-auto px-4 w-full  text-green-900 "  >
     <div className="flex flex-col items-center ">
 
       {/* :TITLE CONTAINER */}
       <div className=" px-4 ">
         <h2 className={`text-center text-2xl sm:text-3xl md:text-4xl font-bold text-[52px]
-         ${toggle === false ? "text-[#12372A]" :"text-[#fbfada]"}`}>Thousands of happy Students</h2>
+         ${toggle === false ? "text-[#12372A]" :"text-[#fbfada]"}`}>Thousands of Happy Students</h2>
       </div>
       <div className={`mb-[60px] mt-5  ${toggle === false ? "text-green-900" : "text-[#fbfada]" } `} >
-        <p>Certainly! Here are 10 testimonials for Skillfull Developer, with a mix of Indian and foreign names</p>
+        <p>Certainly! Here are 5 testimonials for Skillfull Developer, with a mix of Indian Names.</p>
       </div>
     </div>
   </div>
@@ -161,7 +163,7 @@ const Testimonials = ({toggle, setToggle}) => {
                 </span>
                 <div className="text-left">
                   {/* :::name */}
-                  <h3 className="text-sm font-semibold ">{person.name}</h3>
+                  <h3 className="text-sm text-black font-semibold ">{person.name}</h3>
                   {/* :::pseudo twitter */}
                   <p className="text-[12px] text-gray-400">{person.twitterPseudo}</p>
                 </div>
@@ -181,7 +183,7 @@ const Testimonials = ({toggle, setToggle}) => {
 
   <div className="flex justify-center items-center ">
     <InfiniteLoopSliderRight duration={20}>
-       {people2.map(person => (
+       {people2?.map(person => (
             <li key={person.twitterPseudo} className="w-[200px] h-[250px]
              sm:col-span-3 lg:col-span-2 py-6 px-4 rounded-xl shadow-lg bg-white 
             inline-block mx-5 mb-4
@@ -194,7 +196,7 @@ const Testimonials = ({toggle, setToggle}) => {
                 </span>
                 <div className="text-left">
                   {/* :::name */}
-                  <h3 className="text-sm font-semibold">{person.name}</h3>
+                  <h3 className="text-sm text-black font-semibold">{person.name}</h3>
                   {/* :::pseudo twitter */}
                   <p className="text-[12px] text-gray-400">{person.twitterPseudo}</p>
                 </div>
@@ -213,20 +215,16 @@ const Testimonials = ({toggle, setToggle}) => {
   </div>
 
     {/* :PARTNER BRANDS */}
-    <div className="mt-8 w-full">
-        <h3 className="mb-3 flex justify-center items-center text-center text-lg font-extrabold uppercase">
-          <span className={`mr-3 w-16 h-1 text-center text-2xl sm:text-3xl md:text-4xl font-bold text-[52px]
-         ${toggle === false ? "text-[#12372A]" :"text-[#fbfada]"}`} />
-          They trusted Us
-        </h3>
-        <ul className="flex flex-wrap justify-evenly items-center space-y-5 sm:space-y-0 space-x-6">
-          {parters.map(brand => (
-            <li key={brand.name} className="w-14 sm:w-16 opacity-40">
-              <img src={brand.picture} alt="" className="object-cover" />
-            </li>
-          ))
-          }
-        </ul>
+    <div className="mt-8 w-full mb-[100px] ">
+        <div className=' flex items-center justify-center ' >
+        <button style={{
+        "cursor":"pointer",
+        }}
+        className='cursor-pointer font-semibold px-8 py-3 rounded-lg bg-[#436850] transition-all duration-300
+             border-2 text-white hover:bg-[#12372A] border-none
+             '
+        >Testimonials</button>
+        </div>
       </div>
   </>
   )
