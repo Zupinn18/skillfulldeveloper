@@ -26,6 +26,26 @@ const HeroSection = ({toggle, setToggle}) => {
     };
   }, []);
 
+
+
+  // for placement
+  const pl = useRef(null);
+   
+  useEffect(() => {
+    const typeds = new Typed(pl.current, {
+      strings: [ "Full Fee Refundable",], // Strings to display
+      loop: true,
+      typeSpeed: 100,
+      backSpeed: 80,
+      backDelay: 1000,
+    });
+
+    // Destropying
+    return () => {
+      typeds.destroy();
+    };
+  }, []);
+
   return (
     <div className='w-full flex justify-center items-center gap-[150px] ' >
       <div className='w-full mx-auto flex flex-col gap-4 ml-[100px] ' >
@@ -37,7 +57,7 @@ const HeroSection = ({toggle, setToggle}) => {
         </div>
 
         {/* 436850 */}
-        <p className={` text-xl font-extrabold ${toggle === false ? "text-red-500" : "text-red-400"} `} >Guaranteed job placement or Full Fee refundable</p>
+        <p className={` text-2xl font-bold ${toggle === false ? "text-red-500" : "text-red-400"} `} >100% Job Placement or <span ref={pl} > </span> </p>
 
         <div>
         <button style={{

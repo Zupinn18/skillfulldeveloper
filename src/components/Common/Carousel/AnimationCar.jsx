@@ -6,7 +6,7 @@ import img3 from "../../../assets/skills/Bootstrap.png";
 import img4 from "../../../assets/skills/git.png";
 import img5 from "../../../assets/skills/Github.png";
 import img6 from "../../../assets/skills/NodeJs.png";
-import img7 from "../../../assets/skills/MongoDB.png";
+import img7 from "../../../assets/skills/MongoDB.svg";
 import img8 from "../../../assets/skills/python.png";
 import img9 from "../../../assets/skills/CSS.png";
 import img10 from "../../../assets/skills/java.png";

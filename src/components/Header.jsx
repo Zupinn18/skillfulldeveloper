@@ -36,8 +36,11 @@ const Header = ({toggle, setToggle}) => {
         <Link to="/about-us" >
                 <p className={` text-lg transition-all duration-200 ${toggle === false ? "text-[#436850] hover:text-green-500 " : "text-[#adbc9f] hover:text-green-300 "} `}>About us</p>
             </Link>
-            <Link to="/" >
-                <p className={` text-lg transition-all duration-200 ${toggle === false ? "text-[#436850] hover:text-green-500" : "text-[#adbc9f] hover:text-green-300 "} `} ><DropDown toggle={toggle} /></p>
+            <Link to="/course" >
+                <p className={` text-lg transition-all duration-200 ${toggle === false ? "text-[#436850] hover:text-green-500" : "text-[#adbc9f] hover:text-green-300 "} `} >
+                    {/* <DropDown toggle={toggle} /> */}
+                    Course
+                    </p>
             </Link>
             <Link to="/skill" >
                 <p className={` text-lg transition-all duration-200 ${toggle === false ? "text-[#436850] hover:text-green-500" : "text-[#adbc9f] hover:text-green-300 "} `}>Skill</p>

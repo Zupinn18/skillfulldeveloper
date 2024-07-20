@@ -132,15 +132,15 @@ const AppDev = ({toggle}) => {
                   </div>
                   <div className=' flex gap-2 justify-start ' >
                     <TiTick className=' w-[100px] ' />
-                    <p className={` text-justify text-sm leading-6 ${toggle === false ? "text-[#436860]" : "text-slate-200"} `} ><strong>Streamlined Development Process :</strong> The MERN stack allows for a smooth development process with a single language, JavaScript, across the entire application. This consistency reduces context switching and simplifies debugging, making development more efficient.</p>
+                    <p className={` text-justify text-sm leading-6 ${toggle === false ? "text-[#436860]" : "text-slate-200"} `} ><strong>Comprehensive Development Environment :</strong> Android Studio, the official integrated development environment (IDE) for Android, provides a robust set of tools for app development. It includes features like code editing, debugging, and performance analysis, which help students build high-quality applications efficiently.</p>
                   </div>
                   <div className=' flex gap-2 items-start ' >
                     <TiTick className=' w-[100px] ' />
-                    <p className={` text-justify text-sm leading-6 ${toggle === false ? "text-[#436860]" : "text-slate-200"} `} ><strong>Strong Community and Resources :</strong> Each component of the MERN stack has a strong community and extensive resources, including tutorials, documentation, and forums. This support network helps students learn more effectively and troubleshoot issues more quickly.</p>
+                    <p className={` text-justify text-sm leading-6 ${toggle === false ? "text-[#436860]" : "text-slate-200"} `} ><strong>Diverse Device Ecosystem :</strong> Android runs on a wide variety of devices, including smartphones, tablets, smart TVs, and wearables. Learning Android development enables students to create applications for this diverse ecosystem, broadening their potential market and application scenarios.</p>
                   </div>
                   <div className=' flex gap-2 items-start ' >
                     <TiTick className=' w-[100px] ' />
-                    <p className={` text-justify text-sm leading-6 ${toggle === false ? "text-[#436860]" : "text-slate-200"} `} ><strong>Real-Time Application Development :</strong> The MERN stack is well-suited for developing real-time applications, such as chat applications and collaborative tools. Learning the MERN stack equips students with the skills to build interactive and responsive web applications that cater to modern user needs.</p>
+                    <p className={` text-justify text-sm leading-6 ${toggle === false ? "text-[#436860]" : "text-slate-200"} `} ><strong>Creative and Innovative Projects :</strong> Android development encourages creativity and innovation. Students can work on a wide range of projects, from simple utility apps to complex, interactive applications like games and social media platforms, allowing them to explore their creativity and problem-solving skills.</p>
                   </div>
                 </div>
 
@@ -170,28 +170,28 @@ const AppDev = ({toggle}) => {
               <div className=' flex flex-col md:flex-row items-center justify-between gap-[25px] ' >
 
                 <div className=' bg-white rounded-md flex flex-col gap-3 px-10 py-5 md:h-[300px] ' >
-                <h2 className={`text-lg font-bold ${toggle === false ? "text-[#12372A]" : "text-white"}`}>Prepare for a career as a MERN Stack Developer</h2>
+                <h2 className={`text-lg font-bold ${toggle === false ? "text-[#12372A]" : "text-white"}`}>Prepare for a career in Android Development</h2>
                 <ul className={` flex flex-col gap-2 list-decimal ${toggle === false ? "text-[#12372A]" : "text-white"} `} >
                 <li>
-                  <p className={` text-sm ${toggle === false ? "text-[#436860]" : "text-slate-200"} `} >Master MongoDB for efficient NoSQL database management.</p>
+                  <p className={` text-sm ${toggle === false ? "text-[#436860]" : "text-slate-200"} `} >Master Java and Kotlin for Android app development proficiency.</p>
                 </li>
                 <li>
-                  <p className={`  text-sm ${toggle === false ? "text-[#436860]" : "text-slate-200"} `} >Gain proficiency in Express.js for building robust server-side applications.</p>
+                  <p className={`  text-sm ${toggle === false ? "text-[#436860]" : "text-slate-200"} `} >Gain hands-on experience with Android Studio and development tools.</p>
                 </li>
                 <li>
-                  <p className={`  text-sm ${toggle === false ? "text-[#436860]" : "text-slate-200"} `} >Learn React for creating dynamic, user-friendly front-end interfaces.</p>
+                  <p className={`  text-sm ${toggle === false ? "text-[#436860]" : "text-slate-200"} `} >Learn UI/UX design principles for creating user-friendly applications.</p>
                 </li>
                 <li>
-                  <p className={` text-sm ${toggle === false ? "text-[#436860]" : "text-slate-200"} `} >Develop skills in Node.js for building scalable server-side applications.</p>
+                  <p className={` text-sm ${toggle === false ? "text-[#436860]" : "text-slate-200"} `} >Build and showcase diverse apps to strengthen your professional portfolio.</p>
                 </li>
               </ul>
                 </div>
 
                 <div className=' bg-white rounded-md flex flex-col gap-3 px-10 py-5 md:h-[300px] ' >
-                <h2 className={`text-lg font-bold ${toggle === false ? "text-[#12372A]" : "text-white"}`}>Career opportunities for MERN Stack developers</h2>
+                <h2 className={`text-lg font-bold ${toggle === false ? "text-[#12372A]" : "text-white"}`}>Career opportunities for Android developers</h2>
                 <ul className={` flex flex-col gap-2 list-decimal ${toggle === false ? "text-[#12372A]" : "text-white"} `} >
                 <li>
-                  <p className={` text-sm ${toggle === false ? "text-[#436860]" : "text-slate-200"} `} >Build and maintain dynamic websites and web applications.</p>
+                  <p className={` text-sm ${toggle === false ? "text-[#436860]" : "text-slate-200"} `} >Build and maintain dynamic applications.</p>
                 </li>
                 <li>
                   <p className={`  text-sm ${toggle === false ? "text-[#436860]" : "text-slate-200"} `} >Work as a project lead managing full development lifecycle.</p>

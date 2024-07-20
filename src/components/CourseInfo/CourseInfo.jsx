@@ -10,6 +10,7 @@ import NodeImg from "../../assets/skills/nodeskill.png";
 import MernImg from "../../assets/skills/mern.jpg";
 import fullImg from "../../assets/skills/rjs.png";
 import AppImg from "../../assets/skills/appde.jpg";
+import DigitalImg from "../../assets/skills/digital.jpg";
 import { Link } from 'react-router-dom';
 
 export default function CourseInfo({toggle}) {
@@ -42,9 +43,15 @@ export default function CourseInfo({toggle}) {
         {
             name:"Application Developement",
             description:"Create powerful mobile applications seamlessly.",
-            path:'application',
+            path:'application-developer',
             image:AppImg
         },
+        {
+          name:"Digital Marketing",
+          description:"Excel in digital marketing strategies.",
+          path:'digital-marketing',
+          image:DigitalImg
+      },
     ]
 
   return (

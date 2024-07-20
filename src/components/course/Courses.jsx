@@ -249,11 +249,10 @@ const Courses = ({toggle, setToggle}) => {
                         <GoInfo />
                         <p>You get a Refund Validity of 2 Years</p>
                     </div> */}
-                    <button className=' font-semibold px-4 py-3 rounded-lg bg-[#436850] transition-all duration-300
-             border-2 text-white cursor-pointer hover:bg-[#12372A]'
-                    >
-                        Enroll Now
-                    </button>
+                    <Link to="/course/application-developer" onClick={() => window.scrollTo(0, 0)} className=' font-semibold px-4 py-3 rounded-lg bg-[#436850] transition-all duration-300
+             border-2 text-white cursor-pointer hover:bg-[#12372A]' >
+                    Enroll Now
+                    </Link>
                 </div>
             </div>
         
