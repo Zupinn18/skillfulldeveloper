@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import img1 from "../../../assets/skills/React.png";
 import img2 from "../../../assets/skills/Bash.png";
 import img3 from "../../../assets/skills/Bootstrap.png";
-import img4 from "../../../assets/skills/Git.svg";
+import img4 from "../../../assets/skills/git.png";
 import img5 from "../../../assets/skills/Github.png";
 import img6 from "../../../assets/skills/NodeJs.png";
 import img7 from "../../../assets/skills/MongoDB.svg";
