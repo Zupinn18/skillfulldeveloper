@@ -1,11 +1,15 @@
 import React, { useEffect, useRef, useState } from 'react'
 import Typed from 'typed.js';
 import img from "../assets/home1.gif";
-import Form from './Form/Form';
+import Enqiryform from './Enquiryform/Enquiryform';
 
 const HeroSection = ({toggle, setToggle}) => {
+    const [showPopup, setShowPopup] = useState(false);
     const el = useRef(null);
-   
+
+  const togglePopup = () => {
+    setShowPopup(!showPopup);
+  };
   useEffect(() => {
     const typed = new Typed(el.current, {
       strings: [ "Web Developer",
@@ -47,6 +51,7 @@ const HeroSection = ({toggle, setToggle}) => {
   }, []);
 
   return (
+    <>
     <div className='w-full flex justify-center items-center gap-[150px] ' >
       <div className='w-full mx-auto flex flex-col gap-4 ml-[100px] ' >
         <div className='flex ' >
@@ -60,7 +65,7 @@ const HeroSection = ({toggle, setToggle}) => {
         <p className={` text-2xl font-bold ${toggle === false ? "text-red-500" : "text-red-400"} `} >100% Job Placement or <span ref={pl} > </span> </p>
 
         <div>
-        <button style={{
+        <button onClick={togglePopup} style={{
         "cursor":"pointer",
         }}
         className='cursor-pointer font-semibold px-8 py-3 rounded-lg bg-[#436850] transition-all duration-300
@@ -70,8 +75,14 @@ const HeroSection = ({toggle, setToggle}) => {
         </div>
         
       </div>
+      
       <img src={img} className='w-[40%]' />
+      
     </div>
+    <div>
+    <Enqiryform showPopup={showPopup} setShowPopup={setShowPopup} />
+    </div>
+    </>
   )
 }
 
