@@ -64,7 +64,7 @@ export default function CourseInfo({toggle}) {
           Discover comprehensive courses on Skillful Developer for mastering essential coding skills.
           </p>
 
-          <div className=' grid grid-cols-3 gap-10 ' >
+          <div className=' grid grid-cols-1 md:grid-cols-3 gap-10 ' >
           {
             courseData?.map((course, index)=>( <Card sx={{ width: 320 }}>
                 <div key={index} >

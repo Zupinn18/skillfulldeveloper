@@ -15,6 +15,7 @@ import Terms from './components/Terms';
 import Contact from './components/Contact';
 import CourseInfo from './components/CourseInfo/CourseInfo';
 import AppDev from './components/skill/Pages/AppDev';
+import DigitalMarketing from './components/skill/Pages/DigitalMarketing';
 
 function App() {
   const [toggle, setToggle] = useState(false);
@@ -54,6 +55,9 @@ function App() {
             }/>
             <Route path="/course/application-developer" element={
               <AppDev toggle={toggle}/>
+            }/>
+            <Route path="/course/digital-marketing" element={
+              <DigitalMarketing toggle={toggle}/>
             }/>
             <Route path="/terms-and-conditions" element={
               <Terms toggle={toggle}/>

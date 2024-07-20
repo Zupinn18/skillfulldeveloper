@@ -72,15 +72,15 @@ export default function AboutUs({toggle, setToggle}) {
             <main>
           <div className=' flex flex-col gap-4 ' >
           <h2 className={`text-center text-xl sm:text-4xl font-edusa font-bold ${toggle === false ? "text-[#12372A]" : "text-white"}`}>Welcome to Skillfull Developer</h2>
-          <div className=' flex gap-[50px] items-center  mt-10' >
-              <p className={` text-justify text-md mb-10 leading-6 ${toggle === false ? "text-[#436860]" : "text-slate-200"} `}>
+          <div className=' flex flex-col md:flex-row gap-[50px] items-center mt-10' >
+              <p className={` text-justify text-md md:mb-10 leading-6 ${toggle === false ? "text-[#436860]" : "text-slate-200"} `}>
               Welcome to Skillful Developer, your ultimate destination for mastering coding skills! We are passionate about empowering individuals to become proficient developers in today's fast-paced tech world. Our mission is to provide high-quality, accessible education that equips you with the knowledge and tools needed to succeed in your coding journey.
 
 At Skillful Developer, we offer a diverse range of coding courses designed to cater to various skill levels and career aspirations. Whether you're a beginner looking to learn Python or an experienced programmer aiming to become a Full Stack or MERN Developer, we have the right course for you. Our expertly crafted curriculum is delivered by industry professionals with real-world experience, ensuring you gain practical skills that are in demand.
                   <br/><br/>
                   Skillfull Developer provides training in various domains like programming languages, software development, web designing. We deliver a superior brand of training that is practical and relevant to today’s technology demands. Our courses are designed to bridge the gap between academics and industry-requirements with emphasis on hands-on learning concepts and methodologies leading to robust designs and code that translates into an efficient software product or solution.
                   </p>
-              <img src={AboutImg} className=' w-[50%] ' />
+              <img src={AboutImg} className=' md:w-[50%] ' />
           </div>
           </div>
   
@@ -111,7 +111,7 @@ At Skillful Developer, we offer a diverse range of coding courses designed to ca
   
           <div id="fourth" className={`reveal rounded-md ${toggle === false ? "bg-[#12372A]" : "bg-slate-300"} `}>
           <h2 className={`text-center text-xl mb-5 sm:text-4xl font-edusa font-bold ${toggle === false ? "text-white" : "text-[#12372A]"}`}>Services We Offer</h2>
-            <div id="fourth_cards">
+            <div id="fourth_cards" className=' flex-col md:flex-row gap-10 md:gap-0 ' >
               <div>
                 <img
                   src="https://cdn.iconscout.com/icon/premium/png-64-thumb/data-analysis-27-681042.png"
