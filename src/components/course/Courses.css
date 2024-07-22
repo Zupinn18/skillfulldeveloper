@@ -3,32 +3,40 @@
     margin: 0 auto;
     text-align: center;
     overflow: hidden;
-  }
-  
-  .slides {
+    position: relative;
+}
+
+.slides {
     display: flex;
     gap: 20px;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
     -webkit-overflow-scrolling: touch;
-    
-  }
-  .slides::-webkit-scrollbar {
+}
+
+.slides::-webkit-scrollbar {
+    width: 0; /* Hides scrollbar */
+    height: 0; /* Hides scrollbar */
+}
+
+.slider:hover .slides::-webkit-scrollbar {
     width: 10% !important;
     height: 8px;
     margin: 0 auto;
-  }
-  .slides::-webkit-scrollbar-thumb {
+}
+
+.slider:hover .slides::-webkit-scrollbar-thumb {
     width: 10%;
     background: white;
     border-radius: 20px;
     cursor: pointer !important;
-  }
-  .slides::-webkit-scrollbar-track {
+}
+
+.slider:hover .slides::-webkit-scrollbar-track {
     width: 10%;
     margin: 0 auto;
     background: #adbc9f;
     border-radius: 20px;
     cursor: pointer;
-  }
+}

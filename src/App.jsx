@@ -16,6 +16,7 @@ import Contact from './components/Contact';
 import CourseInfo from './components/CourseInfo/CourseInfo';
 import AppDev from './components/skill/Pages/AppDev';
 import DigitalMarketing from './components/skill/Pages/DigitalMarketing';
+import Enroll from './components/Enquiryform'
 
 function App() {
   const [toggle, setToggle] = useState(false);
@@ -61,6 +62,9 @@ function App() {
             }/>
             <Route path="/terms-and-conditions" element={
               <Terms toggle={toggle}/>
+            }/>
+            <Route path="/enroll-now" element={
+              <Enroll toggle={toggle}/>
             }/>
         </Routes>
         <Footer toggle={toggle} setToggle={setToggle}/>
