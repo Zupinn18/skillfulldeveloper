@@ -1,8 +1,8 @@
 import React, { useEffect, useRef, useState } from 'react'
 import Typed from 'typed.js';
 import img from "../assets/home1.gif";
-import Enqiryform from './Enquiryform/Enquiryform';
-
+import Enqiryform from './Enquiryform';
+import {Link} from "react-router-dom";
 const HeroSection = ({toggle, setToggle}) => {
     const [showPopup, setShowPopup] = useState(false);
     const el = useRef(null);
@@ -65,13 +65,13 @@ const HeroSection = ({toggle, setToggle}) => {
         <p className={` text-md md:text-2xl font-bold ${toggle === false ? "text-red-500" : "text-red-400"} `} >100% Job Placement or <span ref={pl} > </span> </p>
 
         <div>
-        <button onClick={togglePopup} style={{
-        "cursor":"pointer",
-        }}
-        className='cursor-pointer font-semibold px-8 py-3 rounded-lg bg-[#436850] transition-all duration-300
-             border-2 text-white hover:bg-[#12372A] mt-5 border-none
-             '
-        >Enroll Now</button>
+          <Link to="/enroll-now" onClick={() => window.scrollTo(0, 0)} title="" className={`flex text-base transition-all duration-200 ${toggle === false ? "text-black hover:text-green-700 focus:text-green-700" : "text-[#adbc9f] hover:text-green-300 focus:text-green-300"}`}>
+  <button
+    className='cursor-pointer font-semibold px-8 py-3 rounded-lg bg-[#436850] transition-all duration-300 border-2 text-white hover:bg-[#12372A] mt-5 border-none'
+  >
+    Enroll Now
+  </button>
+</Link>
         </div>
         
       </div>
@@ -79,9 +79,7 @@ const HeroSection = ({toggle, setToggle}) => {
       <img src={img} className='md:w-[40%]' />
       
     </div>
-    <div>
-    <Enqiryform showPopup={showPopup} setShowPopup={setShowPopup} />
-    </div>
+    
     </>
   )
 }

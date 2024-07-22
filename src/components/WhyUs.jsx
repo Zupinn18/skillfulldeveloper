@@ -47,7 +47,7 @@ const whyUs = ({toggle}) => {
                     </div>
 
                 </div>
-                <div className='md:h-[500px] flex flex-col gap-5 items-center bg-white px-10 py-8 rounded-md shadow-xl cursor-pointer transition-all duration-200 hover:scale-105 ' >
+                <div className='md:h-[500px] flex flex-col gap-5 items-center bg-white px-8 py-8 rounded-md shadow-xl cursor-pointer transition-all duration-200 hover:scale-105 ' >
                     <img src={ProjectImg} className=' w-[200px] ' />
                     <div className='h-[40%] flex flex-col gap-2 ' >
                     <p className={`text-xl font-bold text-center ${ toggle === false ? "text-[#12372A]" : "text-[#12372A]" } `} >Hands-On Projects and Practical Experience</p>
@@ -55,7 +55,7 @@ const whyUs = ({toggle}) => {
                     <p className={` text-justify text-md ${ toggle === false ? "text-[#436850]" : "text-[#436850]" } `} >Our courses emphasize hands-on learning through real-world projects and assignments. This practical approach helps students build a strong portfolio, demonstrating their skills to potential employers and enhancing their employability.</p>
                     </div>
                 </div>
-                <div className=' md:h-[500px] flex flex-col gap-5 items-center bg-white px-10 py-8 rounded-md shadow-xl cursor-pointer transition-all duration-200 hover:scale-105 ' >
+                <div className=' md:h-[500px] flex flex-col gap-5 items-center bg-white px-8 py-8 rounded-md shadow-xl cursor-pointer transition-all duration-200 hover:scale-105 ' >
                     <img src={IndustryImg} className=' w-[200px] ' />
                     <div className='h-[40%] flex flex-col gap-2' >
                         <p className={`text-xl font-bold text-center ${ toggle === false ? "text-[#12372A]" : "text-[#12372A]" } `} >Industry-Relevant Training and Support</p>

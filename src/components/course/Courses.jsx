@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useRef, useEffect } from 'react'
 import dsImg from "../../assets/course/datascience.png";
 import Dscience from "../../assets/course/dscience.png";
 import sqlImg from "../../assets/course/sqlq.png";
@@ -22,67 +22,76 @@ import { GoInfo } from "react-icons/go";
 import './Courses.css';
 import { Link } from 'react-router-dom';
 
-const Courses = ({toggle, setToggle}) => {
+const Courses = ({ toggle, setToggle }) => {
+    const sliderRef = useRef(null);
+    let scrollInterval;
+  
+    useEffect(() => {
+      const slider = sliderRef.current;
+  
+      const startScrolling = () => {
+        if (scrollInterval) clearInterval(scrollInterval);
+  
+        scrollInterval = setInterval(() => {
+          slider.scrollLeft += 1;
+        }, 10);
+      };
+  
+      const stopScrolling = () => {
+        if (scrollInterval) clearInterval(scrollInterval);
+      };
+  
+      slider.addEventListener('mouseover', startScrolling);
+      slider.addEventListener('mouseout', stopScrolling);
+  
+      return () => {
+        slider.removeEventListener('mouseover', startScrolling);
+        slider.removeEventListener('mouseout', stopScrolling);
+        if (scrollInterval) clearInterval(scrollInterval);
+      };
+    }, []);
+
+
   return (
     <>
     {/* bg-[#12372a] */}
-    <div className=' w-full mb-[50px] ' >
-        <div className='w-11/12 mx-auto flex flex-col gap-10 py-[70px] ' >
-            <h2 className={`text-4xl font-semibold text-center ${toggle === false ? "text-[#12372A]" :"text-[#fbfada]"} `} >Interested in our Combo Packs ?</h2>
-            <div className="slider" >
-  
-    <div className="slides" style={{
-    "width": "90%",
-    "margin": "0 auto",
-    }} >
-    
-    <div className=' flex gap-10 items-center mb-[60px] ' >
-                {/* card1 */}
-                <div className=' w-[350px] flex flex-col gap-5 px-4 py-2  bg-white rounded-xl ' >
-                    <div className='flex gap-3 items-center ' >
-                        <div className=' w-[80px] h-[80px] flex items-center justify-center rounded-full
-                        shadow-2xl
-                        ' >
-                            <img src={pythonImg} />
-                        </div>
-                        <p className=' text-xl font-bold text-[#12372a] ' >Python Developer</p>
-                    </div>
-                    <div className=' w-full h-[1px] bg-gray-300 decoration-dashed ' ></div>
-                    <div className=' grid grid-cols-2 gap-6 ' >
-                        {/* <div className=' flex gap-2 items-center  ' >
-                            <img src={Dscience} className=' w-8 ' />
-                            <p className=' font-[500] text-md leading-5 ' >Data Science</p>
-                        </div> */}
-                        <div className=' flex gap-2 items-center  ' >
-                            <img src={sqlImg} className=' w-8 '  />
-                            <p className=' font-[500] text-md ' >SQL</p>
-                        </div>
-                        <div className=' flex gap-2 items-center  ' >
-                            <img src={mlImg} className=' w-8 '  />
-                            <p className=' font-[500] text-md ' >AI/ML</p>
-                        </div>
-                        
-                        <div className=' flex gap-2 items-center  ' >
-                            <img src={pythonImg} className=' w-8 '  />
-                            <p className=' font-[500] text-md ' >Python</p>
-                        </div>
-                        <div className=' flex gap-2 items-center  ' >
-                            <img src={dsa} className=' w-8 '  />
-                            <p className=' font-[500] text-md ' >DSA </p>
-                        </div>
-
-                    </div>
-
-                    {/* <div className=' flex text-green-700 items-center
-                     gap-2 border-2 border-green-700 justify-center py-2 rounded-lg text-md ' >
-                        <GoInfo />
-                        <p>You get a Refund Validity of 2 Years</p>
-                    </div> */}
-                    <Link to="/course/python" onClick={() => window.scrollTo(0, 0)} className=' font-semibold px-4 py-3 rounded-lg bg-[#436850] transition-all duration-300
-             border-2 text-white cursor-pointer hover:bg-[#12372A]' >
-                    Enroll Now
-                    </Link>
+    <div className='w-full mb-[50px]'>
+      <div className='w-11/12 mx-auto flex flex-col gap-10 py-[70px]'>
+        <h2 className={`text-4xl font-semibold text-center ${toggle === false ? "text-[#12372A]" : "text-[#fbfada]"}`}>Interested in our Combo Packs ?</h2>
+        <div className="slider" ref={sliderRef}>
+          <div className="slides" style={{ width: "90%", margin: "0 auto" }}>
+            <div className='flex gap-10 items-center mb-[60px]'>
+              {/* Repeat this structure for each card */}
+              <div className='w-[350px] flex flex-col gap-5 px-4 py-2 bg-white rounded-xl'>
+                <div className='flex gap-3 items-center'>
+                  <div className='w-[80px] h-[80px] flex items-center justify-center rounded-full shadow-2xl'>
+                    <img src={pythonImg} />
+                  </div>
+                  <p className='text-xl font-bold text-[#12372a]'>Python Developer</p>
                 </div>
+                <div className='w-full h-[1px] bg-gray-300 decoration-dashed'></div>
+                <div className='grid grid-cols-2 gap-6'>
+                  <div className='flex gap-2 items-center'>
+                    <img src={sqlImg} className='w-8' />
+                    <p className='font-[500] text-md'>SQL</p>
+                  </div>
+                  <div className='flex gap-2 items-center'>
+                    <img src={mlImg} className='w-8' />
+                    <p className='font-[500] text-md'>AI/ML</p>
+                  </div>
+                  <div className='flex gap-2 items-center'>
+                    <img src={pythonImg} className='w-8' />
+                    <p className='font-[500] text-md'>Python</p>
+                  </div>
+                  <div className='flex gap-2 items-center'>
+                    <img src={dsa} className='w-8' />
+                    <p className='font-[500] text-md'>DSA </p>
+                  </div>
+                </div>
+                <Link to="/course/python" onClick={() => window.scrollTo(0, 0)} className='font-semibold px-4 py-3 rounded-lg bg-[#436850] transition-all duration-300 border-2 text-white cursor-pointer hover:bg-[#12372A]'>
+                  Enroll Now
+                </Link>
+              </div>
 
                 <div className=' w-[350px] flex flex-col gap-5 px-4 py-2  bg-white rounded-xl ' >
                     <div className='flex gap-3 items-center ' >
