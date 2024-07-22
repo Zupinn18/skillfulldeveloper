@@ -3,16 +3,16 @@ import TermImg from "../assets/terms.gif";
 
 const Terms = ({toggle}) => {
   return (
-    <div className=' w-11/12 mx-auto flex flex-col gap-[50px] ' >
+    <div className=' w-11/12 mx-auto flex flex-col gap-[50px] mb-10 ' >
         <div className=' flex flex-col gap-4 mt-[50px]' >
           <h2 className={`text-center text-xl sm:text-4xl font-edusa font-bold ${toggle === false ? "text-[#12372A]" : "text-white"}`}>Terms & Conditions</h2>
-          <div className=' flex gap-[50px] items-center ' >
+          <div className=' flex gap-[50px] items-center flex-col md:flex-row ' >
               <p className={` text-justify text-md mb-10 leading-6 ${toggle === false ? "text-[#436860]" : "text-slate-200"} `}>
               Welcome to Skillful Developer! These terms and conditions outline the rules and regulations for the use of our website and services. By accessing or using our website, you agree to comply with and be bound by these terms. If you disagree with any part of these terms, please do not use our website.
                   <br/><br/>
                   Skillfull Developer provides training in various domains like programming languages, software development, web designing. We deliver a superior brand of training that is practical and relevant to today’s technology demands. Our courses are designed to bridge the gap between academics and industry-requirements with emphasis on hands-on learning concepts and methodologies leading to robust designs and code that translates into an efficient software product or solution.
                   </p>
-              <img src={TermImg} className=' w-[50%] ' />
+              <img src={TermImg} className=' md:w-[50%] ' />
           </div>
           </div>
 

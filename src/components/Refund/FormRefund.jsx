@@ -5,8 +5,8 @@ const FormRefund = ({toggle}) => {
     
   return (
     <div className=' w-11/12 mx-auto font-poppins ' >
-      <div className=' flex justify-between items-center gap-5 ' > 
-      <img src={ContactImg} className=' w-[40%] ' />
+      <div className=' flex flex-col md:flex-row justify-between items-center gap-5 ' > 
+      <img src={ContactImg} className=' w-full md:w-[40%] ' />
       <section >
   <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
       <h2 className={` ${toggle === true ? " text-white " :" text-[#12372A] " } mb-4 text-4xl tracking-tight font-bold text-center `}>Fee Refund</h2>

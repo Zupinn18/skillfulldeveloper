@@ -66,7 +66,7 @@ const Header = ({toggle, setToggle}) => {
                 <Link to="/skill" >
                     <p className={` text-lg transition-all duration-200 ${toggle === false ? "text-[#436850] hover:text-green-500" : "text-[#adbc9f] hover:text-green-300 "} `}>Skill</p>
                 </Link>
-                <Link to="/" >
+                <Link to="/placement" >
                     <p className={` text-lg transition-all duration-200 ${toggle === false ? "text-[#436850] hover:text-green-500" : "text-[#adbc9f] hover:text-green-300 "} `}>Placement</p>
                 </Link>
                 
