@@ -2,9 +2,11 @@ import React, { useEffect, useRef, useState } from 'react'
 import ReactImage from "../../../assets/skills/pythoni.jpg";
 import img from "../../../assets/avatar-1.svg";
 import { IoStar } from "react-icons/io5";
-import ProjectImg from "../../../assets/project.gif";
 import { GoInfo } from 'react-icons/go';
 import { TiTick } from "react-icons/ti";
+import CareerImg from "../../../assets/career.gif";
+import InterviewImg from "../../../assets/interview.gif";
+import PrepareImg from "../../../assets/prepare.gif";
 
 const Python = ({ toggle }) => {
   const skillsGain = [
@@ -73,7 +75,7 @@ const Python = ({ toggle }) => {
       <div className=' w-11/12 mx-auto flex flex-col gap-[50px] mt-6 ' >
         <div className='flex md:flex-row flex-col justify-between items-center gap-[50px]'>
           <div className='w-[100%] flex flex-col gap-12 rounded-lg bg-[#55cea4] p-10'>
-            <p className={`text-xl sm:text-5xl font-bold ${toggle === false ? "text-white" : "text-white"}`}>Introduction To programming <br /> with python</p>
+            <p className={`text-xl sm:text-5xl font-bold ${toggle === false ? "text-white" : "text-white"}`}>Introduction To programming <br/> with Python</p>
             <p className={` text-justify text-lg leading-6 ${toggle === false ? "text-slate-100" : "text-slate-100"}`}>Boost your Computer programming skills, with minimal previous exposure, learn two <br /> popular programming languages at an accelerated pace.</p>
             {/* <div className='flex items-center gap-1'>
               <div className='flex gap-2 items-center'>
@@ -121,35 +123,27 @@ const Python = ({ toggle }) => {
           <div className='w-[67%] grid lg:grid-cols-2 gap-[20px]'>
             <div className='flex gap-2 items-start'>
               <TiTick className='w-[100px]' />
-              <p className={`text-justify text-sm leading-6 ${toggle === false ? "text-[#436860]" : "text-slate-200"}`}><strong>100% Placement Guarantee :</strong> We stand by the quality of our training with a 100% placement guarantee. If students do not secure a job after completing our program, we will refund the full amount, ensuring their investment in education is risk-free.</p>
+              <p className={`text-justify text-sm leading-6 ${toggle === false ? "text-[#436860]" : "text-slate-200"}`}><strong>Beginner-Friendly Syntax :</strong> Python has a clear and readable syntax that makes it easy for beginners to learn and understand programming concepts. This simplicity allows students to focus on learning programming logic rather than getting bogged down by complex syntax.</p>
             </div>
             <div className='flex gap-2 justify-start'>
               <TiTick className='w-[100px]' />
-              <p className={`text-justify text-sm leading-6 ${toggle === false ? "text-[#436860]" : "text-slate-200"}`}><strong>Expert Trainers :</strong> Our instructors are seasoned developers with extensive industry experience. They provide insights and knowledge that go beyond textbooks, equipping students with practical skills and real-world problem-solving abilities.</p>
+              <p className={`text-justify text-sm leading-6 ${toggle === false ? "text-[#436860]" : "text-slate-200"}`}><strong>Versatility :</strong> Python is a versatile language used in various fields such as web development, data science, machine learning, artificial intelligence, automation, and more. This wide range of applications means that learning Python can open doors to numerous career opportunities.</p>
             </div>
             <div className='flex gap-2 items-start'>
               <TiTick className='w-[100px]' />
-              <p className={`text-justify text-sm leading-6 ${toggle === false ? "text-[#436860]" : "text-slate-200"}`}><strong>Comprehensive Curriculum :</strong> Our training programs cover a wide range of topics and technologies, including Python, Full Stack Programming, MERN Stack, Java Programming, and Mobile Application Development. This ensures that students gain a versatile skill set that is highly valued in the job market.</p>
+              <p className={`text-justify text-sm leading-6 ${toggle === false ? "text-[#436860]" : "text-slate-200"}`}><strong>Large Community and Resources :</strong> Python has a vast and active community of developers. This means students have access to extensive resources, including tutorials, documentation, forums, and libraries, which can help them learn and solve problems more effectively.</p>
             </div>
             <div className='flex gap-2 items-start'>
               <TiTick className='w-[100px]' />
-              <p className={`text-justify text-sm leading-6 ${toggle === false ? "text-[#436860]" : "text-slate-200"}`}><strong>Online Live Classes :</strong> We offer online live classes, allowing students to learn from anywhere with the flexibility to fit their schedules. This interactive format ensures that students can ask questions, engage in discussions, and receive immediate feedback.</p>
+              <p className={`text-justify text-sm leading-6 ${toggle === false ? "text-[#436860]" : "text-slate-200"}`}><strong>High Demand in Job Market :</strong> Python is one of the most in-demand programming languages in the job market. Many tech companies, startups, and enterprises seek Python developers, making it a valuable skill that can enhance employability and career prospects.</p>
             </div>
             <div className='flex gap-2 items-start'>
               <TiTick className='w-[100px]' />
-              <p className={`text-justify text-sm leading-6 ${toggle === false ? "text-[#436860]" : "text-slate-200"}`}><strong>Hands-on Projects :</strong> Our training emphasizes hands-on learning through projects that simulate real-world scenarios. Students work on practical assignments and build a portfolio of projects, showcasing their skills to potential employers.</p>
+              <p className={`text-justify text-sm leading-6 ${toggle === false ? "text-[#436860]" : "text-slate-200"}`}><strong>Integration Capabilities :</strong> Python can easily integrate with other programming languages and tools. This makes it a great choice for students who may need to work with different technologies and platforms in their future careers.</p>
             </div>
             <div className='flex gap-2 items-start'>
               <TiTick className='w-[100px]' />
-              <p className={`text-justify text-sm leading-6 ${toggle === false ? "text-[#436860]" : "text-slate-200"}`}><strong>Job Placement Assistance :</strong> We provide job placement assistance to help students kickstart their careers. Our dedicated placement team works closely with students to polish their resumes, prepare for interviews, and connect them with top employers in the industry.</p>
-            </div>
-            <div className=' flex gap-2 items-start ' >
-              <TiTick className=' w-[100px] ' />
-              <p className={`text-justify text-sm leading-6 ${toggle === false ? "text-[#436860]" : "text-slate-200"}`} ><strong>Hands-On Projects and Practical Experience :</strong> Our courses emphasize hands-on learning through real-world projects and assignments. This practical approach helps students build a strong portfolio, demonstrating their skills to potential employers and enhancing their employability.</p>
-            </div>
-            <div className=' flex gap-2 items-start ' >
-              <TiTick className=' w-[100px] ' />
-              <p className={`text-justify text-sm leading-6 ${toggle === false ? "text-[#436860]" : "text-slate-200"}`} ><strong>Industry-Relevant Training and Support :</strong> We stay updated with the latest industry trends and technologies to ensure our training is relevant and up-to-date. Additionally, we provide ongoing support and resources to help students succeed in their careers, from resume building to interview preparation.</p>
+              <p className={`text-justify text-sm leading-6 ${toggle === false ? "text-[#436860]" : "text-slate-200"}`}><strong>Support for AI and Data Science :</strong> Python is the preferred language for artificial intelligence, data science, and machine learning. With powerful libraries like TensorFlow, PyTorch, and Pandas, students can delve into these cutting-edge fields and work on innovative projects.</p>
             </div>
           </div>
         </div>
@@ -157,7 +151,7 @@ const Python = ({ toggle }) => {
 
       <div className=' w-[67%] flex flex-col gap-10 ' >
         <p className={`text-xl sm:text-2xl font-bold ${toggle === false ? "text-[#12372A]" : "text-white"}`} >Skills you'll gain</p>
-        <div className='flex flex-col md:flex-row gap-3 items-start ' >
+        <div className='flex flex-col md:flex-row flex-wrap gap-3 items-start ' >
           {
             skillsGain?.map((skill, ind) => (
               <div key={ind} className='bg-emerald-100 px-3 py-1 rounded-xl ' >
@@ -169,30 +163,11 @@ const Python = ({ toggle }) => {
       </div>
 
       
-      {/* <div className=' flex justify-between items-center gap-[50px] ' >
-              <p className={` text-justify text-md leading-6 ${toggle === false ? "text-[#436860]" : "text-slate-200"} `}>
-              Another widely used general-purpose programming language is Python, which has been extensively applied by people in today’s technology industry. Being easy to read and having a very uncomplicated syntax, Python is one of the most popular languages for industry professionals and novices. In this article, you will discover what Python is in its simple definition, primary and secondary capabilities, its use cases in different industries including data science and web development, libraries, frameworks, automation, and scripting. Follow me as we explore the strengths and possibilities of Python in the rapidly developing trends in programming languages.
-              </p>
-              <img src={ReactImage} className=' w-[25%] ' />
-          </div> */}
-
-      {/* <ul className={` flex flex-col gap-5 list-disc ${toggle === false ? "text-[#12372A]" : "text-white"} `} >
-            <li>
-              <p className={`font-semibold text-lg ${toggle === false ? "text-[#12372A]" : "text-gray-100"}`} >What is Python?</p>
-              <p className={` text-justify text-md leading-6 ${toggle === false ? "text-[#436860]" : "text-slate-200"} `} >Python is a general-purpose, interpreted programming language which gets high acclaim due to its ease of working and code readability. Unknown to many it is considered ideal for use by novices and professionals due to its simplicity and incredible functionality.</p>
-            </li>
-            <li>
-              <p className={`font-semibold text-lg ${toggle === false ? "text-[#12372A]" : "text-gray-100"}`} >History of Python</p>
-              <p className={` text-justify text-md leading-6 ${toggle === false ? "text-[#436860]" : "text-slate-200"} `} >Python was created in the late 1980s by Guido van Rossum, a Dutch computer programmer. Over the years, Python has evolved into a popular language used for web development, data analysis, artificial intelligence, and more.
-</p>
-            </li>
-          </ul> */}
-
 
       {/* new python content */}
       <div className=' w-[95%] md:w-[100%]  flex flex-row gap-[50px] ' >
         <div className=' flex flex-col gap-5 ' >
-          <h2 className={`text-xl mb-5 sm:text-2xl font-bold ${toggle === false ? "text-[#12372A]" : "text-white"}`}>Why choose Skill Full Developer for learning Python</h2>
+          <h2 className={`text-xl mb-5 sm:text-2xl font-bold ${toggle === false ? "text-[#12372A]" : "text-white"}`}>Why choose Skill-Full Developer for learning Python</h2>
           <ul className={` flex flex-col gap-5 list-decimal ${toggle === false ? "text-[#12372A]" : "text-white"} `} >
             <li>
               <p className={` text-justify text-md leading-6 ${toggle === false ? "text-[#436860]" : "text-slate-200"} `} ><strong>100% Placement Guarantee :</strong> We offer a 100% placement guarantee. If a student doesn't secure a job after completing our Python training program, we will refund the full amount. This commitment ensures that students can trust our training quality and our dedication to their success.</p>
@@ -213,7 +188,7 @@ const Python = ({ toggle }) => {
           </ul>
         </div>
         <div className=' bg-white rounded-md flex flex-col gap-3 px-10 py-5 md:w-[70%]' >
-        <img src={ProjectImg} className=' w-[300px] ' />
+        <img src={InterviewImg} className=' w-[300px] ' />
             <h2 className={`text-lg font-bold ${toggle === false ? "text-[#12372A]" : "text-white"}`}>Interview opportunities for Python Developers</h2>
             <ul className={` flex flex-col gap-2 list-decimal ${toggle === false ? "text-[#12372A]" : "text-white"} `} >
               <li>
@@ -234,8 +209,8 @@ const Python = ({ toggle }) => {
       <h1 ref={scrollToRef} id="scroll-to"></h1>
       <div className=' flex flex-col md:flex-row items-center justify-between gap-[25px] ' >
 
-          <div className=' bg-white rounded-md flex flex-col gap-3 px-10 py-5 ' >
-          <img src={ProjectImg} className=' w-[300px] ' />
+          <div className=' bg-white rounded-md flex flex-col gap-3 px-10 py-5 h-[500px]' >
+          <img src={PrepareImg} className=' w-[300px] ' />
             <h2 className={`text-lg font-bold ${toggle === false ? "text-[#12372A]" : "text-white"}`}>Prepare for a career as a Python Developer</h2>
             <ul className={` flex flex-col gap-2 list-decimal ${toggle === false ? "text-[#12372A]" : "text-white"} `} >
               <li>
@@ -253,8 +228,8 @@ const Python = ({ toggle }) => {
             </ul>
           </div>
 
-          <div className=' bg-white rounded-md flex flex-col gap-3 px-10 py-5 ' >
-          <img src={ProjectImg} className=' w-[300px] ' />
+          <div className=' bg-white rounded-md flex flex-col justify-center gap-3 px-10 py-5 h-[500px]' >
+          <img src={CareerImg} className=' w-[300px] h-[200px] object-cover ' />
             <h2 className={`text-lg font-bold ${toggle === false ? "text-[#12372A]" : "text-white"}`}>Career opportunities for Python Developers</h2>
             <ul className={` flex flex-col gap-2 list-decimal ${toggle === false ? "text-[#12372A]" : "text-white"} `} >
               <li>
@@ -271,8 +246,8 @@ const Python = ({ toggle }) => {
               </li>
             </ul>
           </div>
-          <div className=' bg-white rounded-md flex flex-col gap-3 px-10 py-5 ' >
-          <img src={ProjectImg} className=' w-[300px] ' />
+          <div className=' bg-white rounded-md flex flex-col gap-3 px-10 py-5 h-[500px] ' >
+          <img src={InterviewImg} className=' w-[300px] ' />
             <h2 className={`text-lg font-bold ${toggle === false ? "text-[#12372A]" : "text-white"}`}>Interview opportunities for Python Developers</h2>
             <ul className={` flex flex-col gap-2 list-decimal ${toggle === false ? "text-[#12372A]" : "text-white"} `} >
               <li>

@@ -18,6 +18,8 @@ import AppDev from './components/skill/Pages/AppDev';
 import DigitalMarketing from './components/skill/Pages/DigitalMarketing';
 import Placement from './components/Placement';
 import Enroll from './components/Enquiryform'
+import NodeJs from './components/SkillSet/NodeJs';
+import PythonSkill from './components/SkillSet/PythonSkill';
 
 function App() {
   const [toggle, setToggle] = useState(false);
@@ -69,6 +71,12 @@ function App() {
             }/>
             <Route path="/enroll-now" element={
               <Enroll toggle={toggle}/>
+            }/>
+            <Route path="/skill/nodejs" element={
+              <NodeJs toggle={toggle}/>
+            }/>
+            <Route path="/skill/python" element={
+              <PythonSkill toggle={toggle}/>
             }/>
         </Routes>
         <Footer toggle={toggle} setToggle={setToggle}/>

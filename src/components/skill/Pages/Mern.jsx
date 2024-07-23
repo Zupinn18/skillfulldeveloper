@@ -5,14 +5,21 @@ import { IoStar } from "react-icons/io5";
 import ProjectImg from "../../../assets/project.gif";
 import { GoInfo } from 'react-icons/go';
 import { TiTick } from "react-icons/ti";
+import InterviewImg from "../../../assets/interview.gif";
+import PrepareImg from "../../../assets/prepare.gif";
+import CareerImg from "../../../assets/career.gif";
+
 
 const Mern = ({ toggle }) => {
   const skillsGain = [
-    { name: "Mern" },
-    { name: "Data Analysis" },
+    { name: "MongoDB" },
+    { name: "ExpressJs" },
+    { name: "ReactJs" },
+    { name: "NodeJs" },
     { name: "Web Development" },
-    { name: "Machine Learning" },
+    { name: "JavaScript" },
     { name: "Database Management" },
+    { name: "Redux" },
   ];
 
   const scrollToRef = useRef(null);
@@ -73,7 +80,7 @@ const Mern = ({ toggle }) => {
       <div className=' w-11/12 mx-auto flex flex-col gap-[50px] mt-6 ' >
         <div className='flex md:flex-row flex-col justify-between items-center gap-[50px]'>
           <div className='w-[100%] flex flex-col gap-12 rounded-lg bg-[#55cea4] p-10'>
-            <p className={`text-xl sm:text-5xl font-bold ${toggle === false ? "text-white" : "text-white"}`}>Introduction To programming <br /> with Mern</p>
+            <p className={`text-xl sm:text-5xl font-bold ${toggle === false ? "text-white" : "text-white"}`}>Master MERN Stack: MERN <br/> Developer Bootcamp</p>
             <p className={` text-justify text-lg leading-6 ${toggle === false ? "text-slate-100" : "text-slate-100"}`}>Boost your Computer programming skills, with minimal previous exposure, learn two <br /> popular programming languages at an accelerated pace.</p>
             {/* <div className='flex items-center gap-1'>
               <div className='flex gap-2 items-center'>
@@ -117,7 +124,7 @@ const Mern = ({ toggle }) => {
         </div>
 
         <div className='w-[100%] flex flex-col gap-10 rounded-lg relative'>
-          <p className={`text-xl sm:text-2xl font-bold ${toggle === false ? "text-[#12372A]" : "text-white"}`}>Why learning Mern is beneficial for students</p>
+          <p className={`text-xl sm:text-2xl font-bold ${toggle === false ? "text-[#12372A]" : "text-white"}`}>Why students should learn the MERN stack</p>
           <div className='w-[67%] grid lg:grid-cols-2 gap-[20px]'>
             <div className='flex gap-2 items-start'>
               <TiTick className='w-[100px]' />
@@ -157,7 +164,7 @@ const Mern = ({ toggle }) => {
 
       <div className=' w-[67%] flex flex-col gap-10 ' >
         <p className={`text-xl sm:text-2xl font-bold ${toggle === false ? "text-[#12372A]" : "text-white"}`} >Skills you'll gain</p>
-        <div className='flex flex-col md:flex-row gap-3 items-start ' >
+        <div className='flex flex-col md:flex-row flex-wrap gap-3 items-start ' >
           {
             skillsGain?.map((skill, ind) => (
               <div key={ind} className='bg-emerald-100 px-3 py-1 rounded-xl ' >
@@ -169,25 +176,7 @@ const Mern = ({ toggle }) => {
       </div>
 
       <h1 ref={scrollToRef} id="scroll-to"></h1>
-      {/* <div className=' flex justify-between items-center gap-[50px] ' >
-              <p className={` text-justify text-md leading-6 ${toggle === false ? "text-[#436860]" : "text-slate-200"} `}>
-              Another widely used general-purpose programming language is Mern, which has been extensively applied by people in today’s technology industry. Being easy to read and having a very uncomplicated syntax, Mern is one of the most popular languages for industry professionals and novices. In this article, you will discover what Mern is in its simple definition, primary and secondary capabilities, its use cases in different industries including data science and web development, libraries, frameworks, automation, and scripting. Follow me as we explore the strengths and possibilities of Mern in the rapidly developing trends in programming languages.
-              </p>
-              <img src={ReactImage} className=' w-[25%] ' />
-          </div> */}
-
-      {/* <ul className={` flex flex-col gap-5 list-disc ${toggle === false ? "text-[#12372A]" : "text-white"} `} >
-            <li>
-              <p className={`font-semibold text-lg ${toggle === false ? "text-[#12372A]" : "text-gray-100"}`} >What is Mern?</p>
-              <p className={` text-justify text-md leading-6 ${toggle === false ? "text-[#436860]" : "text-slate-200"} `} >Mern is a general-purpose, interpreted programming language which gets high acclaim due to its ease of working and code readability. Unknown to many it is considered ideal for use by novices and professionals due to its simplicity and incredible functionality.</p>
-            </li>
-            <li>
-              <p className={`font-semibold text-lg ${toggle === false ? "text-[#12372A]" : "text-gray-100"}`} >History of Mern</p>
-              <p className={` text-justify text-md leading-6 ${toggle === false ? "text-[#436860]" : "text-slate-200"} `} >Mern was created in the late 1980s by Guido van Rossum, a Dutch computer programmer. Over the years, Mern has evolved into a popular language used for web development, data analysis, artificial intelligence, and more.
-</p>
-            </li>
-          </ul> */}
-
+    
 
       {/* new Mern content */}
       <div className=' w-[95%] md:w-[100%]  flex flex-row gap-[50px] ' >
@@ -234,26 +223,46 @@ const Mern = ({ toggle }) => {
 
       <div className=' flex flex-col md:flex-row items-center justify-between gap-[25px] ' >
 
-          <div className=' bg-white rounded-md flex flex-col gap-3 px-10 py-5 ' >
-            <h2 className={`text-lg font-bold ${toggle === false ? "text-[#12372A]" : "text-white"}`}>Prepare for a career as a Mern Developer</h2>
+      <div className=' bg-white rounded-md flex flex-col gap-3 px-10 py-5 h-[550px]' >
+          <img src={PrepareImg} className=' w-[300px] ' />
+            <h2 className={`text-lg font-bold ${toggle === false ? "text-[#12372A]" : "text-white"}`}>Prepare for a career as a MERN Developer</h2>
             <ul className={` flex flex-col gap-2 list-decimal ${toggle === false ? "text-[#12372A]" : "text-white"} `} >
               <li>
-                <p className={` text-sm ${toggle === false ? "text-[#436860]" : "text-slate-200"} `} >Master Mern programming essentials thoroughly.</p>
+                <p className={` text-sm ${toggle === false ? "text-[#436860]" : "text-slate-200"} `} >Master front-end technologies: HTML, CSS, and JavaScript.</p>
               </li>
               <li>
-                <p className={`  text-sm ${toggle === false ? "text-[#436860]" : "text-slate-200"} `} >Build real-world projects for experience.</p>
+                <p className={`  text-sm ${toggle === false ? "text-[#436860]" : "text-slate-200"} `} >Gain proficiency in back-end languages: Node.js, Python, or Java.</p>
               </li>
               <li>
-                <p className={`  text-sm ${toggle === false ? "text-[#436860]" : "text-slate-200"} `} >Gain expertise in data structures.</p>
+                <p className={`  text-sm ${toggle === false ? "text-[#436860]" : "text-slate-200"} `} >Learn database management with SQL and NoSQL databases.</p>
               </li>
               <li>
-                <p className={` text-sm ${toggle === false ? "text-[#436860]" : "text-slate-200"} `} >Learn debugging and problem-solving skills.</p>
+                <p className={` text-sm ${toggle === false ? "text-[#436860]" : "text-slate-200"} `} >Build and deploy full stack projects to showcase your skills.</p>
               </li>
             </ul>
           </div>
 
-          <div className=' bg-white rounded-md flex flex-col gap-3 px-10 py-5 ' >
-            <h2 className={`text-lg font-bold ${toggle === false ? "text-[#12372A]" : "text-white"}`}>Career opportunities for Mern Developers</h2>
+          <div className=' bg-white rounded-md flex flex-col justify-center gap-3 px-10 py-5 h-[550px]' >
+          <img src={CareerImg} className=' w-[300px] h-[200px] object-cover ' />
+            <h2 className={`text-lg font-bold ${toggle === false ? "text-[#12372A]" : "text-white"}`}>Career opportunities for MERN Developers</h2>
+            <ul className={` flex flex-col gap-2 list-decimal ${toggle === false ? "text-[#12372A]" : "text-white"} `} >
+              <li>
+                <p className={` text-sm ${toggle === false ? "text-[#436860]" : "text-slate-200"} `} >Build and maintain dynamic websites and web applications.</p>
+              </li>
+              <li>
+                <p className={`  text-sm ${toggle === false ? "text-[#436860]" : "text-slate-200"} `} >Work as a project lead managing full development lifecycle.</p>
+              </li>
+              <li>
+                <p className={`  text-sm ${toggle === false ? "text-[#436860]" : "text-slate-200"} `} >Join startups or tech companies needing versatile developers.</p>
+              </li>
+              <li>
+                <p className={` text-sm ${toggle === false ? "text-[#436860]" : "text-slate-200"} `} >Consult as a freelance developer for diverse client projects.</p>
+              </li>
+            </ul>
+          </div>
+          <div className=' bg-white rounded-md flex flex-col gap-3 px-10 py-5 h-[550px] ' >
+          <img src={InterviewImg} className=' w-[300px] ' />
+            <h2 className={`text-lg font-bold ${toggle === false ? "text-[#12372A]" : "text-white"}`}>Interview opportunities for MERN Developers</h2>
             <ul className={` flex flex-col gap-2 list-decimal ${toggle === false ? "text-[#12372A]" : "text-white"} `} >
               <li>
                 <p className={` text-sm ${toggle === false ? "text-[#436860]" : "text-slate-200"} `} >High demand across diverse industries.</p>
@@ -269,23 +278,7 @@ const Mern = ({ toggle }) => {
               </li>
             </ul>
           </div>
-          <div className=' bg-white rounded-md flex flex-col gap-3 px-10 py-5 ' >
-            <h2 className={`text-lg font-bold ${toggle === false ? "text-[#12372A]" : "text-white"}`}>Interview opportunities for Mern Developers</h2>
-            <ul className={` flex flex-col gap-2 list-decimal ${toggle === false ? "text-[#12372A]" : "text-white"} `} >
-              <li>
-                <p className={` text-sm ${toggle === false ? "text-[#436860]" : "text-slate-200"} `} >High demand across diverse industries.</p>
-              </li>
-              <li>
-                <p className={`  text-sm ${toggle === false ? "text-[#436860]" : "text-slate-200"} `} >Competitive salaries and benefits packages.</p>
-              </li>
-              <li>
-                <p className={`  text-sm ${toggle === false ? "text-[#436860]" : "text-slate-200"} `} >Opportunities for career advancement.</p>
-              </li>
-              <li>
-                <p className={` text-sm ${toggle === false ? "text-[#436860]" : "text-slate-200"} `} >Versatility in tech and design.</p>
-              </li>
-            </ul>
-          </div>
+
 
         </div>
 </div>

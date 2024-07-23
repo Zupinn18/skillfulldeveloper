@@ -5,13 +5,18 @@ import { IoStar } from "react-icons/io5";
 import ProjectImg from "../../../assets/project.gif";
 import { GoInfo } from 'react-icons/go';
 import { TiTick } from "react-icons/ti";
+import InterviewImg from "../../../assets/interview.gif";
+import PrepareImg from "../../../assets/prepare.gif";
+import CareerImg from "../../../assets/career.gif";
 
 const AppDev = ({ toggle }) => {
   const skillsGain = [
     { name: "Application Development" },
-    { name: "Data Analysis" },
-    { name: "Web Development" },
-    { name: "Machine Learning" },
+    { name: "Flutter" },
+    { name: "Java" },
+    { name: "Kotlin" },
+    { name: "React Native" },
+    { name: "Android Studio" },
     { name: "Database Management" },
   ];
 
@@ -73,7 +78,7 @@ const AppDev = ({ toggle }) => {
       <div className=' w-11/12 mx-auto flex flex-col gap-[50px] mt-6 ' >
         <div className='flex md:flex-row flex-col justify-between items-center gap-[50px]'>
           <div className='w-[100%] flex flex-col gap-12 rounded-lg bg-[#55cea4] p-10'>
-            <p className={`text-xl sm:text-5xl font-bold ${toggle === false ? "text-white" : "text-white"}`}>Introduction To programming <br /> with Application Development</p>
+            <p className={`text-xl sm:text-5xl font-bold ${toggle === false ? "text-white" : "text-white"}`}>Master App Development:<br/> Build Stunning Mobile Apps</p>
             <p className={` text-justify text-lg leading-6 ${toggle === false ? "text-slate-100" : "text-slate-100"}`}>Boost your Computer programming skills, with minimal previous exposure, learn two <br /> popular programming languages at an accelerated pace.</p>
             {/* <div className='flex items-center gap-1'>
               <div className='flex gap-2 items-center'>
@@ -129,7 +134,7 @@ const AppDev = ({ toggle }) => {
             </div>
             <div className='flex gap-2 items-start'>
               <TiTick className='w-[100px]' />
-              <p className={`text-justify text-sm leading-6 ${toggle === false ? "text-[#436860]" : "text-slate-200"}`}><strong>Comprehensive Curriculum :</strong> Our training programs cover a wide range of topics and technologies, including Application Development, Full Stack Programming, MERN Stack, Java Programming, and Mobile Application Development. This ensures that students gain a versatile skill set that is highly valued in the job market.</p>
+              <p className={`text-justify text-sm leading-6 ${toggle === false ? "text-[#436860]" : "text-slate-200"}`}><strong>Comprehensive Curriculum :</strong> Our training programs cover a wide range of topics and technologies, including Application Development, Full Stack Programming, App Stack, Java Programming, and Mobile Application Development. This ensures that students gain a versatile skill set that is highly valued in the job market.</p>
             </div>
             <div className='flex gap-2 items-start'>
               <TiTick className='w-[100px]' />
@@ -157,7 +162,7 @@ const AppDev = ({ toggle }) => {
 
       <div className=' w-[67%] flex flex-col gap-10 ' >
         <p className={`text-xl sm:text-2xl font-bold ${toggle === false ? "text-[#12372A]" : "text-white"}`} >Skills you'll gain</p>
-        <div className='flex flex-col md:flex-row gap-3 items-start ' >
+        <div className='flex flex-col md:flex-row flex-wrap gap-3 items-start ' >
           {
             skillsGain?.map((skill, ind) => (
               <div key={ind} className='bg-emerald-100 px-3 py-1 rounded-xl ' >
@@ -234,43 +239,46 @@ const AppDev = ({ toggle }) => {
 
       <div className=' flex flex-col md:flex-row items-center justify-between gap-[25px] ' >
 
-          <div className=' bg-white rounded-md flex flex-col gap-3 px-10 py-5 ' >
-            <h2 className={`text-lg font-bold ${toggle === false ? "text-[#12372A]" : "text-white"}`}>Prepare for a career as a Application Development Developer</h2>
+      <div className=' bg-white rounded-md flex flex-col gap-3 px-10 py-5 h-[550px]' >
+          <img src={PrepareImg} className=' w-[300px] ' />
+            <h2 className={`text-lg font-bold ${toggle === false ? "text-[#12372A]" : "text-white"}`}>Prepare for a career as a App Developer</h2>
             <ul className={` flex flex-col gap-2 list-decimal ${toggle === false ? "text-[#12372A]" : "text-white"} `} >
               <li>
-                <p className={` text-sm ${toggle === false ? "text-[#436860]" : "text-slate-200"} `} >Master Application Development programming essentials thoroughly.</p>
+                <p className={` text-sm ${toggle === false ? "text-[#436860]" : "text-slate-200"} `} >Master front-end technologies: HTML, CSS, and JavaScript.</p>
               </li>
               <li>
-                <p className={`  text-sm ${toggle === false ? "text-[#436860]" : "text-slate-200"} `} >Build real-world projects for experience.</p>
+                <p className={`  text-sm ${toggle === false ? "text-[#436860]" : "text-slate-200"} `} >Gain proficiency in back-end languages: Node.js, Python, or Java.</p>
               </li>
               <li>
-                <p className={`  text-sm ${toggle === false ? "text-[#436860]" : "text-slate-200"} `} >Gain expertise in data structures.</p>
+                <p className={`  text-sm ${toggle === false ? "text-[#436860]" : "text-slate-200"} `} >Learn database management with SQL and NoSQL databases.</p>
               </li>
               <li>
-                <p className={` text-sm ${toggle === false ? "text-[#436860]" : "text-slate-200"} `} >Learn debugging and problem-solving skills.</p>
+                <p className={` text-sm ${toggle === false ? "text-[#436860]" : "text-slate-200"} `} >Build and deploy full stack projects to showcase your skills.</p>
               </li>
             </ul>
           </div>
 
-          <div className=' bg-white rounded-md flex flex-col gap-3 px-10 py-5 ' >
-            <h2 className={`text-lg font-bold ${toggle === false ? "text-[#12372A]" : "text-white"}`}>Career opportunities for Application Development Developers</h2>
+          <div className=' bg-white rounded-md flex flex-col justify-center gap-3 px-10 py-5 h-[550px]' >
+          <img src={CareerImg} className=' w-[300px] h-[200px] object-cover ' />
+            <h2 className={`text-lg font-bold ${toggle === false ? "text-[#12372A]" : "text-white"}`}>Career opportunities for App Developers</h2>
             <ul className={` flex flex-col gap-2 list-decimal ${toggle === false ? "text-[#12372A]" : "text-white"} `} >
               <li>
-                <p className={` text-sm ${toggle === false ? "text-[#436860]" : "text-slate-200"} `} >High demand across diverse industries.</p>
+                <p className={` text-sm ${toggle === false ? "text-[#436860]" : "text-slate-200"} `} >Build and maintain dynamic websites and web applications.</p>
               </li>
               <li>
-                <p className={`  text-sm ${toggle === false ? "text-[#436860]" : "text-slate-200"} `} >Competitive salaries and benefits packages.</p>
+                <p className={`  text-sm ${toggle === false ? "text-[#436860]" : "text-slate-200"} `} >Work as a project lead managing full development lifecycle.</p>
               </li>
               <li>
-                <p className={`  text-sm ${toggle === false ? "text-[#436860]" : "text-slate-200"} `} >Opportunities for career advancement.</p>
+                <p className={`  text-sm ${toggle === false ? "text-[#436860]" : "text-slate-200"} `} >Join startups or tech companies needing versatile developers.</p>
               </li>
               <li>
-                <p className={` text-sm ${toggle === false ? "text-[#436860]" : "text-slate-200"} `} >Versatility in tech and design.</p>
+                <p className={` text-sm ${toggle === false ? "text-[#436860]" : "text-slate-200"} `} >Consult as a freelance developer for diverse client projects.</p>
               </li>
             </ul>
           </div>
-          <div className=' bg-white rounded-md flex flex-col gap-3 px-10 py-5 ' >
-            <h2 className={`text-lg font-bold ${toggle === false ? "text-[#12372A]" : "text-white"}`}>Interview opportunities for Application Development Developers</h2>
+          <div className=' bg-white rounded-md flex flex-col gap-3 px-10 py-5 h-[550px] ' >
+          <img src={InterviewImg} className=' w-[300px] ' />
+            <h2 className={`text-lg font-bold ${toggle === false ? "text-[#12372A]" : "text-white"}`}>Interview opportunities for App Developers</h2>
             <ul className={` flex flex-col gap-2 list-decimal ${toggle === false ? "text-[#12372A]" : "text-white"} `} >
               <li>
                 <p className={` text-sm ${toggle === false ? "text-[#436860]" : "text-slate-200"} `} >High demand across diverse industries.</p>

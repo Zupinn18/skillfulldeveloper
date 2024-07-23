@@ -3,6 +3,9 @@ import ProjectImg from "../../../assets/project.gif";
 import { GoInfo } from 'react-icons/go';
 import { TiTick } from "react-icons/ti";
 import { useEffect, useRef, useState } from "react";
+import InterviewImg from "../../../assets/interview.gif";
+import PrepareImg from "../../../assets/prepare.gif";
+import CareerImg from "../../../assets/career.gif";
 
 const DigitalMarketing = ({ toggle }) => {
 
@@ -165,24 +168,7 @@ const DigitalMarketing = ({ toggle }) => {
       </div>
 
       <h1 ref={scrollToRef} id="scroll-to"></h1>
-      {/* <div className=' flex justify-between items-center gap-[50px] ' >
-              <p className={` text-justify text-md leading-6 ${toggle === false ? "text-[#436860]" : "text-slate-200"} `}>
-              Another widely used general-purpose programming language is Digital Marketing, which has been extensively applied by people in today’s technology industry. Being easy to read and having a very uncomplicated syntax, Digital Marketing is one of the most popular languages for industry professionals and novices. In this article, you will discover what Digital Marketing is in its simple definition, primary and secondary capabilities, its use cases in different industries including data science and web development, libraries, frameworks, automation, and scripting. Follow me as we explore the strengths and possibilities of Digital Marketing in the rapidly developing trends in programming languages.
-              </p>
-              <img src={ReactImage} className=' w-[25%] ' />
-          </div> */}
 
-      {/* <ul className={` flex flex-col gap-5 list-disc ${toggle === false ? "text-[#12372A]" : "text-white"} `} >
-            <li>
-              <p className={`font-semibold text-lg ${toggle === false ? "text-[#12372A]" : "text-gray-100"}`} >What is Digital Marketing?</p>
-              <p className={` text-justify text-md leading-6 ${toggle === false ? "text-[#436860]" : "text-slate-200"} `} >Digital Marketing is a general-purpose, interpreted programming language which gets high acclaim due to its ease of working and code readability. Unknown to many it is considered ideal for use by novices and professionals due to its simplicity and incredible functionality.</p>
-            </li>
-            <li>
-              <p className={`font-semibold text-lg ${toggle === false ? "text-[#12372A]" : "text-gray-100"}`} >History of Digital Marketing</p>
-              <p className={` text-justify text-md leading-6 ${toggle === false ? "text-[#436860]" : "text-slate-200"} `} >Digital Marketing was created in the late 1980s by Guido van Rossum, a Dutch computer programmer. Over the years, Digital Marketing has evolved into a popular language used for web development, data analysis, artificial intelligence, and more.
-</p>
-            </li>
-          </ul> */}
 
 
       {/* new Digital Marketing content */}
@@ -230,8 +216,9 @@ const DigitalMarketing = ({ toggle }) => {
 
       <div className=' flex flex-col md:flex-row items-center justify-between gap-[25px] ' >
 
-          <div className=' bg-white rounded-md flex flex-col gap-3 px-10 py-5 ' >
-            <h2 className={`text-lg font-bold ${toggle === false ? "text-[#12372A]" : "text-white"}`}>Prepare for a career as a Digital Marketer </h2>
+          <div className=' bg-white rounded-md flex flex-col gap-3 px-10 py-5 h-[550px]' >
+          <img src={PrepareImg} className=' w-[300px] ' />
+            <h2 className={`text-lg font-bold ${toggle === false ? "text-[#12372A]" : "text-white"}`}>Prepare for a career as a NodeJs Developer</h2>
             <ul className={` flex flex-col gap-2 list-decimal ${toggle === false ? "text-[#12372A]" : "text-white"} `} >
               <li>
                 <p className={` text-sm ${toggle === false ? "text-[#436860]" : "text-slate-200"} `} >Learn the fundamentals</p>
@@ -248,8 +235,9 @@ const DigitalMarketing = ({ toggle }) => {
             </ul>
           </div>
 
-          <div className=' bg-white rounded-md flex flex-col gap-3 px-10 py-5 ' >
-            <h2 className={`text-lg font-bold ${toggle === false ? "text-[#12372A]" : "text-white"}`}>Career opportunities for digital marketer</h2>
+          <div className=' bg-white rounded-md flex flex-col justify-center gap-3 px-10 py-5 h-[550px]' >
+          <img src={CareerImg} className=' w-[300px] h-[200px] object-cover ' />
+            <h2 className={`text-lg font-bold ${toggle === false ? "text-[#12372A]" : "text-white"}`}>Career opportunities for NodeJs Developers</h2>
             <ul className={` flex flex-col gap-2 list-decimal ${toggle === false ? "text-[#12372A]" : "text-white"} `} >
               <li>
                 <p className={` text-sm ${toggle === false ? "text-[#436860]" : "text-slate-200"} `} >Email Marketing</p>
@@ -265,8 +253,9 @@ const DigitalMarketing = ({ toggle }) => {
               </li>
             </ul>
           </div>
-          <div className=' bg-white rounded-md flex flex-col gap-3 px-10 py-5 ' >
-            <h2 className={`text-lg font-bold ${toggle === false ? "text-[#12372A]" : "text-white"}`}>Interview opportunities for Digital Marketing </h2>
+          <div className=' bg-white rounded-md flex flex-col gap-3 px-10 py-5 h-[550px] ' >
+          <img src={InterviewImg} className=' w-[300px] ' />
+            <h2 className={`text-lg font-bold ${toggle === false ? "text-[#12372A]" : "text-white"}`}>Interview opportunities for NodeJs Developers</h2>
             <ul className={` flex flex-col gap-2 list-decimal ${toggle === false ? "text-[#12372A]" : "text-white"} `} >
               <li>
                 <p className={` text-sm ${toggle === false ? "text-[#436860]" : "text-slate-200"} `} >High demand across diverse industries.</p>
@@ -285,55 +274,7 @@ const DigitalMarketing = ({ toggle }) => {
 
         </div>
 </div>
-      {/* <div className={` w-full mt-5 h-[1px] ${toggle === false ? "bg-[#12372A]" : "bg-slate-300"}`} ></div>
-          <div className=' flex flex-col gap-5 mt-5 ' >
-          <h2 className={` text-xl text-start font-bold ${toggle === false ? "text-[#12372A]" : "text-white"}`}>Digital Marketing's Versatility and Applications</h2>
-          <ul className={` flex flex-col gap-5 list-decimal ${toggle === false ? "text-[#12372A]" : "text-white"} `} >
-            <li>
-              <p className={` text-justify text-md leading-6 ${toggle === false ? "text-[#436860]" : "text-slate-200"} `} ><strong>Application Development with Digital Marketing :</strong> Digital Marketing facilitates the creation of software in web applications, desktop GUI, and even mobile applications. Due to its libraries and frameworks, it is good for developing all types of applications and with fewer codes.</p>
-            </li>
-            <li>
-              <p className={` text-justify text-md leading-6 ${toggle === false ? "text-[#436860]" : "text-slate-200"} `} ><strong>Scientific Computing and Data Analysis :</strong> Digital Marketing is considered to be an ideal language for doing scientific computing and data analyses because of its numerously available and powerful libraries for example NumPy, pandas, and Matplotlib. Some of the application areas of Digital Marketing include the following; artificial intelligence, machine learning, data visualization, and the like, computational biology among others.</p>
-            </li>
-          </ul>
-          </div>
-
-          <div className=' flex flex-col gap-5 mt-5 ' >
-          <h2 className={` text-xl text-center font-bold ${toggle === false ? "text-[#12372A]" : "text-white"}`}>Key features of Digital Marketing:</h2>
-          <ul className={` flex flex-col gap-5 list-decimal ${toggle === false ? "text-[#12372A]" : "text-white"} `} >
-            <li>
-              <p className={` text-justify text-md leading-6 ${toggle === false ? "text-[#436860]" : "text-slate-200"} `} ><strong>Easy to Learn :</strong> It can be noted that this language is rather easy to learn since the syntax of payrollMC 2 is rather simple, and therefore beginner may use this language.</p>
-            </li>
-            <li>
-              <p className={` text-justify text-md leading-6 ${toggle === false ? "text-[#436860]" : "text-slate-200"} `} ><strong>High-Level Language :</strong> because Digital Marketing is an interpreted language it is classified as a high-level language, this means that you do not control the engine that interprets your code, hence you do not deal with raw details of an operation but rather raw idea or manner to it.</p>
-            </li>
-            <li>
-              <p className={` text-justify text-md leading-6 ${toggle === false ? "text-[#436860]" : "text-slate-200"} `} ><strong>Interpreted Language : </strong> Other consideration is that it as an interpreted language not compiled, it is a very flexible and easy language one can write and test the script short periods of time.</p>
-            </li>
-            <li>
-              <p className={` text-justify text-md leading-6 ${toggle === false ? "text-[#436860]" : "text-slate-200"} `} ><strong>Object-Oriented :</strong> In addition to this there are reliable concepts such as class, object and inheritance which are features of the object –oriented programming paradigm that are also available in Digital Marketing.</p>
-            </li>
-            <li>
-              <p className={` text-justify text-md leading-6 ${toggle === false ? "text-[#436860]" : "text-slate-200"} `} ><strong>Large Standard Library :</strong> It is a standardized language that has one of the richest and most comprehensive standard package and library that contains ranging abilities that cater for most of the routine operations some of them being file operations, networking operations, dimensional analysis among others.</p>
-            </li>
-            <li>
-              <p className={` text-justify text-md leading-6 ${toggle === false ? "text-[#436860]" : "text-slate-200"} `} ><strong>Dynamic Typing :</strong> If at all, you have noticed, Digital Marketing is a dynamically typed language, and you do not declare the type of a variable before using it.</p>
-            </li>
-            <li>
-              <p className={` text-justify text-md leading-6 ${toggle === false ? "text-[#436860]" : "text-slate-200"} `} ><strong>Cross-Platform :</strong> The programs written in Digital Marketing is for all the operating systems including Windows, macOs, Linux and so on.</p>
-            </li>
-            <li>
-              <p className={` text-justify text-md leading-6 ${toggle === false ? "text-[#436860]" : "text-slate-200"} `} ><strong>Extensive Community :</strong> Today, there are many libraries, frameworks, and tools written in Digital Marketing and, most importantly, they are constantly developing due to the large community of programmers.</p>
-            </li>
-            <li>
-              <p className={` text-justify text-md leading-6 ${toggle === false ? "text-[#436860]" : "text-slate-200"} `} ><strong>Rapid Development :</strong> Thanks to the passing of numeric values and the ease of the language and syntax and the nature of the language is most suitable for prototype.</p>
-            </li>
-            <li>
-              <p className={` text-justify text-md leading-6 ${toggle === false ? "text-[#436860]" : "text-slate-200"} `} ><strong>Extensive Use Cases :</strong> Web development field, data science, machine learning, automation and many such fields have adapted the programming language called Digital Marketing.</p>
-            </li>
-          </ul>
-          </div> */}
-
+     
     </div>
 
   )

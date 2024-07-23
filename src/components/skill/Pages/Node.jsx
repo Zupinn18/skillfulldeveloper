@@ -5,13 +5,19 @@ import { IoStar } from "react-icons/io5";
 import ProjectImg from "../../../assets/project.gif";
 import { GoInfo } from 'react-icons/go';
 import { TiTick } from "react-icons/ti";
+import InterviewImg from "../../../assets/interview.gif";
+import PrepareImg from "../../../assets/prepare.gif";
+import CareerImg from "../../../assets/career.gif";
 
 const Node = ({ toggle }) => {
   const skillsGain = [
-    { name: "Node" },
-    { name: "Data Analysis" },
+    { name: "NodeJS" },
+    { name: "Backend" },
     { name: "Web Development" },
-    { name: "Machine Learning" },
+    { name: "HTML5" },
+    { name: "CSS3" },
+    { name: "Javascript" },
+    { name: "Responsive Design" },
     { name: "Database Management" },
   ];
 
@@ -73,7 +79,7 @@ const Node = ({ toggle }) => {
       <div className=' w-11/12 mx-auto flex flex-col gap-[50px] mt-6 ' >
         <div className='flex md:flex-row flex-col justify-between items-center gap-[50px]'>
           <div className='w-[100%] flex flex-col gap-12 rounded-lg bg-[#55cea4] p-10'>
-            <p className={`text-xl sm:text-5xl font-bold ${toggle === false ? "text-white" : "text-white"}`}>Introduction To programming <br /> with Node</p>
+            <p className={`text-xl sm:text-5xl font-bold ${toggle === false ? "text-white" : "text-white"}`}>Master Node.js <br/> Build Scalable Apps</p>
             <p className={` text-justify text-lg leading-6 ${toggle === false ? "text-slate-100" : "text-slate-100"}`}>Boost your Computer programming skills, with minimal previous exposure, learn two <br /> popular programming languages at an accelerated pace.</p>
             {/* <div className='flex items-center gap-1'>
               <div className='flex gap-2 items-center'>
@@ -117,39 +123,31 @@ const Node = ({ toggle }) => {
         </div>
 
         <div className='w-[100%] flex flex-col gap-10 rounded-lg relative'>
-          <p className={`text-xl sm:text-2xl font-bold ${toggle === false ? "text-[#12372A]" : "text-white"}`}>Why learning Node is beneficial for students</p>
+          <p className={`text-xl sm:text-2xl font-bold ${toggle === false ? "text-[#12372A]" : "text-white"}`}>Why students should learn Node.js</p>
           <div className='w-[67%] grid lg:grid-cols-2 gap-[20px]'>
             <div className='flex gap-2 items-start'>
               <TiTick className='w-[100px]' />
-              <p className={`text-justify text-sm leading-6 ${toggle === false ? "text-[#436860]" : "text-slate-200"}`}><strong>100% Placement Guarantee :</strong> We stand by the quality of our training with a 100% placement guarantee. If students do not secure a job after completing our program, we will refund the full amount, ensuring their investment in education is risk-free.</p>
+              <p className={`text-justify text-sm leading-6 ${toggle === false ? "text-[#436860]" : "text-slate-200"}`}><strong>High Demand for Developers :</strong> Node.js is widely used in the tech industry, and there is a high demand for developers skilled in this technology. Learning Node.js can significantly enhance employability and open up numerous job opportunities.</p>
             </div>
             <div className='flex gap-2 justify-start'>
               <TiTick className='w-[100px]' />
-              <p className={`text-justify text-sm leading-6 ${toggle === false ? "text-[#436860]" : "text-slate-200"}`}><strong>Expert Trainers :</strong> Our instructors are seasoned developers with extensive industry experience. They provide insights and knowledge that go beyond textbooks, equipping students with practical skills and real-world problem-solving abilities.</p>
+              <p className={`text-justify text-sm leading-6 ${toggle === false ? "text-[#436860]" : "text-slate-200"}`}><strong>Full Stack Development :</strong> Node.js allows for full stack development using JavaScript for both client-side and server-side applications. This simplifies the development process and enables students to become versatile full stack developers.</p>
             </div>
             <div className='flex gap-2 items-start'>
               <TiTick className='w-[100px]' />
-              <p className={`text-justify text-sm leading-6 ${toggle === false ? "text-[#436860]" : "text-slate-200"}`}><strong>Comprehensive Curriculum :</strong> Our training programs cover a wide range of topics and technologies, including Node, Full Stack Programming, MERN Stack, Java Programming, and Mobile Application Development. This ensures that students gain a versatile skill set that is highly valued in the job market.</p>
+              <p className={`text-justify text-sm leading-6 ${toggle === false ? "text-[#436860]" : "text-slate-200"}`}><strong>Fast and Efficient :</strong> Node.js is known for its non-blocking, event-driven architecture, which makes it highly efficient and capable of handling a large number of simultaneous connections. This makes it ideal for building scalable and high-performance applications.</p>
             </div>
             <div className='flex gap-2 items-start'>
               <TiTick className='w-[100px]' />
-              <p className={`text-justify text-sm leading-6 ${toggle === false ? "text-[#436860]" : "text-slate-200"}`}><strong>Online Live Classes :</strong> We offer online live classes, allowing students to learn from anywhere with the flexibility to fit their schedules. This interactive format ensures that students can ask questions, engage in discussions, and receive immediate feedback.</p>
+              <p className={`text-justify text-sm leading-6 ${toggle === false ? "text-[#436860]" : "text-slate-200"}`}><strong>Large Ecosystem :</strong> Node.js has a vast ecosystem of libraries and frameworks available through npm (Node Package Manager). This extensive range of tools can speed up development and help students build robust applications with ease.</p>
             </div>
             <div className='flex gap-2 items-start'>
               <TiTick className='w-[100px]' />
-              <p className={`text-justify text-sm leading-6 ${toggle === false ? "text-[#436860]" : "text-slate-200"}`}><strong>Hands-on Projects :</strong> Our training emphasizes hands-on learning through projects that simulate real-world scenarios. Students work on practical assignments and build a portfolio of projects, showcasing their skills to potential employers.</p>
+              <p className={`text-justify text-sm leading-6 ${toggle === false ? "text-[#436860]" : "text-slate-200"}`}><strong>Community Support :</strong> Node.js has a strong and active community, providing ample resources, tutorials, and forums for learning and problem-solving. Students can easily find support and collaborate with other developers</p>
             </div>
             <div className='flex gap-2 items-start'>
               <TiTick className='w-[100px]' />
-              <p className={`text-justify text-sm leading-6 ${toggle === false ? "text-[#436860]" : "text-slate-200"}`}><strong>Job Placement Assistance :</strong> We provide job placement assistance to help students kickstart their careers. Our dedicated placement team works closely with students to polish their resumes, prepare for interviews, and connect them with top employers in the industry.</p>
-            </div>
-            <div className=' flex gap-2 items-start ' >
-              <TiTick className=' w-[100px] ' />
-              <p className={`text-justify text-sm leading-6 ${toggle === false ? "text-[#436860]" : "text-slate-200"}`} ><strong>Hands-On Projects and Practical Experience :</strong> Our courses emphasize hands-on learning through real-world projects and assignments. This practical approach helps students build a strong portfolio, demonstrating their skills to potential employers and enhancing their employability.</p>
-            </div>
-            <div className=' flex gap-2 items-start ' >
-              <TiTick className=' w-[100px] ' />
-              <p className={`text-justify text-sm leading-6 ${toggle === false ? "text-[#436860]" : "text-slate-200"}`} ><strong>Industry-Relevant Training and Support :</strong> We stay updated with the latest industry trends and technologies to ensure our training is relevant and up-to-date. Additionally, we provide ongoing support and resources to help students succeed in their careers, from resume building to interview preparation.</p>
+              <p className={`text-justify text-sm leading-6 ${toggle === false ? "text-[#436860]" : "text-slate-200"}`}><strong>Real-Time Applications :</strong> Node.js is particularly well-suited for building real-time applications, such as chat applications, online gaming, and collaborative tools. Learning Node.js equips students with the skills to develop modern, interactive web applications</p>
             </div>
           </div>
         </div>
@@ -157,7 +155,7 @@ const Node = ({ toggle }) => {
 
       <div className=' w-[67%] flex flex-col gap-10 ' >
         <p className={`text-xl sm:text-2xl font-bold ${toggle === false ? "text-[#12372A]" : "text-white"}`} >Skills you'll gain</p>
-        <div className='flex flex-col md:flex-row gap-3 items-start ' >
+        <div className='flex flex-col md:flex-row gap-3 flex-wrap items-start ' >
           {
             skillsGain?.map((skill, ind) => (
               <div key={ind} className='bg-emerald-100 px-3 py-1 rounded-xl ' >
@@ -169,30 +167,12 @@ const Node = ({ toggle }) => {
       </div>
 
       
-      {/* <div className=' flex justify-between items-center gap-[50px] ' >
-              <p className={` text-justify text-md leading-6 ${toggle === false ? "text-[#436860]" : "text-slate-200"} `}>
-              Another widely used general-purpose programming language is Node, which has been extensively applied by people in today’s technology industry. Being easy to read and having a very uncomplicated syntax, Node is one of the most popular languages for industry professionals and novices. In this article, you will discover what Node is in its simple definition, primary and secondary capabilities, its use cases in different industries including data science and web development, libraries, frameworks, automation, and scripting. Follow me as we explore the strengths and possibilities of Node in the rapidly developing trends in programming languages.
-              </p>
-              <img src={ReactImage} className=' w-[25%] ' />
-          </div> */}
-
-      {/* <ul className={` flex flex-col gap-5 list-disc ${toggle === false ? "text-[#12372A]" : "text-white"} `} >
-            <li>
-              <p className={`font-semibold text-lg ${toggle === false ? "text-[#12372A]" : "text-gray-100"}`} >What is Node?</p>
-              <p className={` text-justify text-md leading-6 ${toggle === false ? "text-[#436860]" : "text-slate-200"} `} >Node is a general-purpose, interpreted programming language which gets high acclaim due to its ease of working and code readability. Unknown to many it is considered ideal for use by novices and professionals due to its simplicity and incredible functionality.</p>
-            </li>
-            <li>
-              <p className={`font-semibold text-lg ${toggle === false ? "text-[#12372A]" : "text-gray-100"}`} >History of Node</p>
-              <p className={` text-justify text-md leading-6 ${toggle === false ? "text-[#436860]" : "text-slate-200"} `} >Node was created in the late 1980s by Guido van Rossum, a Dutch computer programmer. Over the years, Node has evolved into a popular language used for web development, data analysis, artificial intelligence, and more.
-</p>
-            </li>
-          </ul> */}
 
 <h1 ref={scrollToRef} id="scroll-to"></h1>
       {/* new Node content */}
       <div className=' w-[95%] md:w-[100%]  flex flex-row gap-[50px] ' >
         <div className=' flex flex-col gap-5 ' >
-          <h2 className={`text-xl mb-5 sm:text-2xl font-bold ${toggle === false ? "text-[#12372A]" : "text-white"}`}>Why choose Skill Full Developer for learning Node</h2>
+          <h2 className={`text-xl mb-5 sm:text-2xl font-bold ${toggle === false ? "text-[#12372A]" : "text-white"}`}>Why choose Skill-Full Developer for learning NodeJS</h2>
           <ul className={` flex flex-col gap-5 list-decimal ${toggle === false ? "text-[#12372A]" : "text-white"} `} >
             <li>
               <p className={` text-justify text-md leading-6 ${toggle === false ? "text-[#436860]" : "text-slate-200"} `} ><strong>100% Placement Guarantee :</strong> We offer a 100% placement guarantee. If a student doesn't secure a job after completing our Node training program, we will refund the full amount. This commitment ensures that students can trust our training quality and our dedication to their success.</p>
@@ -235,43 +215,46 @@ const Node = ({ toggle }) => {
       
       <div className=' flex flex-col md:flex-row items-center justify-between gap-[25px] ' >
 
-          <div className=' bg-white rounded-md flex flex-col gap-3 px-10 py-5 ' >
-            <h2 className={`text-lg font-bold ${toggle === false ? "text-[#12372A]" : "text-white"}`}>Prepare for a career as a Node Developer</h2>
+      <div className=' bg-white rounded-md flex flex-col gap-3 px-10 py-5 h-[550px]' >
+          <img src={PrepareImg} className=' w-[300px] ' />
+            <h2 className={`text-lg font-bold ${toggle === false ? "text-[#12372A]" : "text-white"}`}>Prepare for a career as a NodeJs Developer</h2>
             <ul className={` flex flex-col gap-2 list-decimal ${toggle === false ? "text-[#12372A]" : "text-white"} `} >
               <li>
-                <p className={` text-sm ${toggle === false ? "text-[#436860]" : "text-slate-200"} `} >Master Node programming essentials thoroughly.</p>
+                <p className={` text-sm ${toggle === false ? "text-[#436860]" : "text-slate-200"} `} >Master front-end technologies: HTML, CSS, and JavaScript.</p>
               </li>
               <li>
-                <p className={`  text-sm ${toggle === false ? "text-[#436860]" : "text-slate-200"} `} >Build real-world projects for experience.</p>
+                <p className={`  text-sm ${toggle === false ? "text-[#436860]" : "text-slate-200"} `} >Gain proficiency in back-end languages: Node.js, Python, or Java.</p>
               </li>
               <li>
-                <p className={`  text-sm ${toggle === false ? "text-[#436860]" : "text-slate-200"} `} >Gain expertise in data structures.</p>
+                <p className={`  text-sm ${toggle === false ? "text-[#436860]" : "text-slate-200"} `} >Learn database management with SQL and NoSQL databases.</p>
               </li>
               <li>
-                <p className={` text-sm ${toggle === false ? "text-[#436860]" : "text-slate-200"} `} >Learn debugging and problem-solving skills.</p>
+                <p className={` text-sm ${toggle === false ? "text-[#436860]" : "text-slate-200"} `} >Build and deploy full stack projects to showcase your skills.</p>
               </li>
             </ul>
           </div>
 
-          <div className=' bg-white rounded-md flex flex-col gap-3 px-10 py-5 ' >
-            <h2 className={`text-lg font-bold ${toggle === false ? "text-[#12372A]" : "text-white"}`}>Career opportunities for Node Developers</h2>
+          <div className=' bg-white rounded-md flex flex-col justify-center gap-3 px-10 py-5 h-[550px]' >
+          <img src={CareerImg} className=' w-[300px] h-[200px] object-cover ' />
+            <h2 className={`text-lg font-bold ${toggle === false ? "text-[#12372A]" : "text-white"}`}>Career opportunities for NodeJs Developers</h2>
             <ul className={` flex flex-col gap-2 list-decimal ${toggle === false ? "text-[#12372A]" : "text-white"} `} >
               <li>
-                <p className={` text-sm ${toggle === false ? "text-[#436860]" : "text-slate-200"} `} >High demand across diverse industries.</p>
+                <p className={` text-sm ${toggle === false ? "text-[#436860]" : "text-slate-200"} `} >Build and maintain dynamic websites and web applications.</p>
               </li>
               <li>
-                <p className={`  text-sm ${toggle === false ? "text-[#436860]" : "text-slate-200"} `} >Competitive salaries and benefits packages.</p>
+                <p className={`  text-sm ${toggle === false ? "text-[#436860]" : "text-slate-200"} `} >Work as a project lead managing full development lifecycle.</p>
               </li>
               <li>
-                <p className={`  text-sm ${toggle === false ? "text-[#436860]" : "text-slate-200"} `} >Opportunities for career advancement.</p>
+                <p className={`  text-sm ${toggle === false ? "text-[#436860]" : "text-slate-200"} `} >Join startups or tech companies needing versatile developers.</p>
               </li>
               <li>
-                <p className={` text-sm ${toggle === false ? "text-[#436860]" : "text-slate-200"} `} >Versatility in tech and design.</p>
+                <p className={` text-sm ${toggle === false ? "text-[#436860]" : "text-slate-200"} `} >Consult as a freelance developer for diverse client projects.</p>
               </li>
             </ul>
           </div>
-          <div className=' bg-white rounded-md flex flex-col gap-3 px-10 py-5 ' >
-            <h2 className={`text-lg font-bold ${toggle === false ? "text-[#12372A]" : "text-white"}`}>Interview opportunities for Node Developers</h2>
+          <div className=' bg-white rounded-md flex flex-col gap-3 px-10 py-5 h-[550px] ' >
+          <img src={InterviewImg} className=' w-[300px] ' />
+            <h2 className={`text-lg font-bold ${toggle === false ? "text-[#12372A]" : "text-white"}`}>Interview opportunities for NodeJs Developers</h2>
             <ul className={` flex flex-col gap-2 list-decimal ${toggle === false ? "text-[#12372A]" : "text-white"} `} >
               <li>
                 <p className={` text-sm ${toggle === false ? "text-[#436860]" : "text-slate-200"} `} >High demand across diverse industries.</p>
@@ -290,55 +273,6 @@ const Node = ({ toggle }) => {
 
         </div>
 </div>
-
-      {/* <div className={` w-full mt-5 h-[1px] ${toggle === false ? "bg-[#12372A]" : "bg-slate-300"}`} ></div>
-          <div className=' flex flex-col gap-5 mt-5 ' >
-          <h2 className={` text-xl text-start font-bold ${toggle === false ? "text-[#12372A]" : "text-white"}`}>Node's Versatility and Applications</h2>
-          <ul className={` flex flex-col gap-5 list-decimal ${toggle === false ? "text-[#12372A]" : "text-white"} `} >
-            <li>
-              <p className={` text-justify text-md leading-6 ${toggle === false ? "text-[#436860]" : "text-slate-200"} `} ><strong>Application Development with Node :</strong> Node facilitates the creation of software in web applications, desktop GUI, and even mobile applications. Due to its libraries and frameworks, it is good for developing all types of applications and with fewer codes.</p>
-            </li>
-            <li>
-              <p className={` text-justify text-md leading-6 ${toggle === false ? "text-[#436860]" : "text-slate-200"} `} ><strong>Scientific Computing and Data Analysis :</strong> Node is considered to be an ideal language for doing scientific computing and data analyses because of its numerously available and powerful libraries for example NumPy, pandas, and Matplotlib. Some of the application areas of Node include the following; artificial intelligence, machine learning, data visualization, and the like, computational biology among others.</p>
-            </li>
-          </ul>
-          </div>
-
-          <div className=' flex flex-col gap-5 mt-5 ' >
-          <h2 className={` text-xl text-center font-bold ${toggle === false ? "text-[#12372A]" : "text-white"}`}>Key features of Node:</h2>
-          <ul className={` flex flex-col gap-5 list-decimal ${toggle === false ? "text-[#12372A]" : "text-white"} `} >
-            <li>
-              <p className={` text-justify text-md leading-6 ${toggle === false ? "text-[#436860]" : "text-slate-200"} `} ><strong>Easy to Learn :</strong> It can be noted that this language is rather easy to learn since the syntax of payrollMC 2 is rather simple, and therefore beginner may use this language.</p>
-            </li>
-            <li>
-              <p className={` text-justify text-md leading-6 ${toggle === false ? "text-[#436860]" : "text-slate-200"} `} ><strong>High-Level Language :</strong> because Node is an interpreted language it is classified as a high-level language, this means that you do not control the engine that interprets your code, hence you do not deal with raw details of an operation but rather raw idea or manner to it.</p>
-            </li>
-            <li>
-              <p className={` text-justify text-md leading-6 ${toggle === false ? "text-[#436860]" : "text-slate-200"} `} ><strong>Interpreted Language : </strong> Other consideration is that it as an interpreted language not compiled, it is a very flexible and easy language one can write and test the script short periods of time.</p>
-            </li>
-            <li>
-              <p className={` text-justify text-md leading-6 ${toggle === false ? "text-[#436860]" : "text-slate-200"} `} ><strong>Object-Oriented :</strong> In addition to this there are reliable concepts such as class, object and inheritance which are features of the object –oriented programming paradigm that are also available in Node.</p>
-            </li>
-            <li>
-              <p className={` text-justify text-md leading-6 ${toggle === false ? "text-[#436860]" : "text-slate-200"} `} ><strong>Large Standard Library :</strong> It is a standardized language that has one of the richest and most comprehensive standard package and library that contains ranging abilities that cater for most of the routine operations some of them being file operations, networking operations, dimensional analysis among others.</p>
-            </li>
-            <li>
-              <p className={` text-justify text-md leading-6 ${toggle === false ? "text-[#436860]" : "text-slate-200"} `} ><strong>Dynamic Typing :</strong> If at all, you have noticed, Node is a dynamically typed language, and you do not declare the type of a variable before using it.</p>
-            </li>
-            <li>
-              <p className={` text-justify text-md leading-6 ${toggle === false ? "text-[#436860]" : "text-slate-200"} `} ><strong>Cross-Platform :</strong> The programs written in Node is for all the operating systems including Windows, macOs, Linux and so on.</p>
-            </li>
-            <li>
-              <p className={` text-justify text-md leading-6 ${toggle === false ? "text-[#436860]" : "text-slate-200"} `} ><strong>Extensive Community :</strong> Today, there are many libraries, frameworks, and tools written in Node and, most importantly, they are constantly developing due to the large community of programmers.</p>
-            </li>
-            <li>
-              <p className={` text-justify text-md leading-6 ${toggle === false ? "text-[#436860]" : "text-slate-200"} `} ><strong>Rapid Development :</strong> Thanks to the passing of numeric values and the ease of the language and syntax and the nature of the language is most suitable for prototype.</p>
-            </li>
-            <li>
-              <p className={` text-justify text-md leading-6 ${toggle === false ? "text-[#436860]" : "text-slate-200"} `} ><strong>Extensive Use Cases :</strong> Web development field, data science, machine learning, automation and many such fields have adapted the programming language called Node.</p>
-            </li>
-          </ul>
-          </div> */}
 
     </div>
 

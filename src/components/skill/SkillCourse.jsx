@@ -19,6 +19,7 @@ import java from '../../assets/skill/java.png';
 import postman from '../../assets/skill/postman.png';
 import python from '../../assets/skill/python.png';
 import sql from '../../assets/skill/mysql.png';
+import { Link } from 'react-router-dom';
 
 export default function SkillCourse() {
 
@@ -52,18 +53,22 @@ export default function SkillCourse() {
               <img className='skills-logo' src={Express} />
               <p>Express Js</p>
             </div>
-            <div className='bg-white px-5 w-[180px] h-[190px] py-3 rounded-md flex flex-col gap-4 items-center font-bold shadow-xl' >
-              <img className='skills-logo' src={NodeJS} />
-              <p>Node Js</p>
-            </div>
+            <Link to="/skill/nodejs" >
+              <div className='bg-white px-5 w-[180px] h-[190px] py-3 rounded-md flex flex-col gap-4 items-center font-bold shadow-xl' >
+                <img className='skills-logo' src={NodeJS} />
+                <p>Node Js</p>
+              </div>
+            </Link>
             <div className='bg-white px-5 w-[180px] h-[190px] py-3 rounded-md flex flex-col gap-4 items-center font-bold shadow-xl' >
               <img className='skills-logo' src={sql} />
               <p>SQL</p>
             </div>
+            <Link to="/skill/python" >
             <div className='bg-white px-5 w-[180px] object-cover h-[190px] py-3 rounded-md flex flex-col gap-4 items-center font-bold shadow-xl' >
               <img className='skills-logo' src={python} />
               <p>Python</p>
             </div>
+            </Link>
             <div className='bg-white px-5 w-[180px] h-[190px] py-3 rounded-md flex flex-col gap-4 items-center font-bold shadow-xl' >
               <img className='skills-logo' src={HTML} />
               <p>HTML</p>
