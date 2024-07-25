@@ -3,7 +3,6 @@ import { Routes, Route } from "react-router-dom";
 import Homepage from './components/Homepage';
 import RefundForm from "./components/Refund/RefundForm";
 import Skill from './components/Skill';
-import ReactJs from './components/skill/Pages/ReactJs';
 import Python from './components/skill/Pages/Python';
 import Mern from './components/skill/Pages/Mern';
 import Node from './components/skill/Pages/Node';
@@ -20,6 +19,9 @@ import Placement from './components/Placement';
 import Enroll from './components/Enquiryform'
 import NodeJs from './components/SkillSet/NodeJs';
 import PythonSkill from './components/SkillSet/PythonSkill';
+import Javascript from './components/skill/Pages/Javascript';
+import FullStack from './components/skill/Pages/FullStack';
+import Reactjs from './components/skill/Pages/Reactjs';
 
 function App() {
   const [toggle, setToggle] = useState(false);
@@ -46,7 +48,7 @@ function App() {
               <CourseInfo toggle={toggle}/>
             }/>
             <Route path="/course/fullstack" element={
-              <ReactJs toggle={toggle}/>
+              <FullStack toggle={toggle}/>
             }/>
             <Route path="/course/python" element={
               < Python toggle={toggle} />
@@ -62,6 +64,12 @@ function App() {
             }/>
             <Route path="/course/digital-marketing" element={
               <DigitalMarketing toggle={toggle}/>
+            }/>
+            <Route path="/course/javascript" element={
+              <Javascript toggle={toggle}/>
+            }/>
+            <Route path="/course/react" element={
+              <Reactjs toggle={toggle}/>
             }/>
             <Route path="/terms-and-conditions" element={
               <Terms toggle={toggle}/>

@@ -5,6 +5,7 @@ import ItcImg from "../assets/itc.png";
 import TcsImg from "../assets/tcs.png";
 import AmazonImg from "../assets/amazon.png";
 import accentImg from "../assets/accenture.png";
+import {Link} from "react-router-dom";
 
 const Placement = ({toggle}) => {
   return (
@@ -68,6 +69,7 @@ Global Tech MNCs hire</p>
                     <img src={fedImg} className=' grayscale transition-all duration-200 hover:grayscale-0 '/>
                 </div>
 
+                <Link to="/enroll-now" onClick={() => window.scrollTo(0, 0)} >
                 <button style={{
                         "cursor":"pointer",
                         }}
@@ -75,6 +77,7 @@ Global Tech MNCs hire</p>
                             border-2 text-white hover:bg-[#12372A] mt-5 border-none
                             '
                 >Enroll Now</button>
+                </Link>
 
             </div>
 

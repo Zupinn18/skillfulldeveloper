@@ -8,16 +8,16 @@ import { TiTick } from "react-icons/ti";
 import InterviewImg from "../../../assets/interview.gif";
 import PrepareImg from "../../../assets/prepare.gif";
 import CareerImg from "../../../assets/career.gif";
+import SalaryImg from "../../../assets/salary.gif";
 
-const ReactJs = ({ toggle }) => {
+const Reactjs = ({ toggle }) => {
   const skillsGain = [
-    { name: "Frontend" },
-    { name: "Backend" },
-    { name: "Web Development" },
-    { name: "HTML5" },
-    { name: "CSS3" },
+    { name: "ReactJs" },
+    { name: "State Management" },
+    { name: "Virtual DOM" },
+    { name: "Styling and layout" },
     { name: "Javascript" },
-    { name: "Responsive Design" },
+    { name: "Component-based architecture" },
   ];
 
   const scrollToRef = useRef(null);
@@ -77,8 +77,8 @@ const ReactJs = ({ toggle }) => {
       {/* main skill content */}
       <div className=' w-11/12 mx-auto flex flex-col gap-[50px] mt-6 ' >
         <div className='flex md:flex-row flex-col justify-between items-center gap-[50px]'>
-          <div className='w-[100%] flex flex-col gap-12 rounded-lg bg-[#55cea4] p-10'>
-            <p className={`text-xl sm:text-5xl font-bold ${toggle === false ? "text-white" : "text-white"}`}>Become a Fullstack Pro:<br/> Master Development</p>
+          <div className='w-[100%] flex flex-col gap-12 rounded-lg bg-[#55cea4] p-10 relative'>
+            <p className={`text-xl sm:text-5xl font-bold ${toggle === false ? "text-white" : "text-white"}`}>Master React: Build Modern, <br/> Dynamic Interfaces!</p>
             <p className={` text-justify text-lg leading-6 ${toggle === false ? "text-slate-100" : "text-slate-100"}`}>Boost your Computer programming skills, with minimal previous exposure, learn two <br /> popular programming languages at an accelerated pace.</p>
             {/* <div className='flex items-center gap-1'>
               <div className='flex gap-2 items-center'>
@@ -94,8 +94,8 @@ const ReactJs = ({ toggle }) => {
                 <p className='text-sm font-thin'>Started at 1 Aug</p>
               </button>
             </div>
-          </div>
-          <div className={`bg-white z-50 flex flex-col px-6 py-6 rounded-md ${Fixed === true ? "md:absolute" : "md:fixed top-[19%]"} right-[6%] shadow-2xl`}>
+
+            <div className={`bg-white absolute z-50 flex flex-col px-6 py-6 top-5 right-5 rounded-md shadow-2xl`}>
             <p className={`text-justify text-xl font-bold leading-6 ${toggle === false ? "text-[#436860]" : "text-slate-800"}`}>Specialization</p>
             <p className={`text-justify text-sm leading-6 ${toggle === false ? "text-slate-400" : "text-slate-400"}`}>Get in-depth knowledge</p>
             <div className={`w-full mt-2 h-[1px] ${toggle === false ? "bg-[#12372A]" : "bg-slate-300"}`}></div>
@@ -119,35 +119,86 @@ const ReactJs = ({ toggle }) => {
               </div>
             </div>
           </div>
+          </div>
+          
         </div>
 
-        <div className='w-[100%] flex flex-col gap-10 rounded-lg relative'>
-          <p className={`text-xl sm:text-2xl font-bold ${toggle === false ? "text-[#12372A]" : "text-white"}`}>Why students should learn Full Stack development</p>
-          <div className='w-[67%] grid lg:grid-cols-2 gap-[20px]'>
+        <div className='w-[100%] flex gap-10'>
+          <div className='w-[67%] flex flex-col gap-5' >
+          <p className={`text-xl sm:text-2xl font-bold ${toggle === false ? "text-[#12372A]" : "text-white"}`}>Why students should learn React.js</p>
+          <div className='grid lg:grid-cols-2 gap-[20px]'>
             <div className='flex gap-2 items-start'>
               <TiTick className='w-[100px]' />
-              <p className={`text-justify text-sm leading-6 ${toggle === false ? "text-[#436860]" : "text-slate-200"}`}><strong>Versatility and Flexibility :</strong> Full Stack developers are proficient in both front-end and back-end development, making them versatile professionals capable of handling multiple aspects of web development. This flexibility allows them to work on various projects and adapt to different roles within a team.</p>
+              <p className={`text-justify text-sm leading-6 ${toggle === false ? "text-[#436860]" : "text-slate-200"}`}><strong>High Demand in the Job Market :</strong> 
+              One of the most in-demand skills on the job market right now is React.js. React.js is used by several leading businesses, such as Netflix, Instagram, and Facebook, to create their user interfaces. Because of this, developers with knowledge of React.js are in high demand, and acquiring it can lead to a variety of career prospects. Students who master React.js should anticipate great demand from employers and good compensation
+              </p>
             </div>
             <div className='flex gap-2 justify-start'>
               <TiTick className='w-[100px]' />
-              <p className={`text-justify text-sm leading-6 ${toggle === false ? "text-[#436860]" : "text-slate-200"}`}><strong>High Demand and Employability :</strong> Full Stack developers are highly sought after in the job market due to their broad skill set. Companies value professionals who can manage entire projects independently, making Full Stack developers more employable and opening up numerous career opportunities.</p>
+              <p className={`text-justify text-sm leading-6 ${toggle === false ? "text-[#436860]" : "text-slate-200"}`}><strong>Versatility :</strong> Front-end and back-end developers can both benefit from knowing React.js. User interfaces, one-page apps, and even mobile applications can be created with it. Because of its adaptability, React.js is an important talent to have since it can be used in a variety of projects and sectors. Learners of React.js are able to work on a range of projects and adjust to various frameworks and technologies</p>
             </div>
             <div className='flex gap-2 items-start'>
               <TiTick className='w-[100px]' />
-              <p className={`text-justify text-sm leading-6 ${toggle === false ? "text-[#436860]" : "text-slate-200"}`}><strong>Comprehensive Understanding :</strong> Learning Full Stack development provides a comprehensive understanding of how web applications function from start to finish. This holistic knowledge enables developers to create more cohesive and efficient applications, and to better communicate with different team members.</p>
+              <p className={`text-justify text-sm leading-6 ${toggle === false ? "text-[#436860]" : "text-slate-200"}`}><strong>Large Community :</strong> Developers from a large and vibrant community actively participate in the growth and development of React.js. This community offers a multitude of tools, such as tutorials, forums, and documentation, to assist students in learning and staying informed about current advancements. For students who wish to pursue a career in software development, the community also offers networking and cooperation opportunities.</p>
             </div>
             <div className='flex gap-2 items-start'>
               <TiTick className='w-[100px]' />
-              <p className={`text-justify text-sm leading-6 ${toggle === false ? "text-[#436860]" : "text-slate-200"}`}><strong>Efficient Problem Solving :</strong> Full Stack developers can identify and resolve issues across the entire development stack, from the user interface to the server and database. This capability leads to faster problem-solving and a more streamlined development process</p>
+              <p className={`text-justify text-sm leading-6 ${toggle === false ? "text-[#436860]" : "text-slate-200"}`}><strong>Constantly Improving :</strong> Because React.js is continuously being updated and developed, students who learn it will have access to the newest trends and technology. Since the React.js team is constantly developing new features and enhancements, students will have the chance to become up to date on the most recent developments in software development. This guarantees that students will be ready for the industry's evolving landscape</p>
             </div>
-            <div className='flex gap-2 items-start'>
-              <TiTick className='w-[100px]' />
-              <p className={`text-justify text-sm leading-6 ${toggle === false ? "text-[#436860]" : "text-slate-200"}`}><strong>Greater Control Over Projects :</strong> With expertise in both front-end and back-end technologies, Full Stack developers have greater control over projects. They can implement features end-to-end and make informed decisions about the best technologies and approaches to use.</p>
-            </div>
-            <div className='flex gap-2 items-start'>
-              <TiTick className='w-[100px]' />
-              <p className={`text-justify text-sm leading-6 ${toggle === false ? "text-[#436860]" : "text-slate-200"}`}><strong>Enhanced Creativity and Innovation :</strong> Full Stack development encourages creativity and innovation by allowing developers to experiment with different technologies and frameworks. This ability to work on all aspects of a project fosters innovative solutions and a deeper understanding of the entire development process.</p>
-            </div>
+           
+          
+          </div>
+          </div>
+
+          <div className=' w-[30%] flex flex-col gap-2 bg-white p-6 rounded-md ' >
+                <p className={`text-justify text-xl font-bold leading-6 ${toggle === false ? "text-[#436860]" : "text-slate-800"}`}>Things you'll learn in this course</p>
+            <div className={`w-full mt-1 h-[1px] ${toggle === false ? "bg-[#12372A]" : "bg-slate-300"}`}></div>
+            <ul className=' flex flex-col px-2 gap-1 mt-2 list-disc '  >
+                <li>
+                <div className='flex gap-1 items-center'>
+                    <p className={`text-justify text-md leading-6 ${toggle === false ? "text-[#436860]" : "text-slate-800"}`}>Installing and setting Up</p>
+                  </div>
+                </li>
+                  <li>
+                <div className='flex gap-1 items-center'>
+                    <p className={`text-justify text-md leading-6 ${toggle === false ? "text-[#436860]" : "text-slate-800"}`}>JSX</p>
+                    <p className={`text-justify text-sm leading-6 ${toggle === false ? "text-slate-400" : "text-slate-400"}`}>(Javascript + XML)</p>
+                  </div>
+                </li>
+                <li><p className={`text-justify text-md leading-6 ${toggle === false ? "text-[#436860]" : "text-slate-800"}`}>State Full and Stateless Component</p> 
+                  </li> 
+                  <li><p className={`text-justify text-md leading-6 ${toggle === false ? "text-[#436860]" : "text-slate-800"}`}>Component</p> 
+                  </li> 
+                  <li><p className={`text-justify text-md leading-6 ${toggle === false ? "text-[#436860]" : "text-slate-800"}`}>Everything about Javascript</p> 
+                  </li> 
+                  <li>
+                <div className='flex gap-1 items-center'>
+                    <p className={`text-justify text-md leading-6 ${toggle === false ? "text-[#436860]" : "text-slate-800"}`}>Hooks</p>
+                    <p className={`text-justify text-sm leading-6 ${toggle === false ? "text-slate-400" : "text-slate-400"}`}>(useEffect, useState, useMemo, useRef)</p>
+                  </div>
+                </li>
+                  
+                    <li><p className={`text-justify text-md leading-6 ${toggle === false ? "text-[#436860]" : "text-slate-800"}`}>Conditional Rendering</p> 
+                  </li> 
+                  <li><p className={`text-justify text-md leading-6 ${toggle === false ? "text-[#436860]" : "text-slate-800"}`}>Context API & State management</p> 
+                  </li>
+
+                  <li><p className={`text-justify text-md leading-6 ${toggle === false ? "text-[#436860]" : "text-slate-800"}`}>Connect API with Fetch or Axios</p> 
+                  </li>
+                  <li><p className={`text-justify text-md leading-6 ${toggle === false ? "text-[#436860]" : "text-slate-800"}`}>React Form or Forkik/Reacthooks</p> 
+                  </li>
+                  <li><p className={`text-justify text-md leading-6 ${toggle === false ? "text-[#436860]" : "text-slate-800"}`}>Redux & React Router</p> 
+                  </li>
+                  <li><p className={`text-justify text-md leading-6 ${toggle === false ? "text-[#436860]" : "text-slate-800"}`}>Tailwind CSS with React</p> 
+                  </li>
+               
+            
+                    
+                         
+            </ul>
+            <button className='flex text-green-700 mt-3 items-center gap-2 border-2 border-green-700 justify-center px-4 py-2 rounded-lg text-md transition-all duration-200 hover:text-white hover:bg-green-700 '>
+                Download full Syllabus Now
+              </button>
           </div>
         </div>
    
@@ -168,13 +219,13 @@ const ReactJs = ({ toggle }) => {
       <h1 ref={scrollToRef} id="scroll-to"></h1>
 
 
-      {/* new Fullstack content */}
+      {/* new React.js content */}
       <div className=' w-[95%] md:w-[100%]  flex flex-row gap-[50px] ' >
         <div className=' flex flex-col gap-5 ' >
-          <h2 className={`text-xl mb-5 sm:text-2xl font-bold ${toggle === false ? "text-[#12372A]" : "text-white"}`}>Why choose Skill-Full Developer for learning Fullstack</h2>
+          <h2 className={`text-xl mb-5 sm:text-2xl font-bold ${toggle === false ? "text-[#12372A]" : "text-white"}`}>Why choose Skill-Full Developer for learning React.js</h2>
           <ul className={` flex flex-col gap-5 list-decimal ${toggle === false ? "text-[#12372A]" : "text-white"} `} >
             <li>
-              <p className={` text-justify text-md leading-6 ${toggle === false ? "text-[#436860]" : "text-slate-200"} `} ><strong>100% Placement Guarantee :</strong> We offer a 100% placement guarantee. If a student doesn't secure a job after completing our Fullstack training program, we will refund the full amount. This commitment ensures that students can trust our training quality and our dedication to their success.</p>
+              <p className={` text-justify text-md leading-6 ${toggle === false ? "text-[#436860]" : "text-slate-200"} `} ><strong>100% Placement Guarantee :</strong> We offer a 100% placement guarantee. If a student doesn't secure a job after completing our React.js training program, we will refund the full amount. This commitment ensures that students can trust our training quality and our dedication to their success.</p>
             </li>
             <li>
               <p className={` text-justify text-md leading-6 ${toggle === false ? "text-[#436860]" : "text-slate-200"} `} ><strong>Experienced and Skilled Developers :</strong> Our trainers are highly skilled and experienced developers who bring real-world expertise. This ensures that students receive practical and relevant training, preparing them to excel in the job market.
@@ -182,7 +233,7 @@ const ReactJs = ({ toggle }) => {
               </p>
             </li>
             <li>
-              <p className={` text-justify text-md leading-6 ${toggle === false ? "text-[#436860]" : "text-slate-200"} `} ><strong>Comprehensive Curriculum :</strong> Our Fullstack training program covers all essential topics, from basic syntax to advanced concepts like data science and machine learning. This comprehensive approach equips students with the knowledge and skills needed to tackle diverse projects and roles.
+              <p className={` text-justify text-md leading-6 ${toggle === false ? "text-[#436860]" : "text-slate-200"} `} ><strong>Comprehensive Curriculum :</strong> Our React.js training program covers all essential topics, from basic syntax to advanced concepts like data science and machine learning. This comprehensive approach equips students with the knowledge and skills needed to tackle diverse projects and roles.
               </p>
             </li>
             <li>
@@ -192,20 +243,17 @@ const ReactJs = ({ toggle }) => {
           </ul>
         </div>
         <div className=' bg-white rounded-md flex flex-col gap-3 px-10 py-5 md:w-[70%]' >
-        <img src={ProjectImg} className=' w-[300px] ' />
-            <h2 className={`text-lg font-bold ${toggle === false ? "text-[#12372A]" : "text-white"}`}>Interview opportunities for Fullstack Developers</h2>
+        <img src={SalaryImg} className=' w-[250px] ml-5 ' />
+            <h2 className={`text-lg font-bold ${toggle === false ? "text-[#12372A]" : "text-white"}`}>Salary of a ReactJs Developer</h2>
             <ul className={` flex flex-col gap-2 list-decimal ${toggle === false ? "text-[#12372A]" : "text-white"} `} >
               <li>
-                <p className={` text-sm ${toggle === false ? "text-[#436860]" : "text-slate-200"} `} >High demand across diverse industries.</p>
+                <p className={` text-sm ${toggle === false ? "text-[#436860]" : "text-slate-200"} `} >Entry-level : <strong>INR 400,000 per annum </strong> </p>
               </li>
               <li>
-                <p className={`  text-sm ${toggle === false ? "text-[#436860]" : "text-slate-200"} `} >Competitive salaries and benefits packages.</p>
+                <p className={`  text-sm ${toggle === false ? "text-[#436860]" : "text-slate-200"} `} >Mid-level : <strong>INR 9-22 lakhs per annum</strong></p>
               </li>
               <li>
-                <p className={`  text-sm ${toggle === false ? "text-[#436860]" : "text-slate-200"} `} >Opportunities for career advancement.</p>
-              </li>
-              <li>
-                <p className={` text-sm ${toggle === false ? "text-[#436860]" : "text-slate-200"} `} >Versatility in tech and design.</p>
+                <p className={`  text-sm ${toggle === false ? "text-[#436860]" : "text-slate-200"} `} >Senior-level : <strong>INR 200.8 lakhs per annum</strong> </p>
               </li>
             </ul>
           </div>
@@ -215,44 +263,44 @@ const ReactJs = ({ toggle }) => {
 
       <div className=' bg-white rounded-md flex flex-col gap-3 px-10 py-5 h-[550px]' >
           <img src={PrepareImg} className=' w-[300px] ' />
-            <h2 className={`text-lg font-bold ${toggle === false ? "text-[#12372A]" : "text-white"}`}>Prepare for a career as a Fullstack Developer</h2>
+            <h2 className={`text-lg font-bold ${toggle === false ? "text-[#12372A]" : "text-white"}`}>Prepare for a career as a React.js Developer</h2>
             <ul className={` flex flex-col gap-2 list-decimal ${toggle === false ? "text-[#12372A]" : "text-white"} `} >
               <li>
-                <p className={` text-sm ${toggle === false ? "text-[#436860]" : "text-slate-200"} `} >Master front-end technologies: HTML, CSS, and JavaScript.</p>
+                <p className={` text-sm ${toggle === false ? "text-[#436860]" : "text-slate-200"} `} >Get Familiar with React.js</p>
               </li>
               <li>
-                <p className={`  text-sm ${toggle === false ? "text-[#436860]" : "text-slate-200"} `} >Gain proficiency in back-end languages: Node.js, Python, or Java.</p>
+                <p className={`  text-sm ${toggle === false ? "text-[#436860]" : "text-slate-200"} `} >Learn Advanced Concepts</p>
               </li>
               <li>
-                <p className={`  text-sm ${toggle === false ? "text-[#436860]" : "text-slate-200"} `} >Learn database management with SQL and NoSQL databases.</p>
+                <p className={`  text-sm ${toggle === false ? "text-[#436860]" : "text-slate-200"} `} >Build Small Projects</p>
               </li>
               <li>
-                <p className={` text-sm ${toggle === false ? "text-[#436860]" : "text-slate-200"} `} >Build and deploy full stack projects to showcase your skills.</p>
+                <p className={` text-sm ${toggle === false ? "text-[#436860]" : "text-slate-200"} `} >Learn Related Technologies</p>
               </li>
             </ul>
           </div>
 
           <div className=' bg-white rounded-md flex flex-col justify-center gap-3 px-10 py-5 h-[550px]' >
           <img src={CareerImg} className=' w-[300px] h-[200px] object-cover ' />
-            <h2 className={`text-lg font-bold ${toggle === false ? "text-[#12372A]" : "text-white"}`}>Career opportunities for Fullstack Developers</h2>
+            <h2 className={`text-lg font-bold ${toggle === false ? "text-[#12372A]" : "text-white"}`}>Career opportunities for React.js Developers</h2>
             <ul className={` flex flex-col gap-2 list-decimal ${toggle === false ? "text-[#12372A]" : "text-white"} `} >
               <li>
-                <p className={` text-sm ${toggle === false ? "text-[#436860]" : "text-slate-200"} `} >Build and maintain dynamic websites and web applications.</p>
+                <p className={` text-sm ${toggle === false ? "text-[#436860]" : "text-slate-200"} `} >Software Engineer</p>
               </li>
               <li>
-                <p className={`  text-sm ${toggle === false ? "text-[#436860]" : "text-slate-200"} `} >Work as a project lead managing full development lifecycle.</p>
+                <p className={`  text-sm ${toggle === false ? "text-[#436860]" : "text-slate-200"} `} >DevOps Engineer</p>
               </li>
               <li>
-                <p className={`  text-sm ${toggle === false ? "text-[#436860]" : "text-slate-200"} `} >Join startups or tech companies needing versatile developers.</p>
+                <p className={`  text-sm ${toggle === false ? "text-[#436860]" : "text-slate-200"} `} >UI/UX Developer</p>
               </li>
               <li>
-                <p className={` text-sm ${toggle === false ? "text-[#436860]" : "text-slate-200"} `} >Consult as a freelance developer for diverse client projects.</p>
+                <p className={` text-sm ${toggle === false ? "text-[#436860]" : "text-slate-200"} `} >React.js Trainer</p>
               </li>
             </ul>
           </div>
           <div className=' bg-white rounded-md flex flex-col gap-3 px-10 py-5 h-[550px] ' >
           <img src={InterviewImg} className=' w-[300px] ' />
-            <h2 className={`text-lg font-bold ${toggle === false ? "text-[#12372A]" : "text-white"}`}>Interview opportunities for Fullstack Developers</h2>
+            <h2 className={`text-lg font-bold ${toggle === false ? "text-[#12372A]" : "text-white"}`}>Interview opportunities for React.js Developers</h2>
             <ul className={` flex flex-col gap-2 list-decimal ${toggle === false ? "text-[#12372A]" : "text-white"} `} >
               <li>
                 <p className={` text-sm ${toggle === false ? "text-[#436860]" : "text-slate-200"} `} >High demand across diverse industries.</p>
@@ -277,4 +325,4 @@ const ReactJs = ({ toggle }) => {
   )
 }
 
-export default ReactJs
+export default Reactjs

@@ -8,9 +8,11 @@ import Typography from '@mui/joy/Typography';
 import PythonImg from "../../assets/skills/pythoni.jpg";
 import NodeImg from "../../assets/skills/nodeskill.png";
 import MernImg from "../../assets/skills/mern.jpg";
-import fullImg from "../../assets/skills/rjs.png";
+import ReactImg from "../../assets/skills/rjs.png";
+import FullImg from "../../assets/fullstack.jpg";
 import AppImg from "../../assets/skills/appde.jpg";
 import DigitalImg from "../../assets/skills/digital.jpg";
+import JavaScriptImg from "../../assets/javascript.png";
 import { Link } from 'react-router-dom';
 
 export default function CourseInfo({toggle}) {
@@ -38,7 +40,7 @@ export default function CourseInfo({toggle}) {
             name:"Full Stack Developer",
             description:"Become proficient in full-stack development",
             path:'fullstack',
-            image:fullImg
+            image:FullImg
         },
         {
             name:"Application Developement",
@@ -46,6 +48,18 @@ export default function CourseInfo({toggle}) {
             path:'application-developer',
             image:AppImg
         },
+        {
+          name:"Javascript",
+          description:"Interactive JavaScript essentials for beginners.",
+          path:'javascript',
+          image:JavaScriptImg
+      },
+        {
+          name:"ReactJs",
+          description:"Beginner to Advance : Master ReactJs ",
+          path:'react',
+          image:ReactImg
+      },
         {
           name:"Digital Marketing",
           description:"Excel in digital marketing strategies.",

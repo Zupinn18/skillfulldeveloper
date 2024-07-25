@@ -11,13 +11,13 @@ const Form = ({showPopup,setShowPopup}) => {
       {showPopup && (
         <div className="fixed z-[1000] top-0 left-0 flex items-center justify-center w-full h-full bg-black bg-opacity-60">
           <div className=' w-full mx-auto flex justify-center rounded-md ' >
-          <img src={formImg} className=' w-[36%] rounded-tl-md rounded-bl-md ' />
+          <img src={formImg} className=' w-[36%] rounded-tl-md rounded-bl-md ' loading='lazy' />
           <div className="p-6 bg-white rounded-tr-md rounded-br-md ">
             <div className=' flex flex-col items-center justify-center mb-4 ' >
                 <div className=' flex items-center gap-1 mb-2 ' >
-                <img src="https://fancytailwind.com/static/avatar-1-7bc2ffc3e63774cda6a41a4869604ebb.png" className=' w-[30px] ' />
-                <img src="https://fancytailwind.com/static/avatar-2-a0aa9c1384e34144e1a683fed8612642.png" className=' w-[30px] ' />
-                <img src="https://fancytailwind.com/static/avatar-3-005377e606b29854c3ff1c525ddd8ec4.png" className=' w-[30px] ' />
+                <img src="https://fancytailwind.com/static/avatar-1-7bc2ffc3e63774cda6a41a4869604ebb.png" className=' w-[30px] ' loading='lazy' />
+                <img src="https://fancytailwind.com/static/avatar-2-a0aa9c1384e34144e1a683fed8612642.png" className=' w-[30px] ' loading='lazy' />
+                <img src="https://fancytailwind.com/static/avatar-3-005377e606b29854c3ff1c525ddd8ec4.png" className=' w-[30px] ' loading='lazy'/>
                 </div>
             <h2 className="mb-2 text-2xl font-semibold ">Unlock Your Coding Potential Today!</h2>
             </div>

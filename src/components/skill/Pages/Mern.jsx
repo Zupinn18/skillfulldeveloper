@@ -8,6 +8,7 @@ import { TiTick } from "react-icons/ti";
 import InterviewImg from "../../../assets/interview.gif";
 import PrepareImg from "../../../assets/prepare.gif";
 import CareerImg from "../../../assets/career.gif";
+import SalaryImg from "../../../assets/salary.gif";
 
 
 const Mern = ({ toggle }) => {
@@ -20,6 +21,11 @@ const Mern = ({ toggle }) => {
     { name: "JavaScript" },
     { name: "Database Management" },
     { name: "Redux" },
+    { name: "React Router" },
+    { name: "Redux" },
+    { name: "JSON" },
+    { name: "APIs" },
+    { name: "NPM Libraries" },
   ];
 
   const scrollToRef = useRef(null);
@@ -79,7 +85,7 @@ const Mern = ({ toggle }) => {
       {/* main skill content */}
       <div className=' w-11/12 mx-auto flex flex-col gap-[50px] mt-6 ' >
         <div className='flex md:flex-row flex-col justify-between items-center gap-[50px]'>
-          <div className='w-[100%] flex flex-col gap-12 rounded-lg bg-[#55cea4] p-10'>
+          <div className='w-[100%] flex flex-col gap-12 rounded-lg bg-[#55cea4] p-10 relative'>
             <p className={`text-xl sm:text-5xl font-bold ${toggle === false ? "text-white" : "text-white"}`}>Master MERN Stack: MERN <br/> Developer Bootcamp</p>
             <p className={` text-justify text-lg leading-6 ${toggle === false ? "text-slate-100" : "text-slate-100"}`}>Boost your Computer programming skills, with minimal previous exposure, learn two <br /> popular programming languages at an accelerated pace.</p>
             {/* <div className='flex items-center gap-1'>
@@ -96,8 +102,7 @@ const Mern = ({ toggle }) => {
                 <p className='text-sm font-thin'>Started at 1 Aug</p>
               </button>
             </div>
-          </div>
-          <div className={`bg-white z-50 flex flex-col px-6 py-6 rounded-md ${Fixed === true ? "md:absolute" : "md:fixed top-[19%]"} right-[6%] shadow-2xl`}>
+            <div className={`bg-white absolute z-50 flex flex-col px-6 py-6 top-5 right-5 rounded-md shadow-2xl`}>
             <p className={`text-justify text-xl font-bold leading-6 ${toggle === false ? "text-[#436860]" : "text-slate-800"}`}>Specialization</p>
             <p className={`text-justify text-sm leading-6 ${toggle === false ? "text-slate-400" : "text-slate-400"}`}>Get in-depth knowledge</p>
             <div className={`w-full mt-2 h-[1px] ${toggle === false ? "bg-[#12372A]" : "bg-slate-300"}`}></div>
@@ -121,43 +126,108 @@ const Mern = ({ toggle }) => {
               </div>
             </div>
           </div>
+          </div>
+         
         </div>
 
-        <div className='w-[100%] flex flex-col gap-10 rounded-lg relative'>
+        <div className='w-[100%] flex flex-col md:flex-row gap-5 md:gap-10'>
+          <div className='w-[67%] flex flex-col gap-5' >
           <p className={`text-xl sm:text-2xl font-bold ${toggle === false ? "text-[#12372A]" : "text-white"}`}>Why students should learn the MERN stack</p>
-          <div className='w-[67%] grid lg:grid-cols-2 gap-[20px]'>
+          <div className=' grid lg:grid-cols-2 gap-[20px]'>
             <div className='flex gap-2 items-start'>
               <TiTick className='w-[100px]' />
-              <p className={`text-justify text-sm leading-6 ${toggle === false ? "text-[#436860]" : "text-slate-200"}`}><strong>100% Placement Guarantee :</strong> We stand by the quality of our training with a 100% placement guarantee. If students do not secure a job after completing our program, we will refund the full amount, ensuring their investment in education is risk-free.</p>
+              <p className={`text-justify text-sm leading-6 ${toggle === false ? "text-[#436860]" : "text-slate-200"}`}><strong>Comprehensive Skill Set :</strong> The MERN stack covers front-end and back-end development, providing students with a comprehensive skill set. Mastering MongoDB, Express.js, React, and Node.js makes them versatile developers capable of building complete web applications.</p>
             </div>
             <div className='flex gap-2 justify-start'>
               <TiTick className='w-[100px]' />
-              <p className={`text-justify text-sm leading-6 ${toggle === false ? "text-[#436860]" : "text-slate-200"}`}><strong>Expert Trainers :</strong> Our instructors are seasoned developers with extensive industry experience. They provide insights and knowledge that go beyond textbooks, equipping students with practical skills and real-world problem-solving abilities.</p>
+              <p className={`text-justify text-sm leading-6 ${toggle === false ? "text-[#436860]" : "text-slate-200"}`}><strong>JavaScript Proficiency :</strong> The MERN stack uses JavaScript for both client-side and server-side development. Learning this stack helps students become proficient in JavaScript, one of the most popular and widely-used programming languages in the industry.</p>
             </div>
             <div className='flex gap-2 items-start'>
               <TiTick className='w-[100px]' />
-              <p className={`text-justify text-sm leading-6 ${toggle === false ? "text-[#436860]" : "text-slate-200"}`}><strong>Comprehensive Curriculum :</strong> Our training programs cover a wide range of topics and technologies, including Mern, Full Stack Programming, MERN Stack, Java Programming, and Mobile Application Development. This ensures that students gain a versatile skill set that is highly valued in the job market.</p>
+              <p className={`text-justify text-sm leading-6 ${toggle === false ? "text-[#436860]" : "text-slate-200"}`}><strong>High Demand in Job Market :</strong> MERN stack developers are in high demand due to the popularity of these technologies in modern web development. Learning the MERN stack can enhance employability and open up numerous job opportunities in startups and established companies alike.</p>
             </div>
             <div className='flex gap-2 items-start'>
               <TiTick className='w-[100px]' />
-              <p className={`text-justify text-sm leading-6 ${toggle === false ? "text-[#436860]" : "text-slate-200"}`}><strong>Online Live Classes :</strong> We offer online live classes, allowing students to learn from anywhere with the flexibility to fit their schedules. This interactive format ensures that students can ask questions, engage in discussions, and receive immediate feedback.</p>
+              <p className={`text-justify text-sm leading-6 ${toggle === false ? "text-[#436860]" : "text-slate-200"}`}><strong>Streamlined Development Process :</strong> The MERN stack allows for a smooth development process with a single language, JavaScript, across the entire application. This consistency reduces context switching and simplifies debugging, making development more efficient.</p>
             </div>
             <div className='flex gap-2 items-start'>
               <TiTick className='w-[100px]' />
-              <p className={`text-justify text-sm leading-6 ${toggle === false ? "text-[#436860]" : "text-slate-200"}`}><strong>Hands-on Projects :</strong> Our training emphasizes hands-on learning through projects that simulate real-world scenarios. Students work on practical assignments and build a portfolio of projects, showcasing their skills to potential employers.</p>
+              <p className={`text-justify text-sm leading-6 ${toggle === false ? "text-[#436860]" : "text-slate-200"}`}><strong>Strong Community and Resources :</strong> Each component of the MERN stack has a strong community and extensive resources, including tutorials, documentation, and forums. This support network helps students learn more effectively and troubleshoot issues more quickly.</p>
             </div>
             <div className='flex gap-2 items-start'>
               <TiTick className='w-[100px]' />
-              <p className={`text-justify text-sm leading-6 ${toggle === false ? "text-[#436860]" : "text-slate-200"}`}><strong>Job Placement Assistance :</strong> We provide job placement assistance to help students kickstart their careers. Our dedicated placement team works closely with students to polish their resumes, prepare for interviews, and connect them with top employers in the industry.</p>
+              <p className={`text-justify text-sm leading-6 ${toggle === false ? "text-[#436860]" : "text-slate-200"}`}><strong>Real-Time Application Development :</strong> The MERN stack is well-suited for developing real-time applications, such as chat applications and collaborative tools. Learning the MERN stack equips students with the skills to build interactive and responsive web applications that cater to modern user needs</p>
             </div>
-            <div className=' flex gap-2 items-start ' >
-              <TiTick className=' w-[100px] ' />
-              <p className={`text-justify text-sm leading-6 ${toggle === false ? "text-[#436860]" : "text-slate-200"}`} ><strong>Hands-On Projects and Practical Experience :</strong> Our courses emphasize hands-on learning through real-world projects and assignments. This practical approach helps students build a strong portfolio, demonstrating their skills to potential employers and enhancing their employability.</p>
-            </div>
-            <div className=' flex gap-2 items-start ' >
-              <TiTick className=' w-[100px] ' />
-              <p className={`text-justify text-sm leading-6 ${toggle === false ? "text-[#436860]" : "text-slate-200"}`} ><strong>Industry-Relevant Training and Support :</strong> We stay updated with the latest industry trends and technologies to ensure our training is relevant and up-to-date. Additionally, we provide ongoing support and resources to help students succeed in their careers, from resume building to interview preparation.</p>
-            </div>
+          
+          </div>
+          </div>
+          <div className=' w-[30%] flex flex-col gap-2 bg-white p-6 rounded-md ' >
+                <p className={`text-justify text-xl font-bold leading-6 ${toggle === false ? "text-[#436860]" : "text-slate-800"}`}>Things you'll learn in this course</p>
+            <div className={`w-full mt-1 h-[1px] ${toggle === false ? "bg-[#12372A]" : "bg-slate-300"}`}></div>
+            <ul className=' flex flex-col px-2 gap-1 mt-2 list-disc '  >
+                <li>
+                <div className='flex gap-1 items-center'>
+                    <p className={`text-justify text-md leading-6 ${toggle === false ? "text-[#436860]" : "text-slate-800"}`}>HTML</p>
+                    <p className={`text-justify text-sm leading-6 ${toggle === false ? "text-slate-400" : "text-slate-400"}`}>(Basic of HTML: tags, attributes)</p>
+                  </div>
+                </li>
+                <li>
+                <div className='flex gap-1 items-center'>
+                    <p className={`text-justify text-md leading-6 ${toggle === false ? "text-[#436860]" : "text-slate-800"}`}>Tables, Inputs, Forms, div, etc. </p>
+                  </div>
+                </li>
+                  <li>
+                <div className='flex gap-1 items-center'>
+                    <p className={`text-justify text-md leading-6 ${toggle === false ? "text-[#436860]" : "text-slate-800"}`}>CSS</p>
+                    <p className={`text-justify text-sm leading-6 ${toggle === false ? "text-slate-400" : "text-slate-400"}`}>(Basic of CSS - tag, class, selector)</p>
+                  </div>
+                </li>
+                <li><p className={`text-justify text-md leading-6 ${toggle === false ? "text-[#436860]" : "text-slate-800"}`}>Inline, Internal, and External CSS</p> 
+                  </li> 
+                  <li><p className={`text-justify text-md leading-6 ${toggle === false ? "text-[#436860]" : "text-slate-800"}`}>CSS Styling Properties</p> 
+                  </li> 
+                  
+                  <li><p className={`text-justify text-md leading-6 ${toggle === false ? "text-[#436860]" : "text-slate-800"}`}>Flex Box and Grid</p> 
+                  </li> 
+                  <li><p className={`text-justify text-md leading-6 ${toggle === false ? "text-[#436860]" : "text-slate-800"}`}>Animations and Transitions</p> 
+                  </li> 
+                  <li><p className={`text-justify text-md leading-6 ${toggle === false ? "text-[#436860]" : "text-slate-800"}`}>Everything about Javascript</p> 
+                  </li> 
+                  <li>
+                <div className='flex gap-1 items-center'>
+                    <p className={`text-justify text-md leading-6 ${toggle === false ? "text-[#436860]" : "text-slate-800"}`}>React</p>
+                    <p className={`text-justify text-sm leading-6 ${toggle === false ? "text-slate-400" : "text-slate-400"}`}>(Installing & Setup, State & Components)</p>
+                  </div>
+                </li>
+                  
+                    <li><p className={`text-justify text-md leading-6 ${toggle === false ? "text-[#436860]" : "text-slate-800"}`}>Hooks & Conditional Rendering</p> 
+                  </li> 
+                  <li><p className={`text-justify text-md leading-6 ${toggle === false ? "text-[#436860]" : "text-slate-800"}`}>Context API & State management</p> 
+                  </li>
+                  <li>
+                <div className='flex gap-1 items-center'>
+                    <p className={`text-justify text-md leading-6 ${toggle === false ? "text-[#436860]" : "text-slate-800"}`}>NodeJs</p>
+                    <p className={`text-justify text-sm leading-6 ${toggle === false ? "text-slate-400" : "text-slate-400"}`}>(Basics, Installation and Setup)</p>
+                  </div>
+                </li>
+                <li>
+                <div className='flex gap-1 items-center'>
+                    <p className={`text-justify text-md leading-6 ${toggle === false ? "text-[#436860]" : "text-slate-800"}`}>ExpressJs</p>
+                    <p className={`text-justify text-sm leading-6 ${toggle === false ? "text-slate-400" : "text-slate-400"}`}>(Basics, Installation and Setup)</p>
+                  </div>
+                </li>
+                <li>
+                <div className='flex gap-1 items-center'>
+                    <p className={`text-justify text-md leading-6 ${toggle === false ? "text-[#436860]" : "text-slate-800"}`}>MongoDB</p>
+                    <p className={`text-justify text-sm leading-6 ${toggle === false ? "text-slate-400" : "text-slate-400"}`}>(Setup and CRUD Operations)</p>
+                  </div>
+                </li>
+                    
+                         
+            </ul>
+            <button className='flex text-green-700 mt-3 items-center gap-2 border-2 border-green-700 justify-center px-4 py-2 rounded-lg text-md transition-all duration-200 hover:text-white hover:bg-green-700 '>
+                Download full Syllabus Now
+              </button>
           </div>
         </div>
    
@@ -202,20 +272,17 @@ const Mern = ({ toggle }) => {
           </ul>
         </div>
         <div className=' bg-white rounded-md flex flex-col gap-3 px-10 py-5 md:w-[70%]' >
-        <img src={ProjectImg} className=' w-[300px] ' />
-            <h2 className={`text-lg font-bold ${toggle === false ? "text-[#12372A]" : "text-white"}`}>Interview opportunities for Mern Developers</h2>
+        <img src={SalaryImg} className=' w-[250px] ml-5 ' />
+        <h2 className={`text-lg font-bold ${toggle === false ? "text-[#12372A]" : "text-white"}`}>Salary of a MERN Developer</h2>
             <ul className={` flex flex-col gap-2 list-decimal ${toggle === false ? "text-[#12372A]" : "text-white"} `} >
-              <li>
-                <p className={` text-sm ${toggle === false ? "text-[#436860]" : "text-slate-200"} `} >High demand across diverse industries.</p>
+            <li>
+                <p className={` text-sm ${toggle === false ? "text-[#436860]" : "text-slate-200"} `} >Entry-level : <strong>INR 400,000 per annum </strong> </p>
               </li>
               <li>
-                <p className={`  text-sm ${toggle === false ? "text-[#436860]" : "text-slate-200"} `} >Competitive salaries and benefits packages.</p>
+                <p className={`  text-sm ${toggle === false ? "text-[#436860]" : "text-slate-200"} `} >Mid-level : <strong>INR 9-22 lakhs per annum</strong></p>
               </li>
               <li>
-                <p className={`  text-sm ${toggle === false ? "text-[#436860]" : "text-slate-200"} `} >Opportunities for career advancement.</p>
-              </li>
-              <li>
-                <p className={` text-sm ${toggle === false ? "text-[#436860]" : "text-slate-200"} `} >Versatility in tech and design.</p>
+                <p className={`  text-sm ${toggle === false ? "text-[#436860]" : "text-slate-200"} `} >Senior-level : <strong>INR 200.8 lakhs per annum</strong> </p>
               </li>
             </ul>
           </div>
@@ -228,16 +295,16 @@ const Mern = ({ toggle }) => {
             <h2 className={`text-lg font-bold ${toggle === false ? "text-[#12372A]" : "text-white"}`}>Prepare for a career as a MERN Developer</h2>
             <ul className={` flex flex-col gap-2 list-decimal ${toggle === false ? "text-[#12372A]" : "text-white"} `} >
               <li>
-                <p className={` text-sm ${toggle === false ? "text-[#436860]" : "text-slate-200"} `} >Master front-end technologies: HTML, CSS, and JavaScript.</p>
+                <p className={` text-sm ${toggle === false ? "text-[#436860]" : "text-slate-200"} `} >Master MongoDB for efficient NoSQL database management</p>
               </li>
               <li>
-                <p className={`  text-sm ${toggle === false ? "text-[#436860]" : "text-slate-200"} `} >Gain proficiency in back-end languages: Node.js, Python, or Java.</p>
+                <p className={`  text-sm ${toggle === false ? "text-[#436860]" : "text-slate-200"} `} >Gain proficiency in Express.js for building robust server-side applications.</p>
               </li>
               <li>
-                <p className={`  text-sm ${toggle === false ? "text-[#436860]" : "text-slate-200"} `} >Learn database management with SQL and NoSQL databases.</p>
+                <p className={`  text-sm ${toggle === false ? "text-[#436860]" : "text-slate-200"} `} >Learn React for creating dynamic, user-friendly front-end interfaces.</p>
               </li>
               <li>
-                <p className={` text-sm ${toggle === false ? "text-[#436860]" : "text-slate-200"} `} >Build and deploy full stack projects to showcase your skills.</p>
+                <p className={` text-sm ${toggle === false ? "text-[#436860]" : "text-slate-200"} `} >Develop skills in Node.js for building scalable server-side applications.</p>
               </li>
             </ul>
           </div>
@@ -282,54 +349,6 @@ const Mern = ({ toggle }) => {
 
         </div>
 </div>
-      {/* <div className={` w-full mt-5 h-[1px] ${toggle === false ? "bg-[#12372A]" : "bg-slate-300"}`} ></div>
-          <div className=' flex flex-col gap-5 mt-5 ' >
-          <h2 className={` text-xl text-start font-bold ${toggle === false ? "text-[#12372A]" : "text-white"}`}>Mern's Versatility and Applications</h2>
-          <ul className={` flex flex-col gap-5 list-decimal ${toggle === false ? "text-[#12372A]" : "text-white"} `} >
-            <li>
-              <p className={` text-justify text-md leading-6 ${toggle === false ? "text-[#436860]" : "text-slate-200"} `} ><strong>Application Development with Mern :</strong> Mern facilitates the creation of software in web applications, desktop GUI, and even mobile applications. Due to its libraries and frameworks, it is good for developing all types of applications and with fewer codes.</p>
-            </li>
-            <li>
-              <p className={` text-justify text-md leading-6 ${toggle === false ? "text-[#436860]" : "text-slate-200"} `} ><strong>Scientific Computing and Data Analysis :</strong> Mern is considered to be an ideal language for doing scientific computing and data analyses because of its numerously available and powerful libraries for example NumPy, pandas, and Matplotlib. Some of the application areas of Mern include the following; artificial intelligence, machine learning, data visualization, and the like, computational biology among others.</p>
-            </li>
-          </ul>
-          </div>
-
-          <div className=' flex flex-col gap-5 mt-5 ' >
-          <h2 className={` text-xl text-center font-bold ${toggle === false ? "text-[#12372A]" : "text-white"}`}>Key features of Mern:</h2>
-          <ul className={` flex flex-col gap-5 list-decimal ${toggle === false ? "text-[#12372A]" : "text-white"} `} >
-            <li>
-              <p className={` text-justify text-md leading-6 ${toggle === false ? "text-[#436860]" : "text-slate-200"} `} ><strong>Easy to Learn :</strong> It can be noted that this language is rather easy to learn since the syntax of payrollMC 2 is rather simple, and therefore beginner may use this language.</p>
-            </li>
-            <li>
-              <p className={` text-justify text-md leading-6 ${toggle === false ? "text-[#436860]" : "text-slate-200"} `} ><strong>High-Level Language :</strong> because Mern is an interpreted language it is classified as a high-level language, this means that you do not control the engine that interprets your code, hence you do not deal with raw details of an operation but rather raw idea or manner to it.</p>
-            </li>
-            <li>
-              <p className={` text-justify text-md leading-6 ${toggle === false ? "text-[#436860]" : "text-slate-200"} `} ><strong>Interpreted Language : </strong> Other consideration is that it as an interpreted language not compiled, it is a very flexible and easy language one can write and test the script short periods of time.</p>
-            </li>
-            <li>
-              <p className={` text-justify text-md leading-6 ${toggle === false ? "text-[#436860]" : "text-slate-200"} `} ><strong>Object-Oriented :</strong> In addition to this there are reliable concepts such as class, object and inheritance which are features of the object –oriented programming paradigm that are also available in Mern.</p>
-            </li>
-            <li>
-              <p className={` text-justify text-md leading-6 ${toggle === false ? "text-[#436860]" : "text-slate-200"} `} ><strong>Large Standard Library :</strong> It is a standardized language that has one of the richest and most comprehensive standard package and library that contains ranging abilities that cater for most of the routine operations some of them being file operations, networking operations, dimensional analysis among others.</p>
-            </li>
-            <li>
-              <p className={` text-justify text-md leading-6 ${toggle === false ? "text-[#436860]" : "text-slate-200"} `} ><strong>Dynamic Typing :</strong> If at all, you have noticed, Mern is a dynamically typed language, and you do not declare the type of a variable before using it.</p>
-            </li>
-            <li>
-              <p className={` text-justify text-md leading-6 ${toggle === false ? "text-[#436860]" : "text-slate-200"} `} ><strong>Cross-Platform :</strong> The programs written in Mern is for all the operating systems including Windows, macOs, Linux and so on.</p>
-            </li>
-            <li>
-              <p className={` text-justify text-md leading-6 ${toggle === false ? "text-[#436860]" : "text-slate-200"} `} ><strong>Extensive Community :</strong> Today, there are many libraries, frameworks, and tools written in Mern and, most importantly, they are constantly developing due to the large community of programmers.</p>
-            </li>
-            <li>
-              <p className={` text-justify text-md leading-6 ${toggle === false ? "text-[#436860]" : "text-slate-200"} `} ><strong>Rapid Development :</strong> Thanks to the passing of numeric values and the ease of the language and syntax and the nature of the language is most suitable for prototype.</p>
-            </li>
-            <li>
-              <p className={` text-justify text-md leading-6 ${toggle === false ? "text-[#436860]" : "text-slate-200"} `} ><strong>Extensive Use Cases :</strong> Web development field, data science, machine learning, automation and many such fields have adapted the programming language called Mern.</p>
-            </li>
-          </ul>
-          </div> */}
 
     </div>
 
