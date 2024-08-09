@@ -22,6 +22,10 @@ import PythonSkill from './components/SkillSet/PythonSkill';
 import Javascript from './components/skill/Pages/Javascript';
 import FullStack from './components/skill/Pages/FullStack';
 import Reactjs from './components/skill/Pages/Reactjs';
+import Java from './components/skill/Pages/Java';
+import Express from './components/skill/Pages/Express';
+import SQL from './components/skill/Pages/SQL';
+import Flutter from './components/skill/Pages/Flutter';
 
 function App() {
   const [toggle, setToggle] = useState(false);
@@ -62,6 +66,15 @@ function App() {
             <Route path="/course/application-developer" element={
               <AppDev toggle={toggle}/>
             }/>
+
+            <Route path="/course/flutter" element={
+              <Flutter toggle={toggle}/>
+            }/>
+
+            <Route path="/course/sql" element={
+              <SQL toggle={toggle}/>
+            }/>
+
             <Route path="/course/digital-marketing" element={
               <DigitalMarketing toggle={toggle}/>
             }/>
@@ -85,6 +98,12 @@ function App() {
             }/>
             <Route path="/skill/python" element={
               <PythonSkill toggle={toggle}/>
+            }/>
+            <Route path="/course/express-js" element={
+              <Express toggle={toggle}/>
+            }/>
+            <Route path="/course/java" element={
+              <Java toggle={toggle}/>
             }/>
         </Routes>
         <Footer toggle={toggle} setToggle={setToggle}/>

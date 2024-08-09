@@ -13,6 +13,10 @@ import FullImg from "../../assets/fullstack.jpg";
 import AppImg from "../../assets/skills/appde.jpg";
 import DigitalImg from "../../assets/skills/digital.jpg";
 import JavaScriptImg from "../../assets/javascript.png";
+import JavaImg from "../../assets/skills/java.jpg";
+import ExpressImg from "../../assets/skills/Express-JS.png";
+import FlutterImg from "../../assets/skills/flutter.jpg";
+import SQLIMG from "../../assets/skills/sql.jpg";
 import { Link } from 'react-router-dom';
 
 export default function CourseInfo({toggle}) {
@@ -66,6 +70,30 @@ export default function CourseInfo({toggle}) {
           path:'digital-marketing',
           image:DigitalImg
       },
+      {
+        name:"Express Js",
+        description:"Beginner to Advance : Master ExpressJs",
+        path:'express-js',
+        image:ExpressImg
+    },
+    {
+      name:"Java",
+      description:"Master Java Bootcamp",
+      path:'java',
+      image:JavaImg
+  },
+  {
+    name:"Flutter",
+    description:"Build Powerful Applications Fast",
+    path:'flutter',
+    image:FlutterImg
+},
+{
+  name:"SQL",
+  description:"Learn SQL Fast",
+  path:'sql',
+  image:SQLIMG
+},
     ]
 
   return (
