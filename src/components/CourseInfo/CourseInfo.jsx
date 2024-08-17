@@ -16,7 +16,12 @@ import JavaScriptImg from "../../assets/javascript.png";
 import JavaImg from "../../assets/skills/java.jpg";
 import ExpressImg from "../../assets/skills/Express-JS.png";
 import FlutterImg from "../../assets/skills/flutter.jpg";
+import NativeImg from "../../assets/skills/react-native.png";
+import DSAImg from "../../assets/skills/dsa.jpg";
+import FrontendImg from "../../assets/skills/frontend.png";
+import BackendIMG from "../../assets/skills/backend.jpg";
 import SQLIMG from "../../assets/skills/sql.jpg";
+
 import { Link } from 'react-router-dom';
 
 export default function CourseInfo({toggle}) {
@@ -93,6 +98,30 @@ export default function CourseInfo({toggle}) {
   description:"Learn SQL Fast",
   path:'sql',
   image:SQLIMG
+},
+{
+  name:"React Native",
+  description:"Master Mobile development with React Native",
+  path:'react-native',
+  image:NativeImg
+},
+{
+  name:"Data Struture & Algorithm",
+  description:"Master Data Structure & Algorithms",
+  path:'data-structure',
+  image:DSAImg
+},
+{
+  name:"Frontend Development",
+  description:"Beginner to Advance : Frontend Development",
+  path:'frontend-development',
+  image:FrontendImg
+},
+{
+  name:"Backend Development",
+  description:"Master Full Backend Development",
+  path:'backend-development',
+  image:BackendIMG
 },
     ]
 

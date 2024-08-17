@@ -26,6 +26,10 @@ import Java from './components/skill/Pages/Java';
 import Express from './components/skill/Pages/Express';
 import SQL from './components/skill/Pages/SQL';
 import Flutter from './components/skill/Pages/Flutter';
+import ReactNative from './components/skill/Pages/ReactNative';
+import DSA from './components/skill/Pages/DSA';
+import Frontend from './components/skill/Pages/Frontend';
+import Backend from './components/skill/Pages/Backend';
 
 function App() {
   const [toggle, setToggle] = useState(false);
@@ -104,6 +108,18 @@ function App() {
             }/>
             <Route path="/course/java" element={
               <Java toggle={toggle}/>
+            }/>
+            <Route path="/course/react-native" element={
+              <ReactNative toggle={toggle}/>
+            }/>
+            <Route path="/course/data-structure" element={
+              <DSA toggle={toggle}/>
+            }/>
+            <Route path="/course/frontend-development" element={
+              <Frontend toggle={toggle}/>
+            }/>
+            <Route path="/course/backend-development" element={
+              <Backend toggle={toggle}/>
             }/>
         </Routes>
         <Footer toggle={toggle} setToggle={setToggle}/>
