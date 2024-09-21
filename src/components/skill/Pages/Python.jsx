@@ -8,6 +8,8 @@ import CareerImg from "../../../assets/career.gif";
 import InterviewImg from "../../../assets/interview.gif";
 import PrepareImg from "../../../assets/prepare.gif";
 import SalaryImg from "../../../assets/salary.gif";
+import { Link } from 'react-router-dom';
+import PythonDoc from "../../../assets/courses/python.pdf";
 
 const Python = ({ toggle }) => {
   const skillsGain = [
@@ -131,11 +133,13 @@ const Python = ({ toggle }) => {
               <p className={` ${toggle === false ? "text-[#436860]" : "text-slate-200"}`}>Brandon Kenny</p>
             </div> */}
             <div>
-              <button style={{ cursor: "pointer" }}
-                className='cursor-pointer font-semibold px-8 py-3 flex flex-col items-center rounded-lg bg-[#436850] transition-all duration-300 border-2 text-white hover:bg-[#12372A] border-none'>
-                Enroll Now
-                <p className='text-sm font-thin'>Started at 1 Aug</p>
-              </button>
+              <Link to="/enroll-python-course" >
+                <button style={{ cursor: "pointer" }}
+                  className='cursor-pointer font-semibold px-8 py-3 flex flex-col items-center rounded-lg bg-[#436850] transition-all duration-300 border-2 text-white hover:bg-[#12372A] border-none'>
+                  Enroll Now
+                  <p className='text-sm font-thin'>Book your slot</p>
+                </button>
+              </Link>
             </div>
             <div className={`bg-white absolute z-50 flex flex-col px-6 py-6 top-5 right-5 rounded-md shadow-2xl`}>
             <p className={`text-justify text-xl font-bold leading-6 ${toggle === false ? "text-[#436860]" : "text-slate-800"}`}>Specialization</p>
@@ -233,9 +237,10 @@ const Python = ({ toggle }) => {
                   <li><p className={`text-justify text-md leading-6 ${toggle === false ? "text-[#436860]" : "text-slate-800"}`}>Data Science</p> 
                   </li>        
             </ul>
-            <button className='flex text-green-700 mt-3 items-center gap-2 border-2 border-green-700 justify-center px-4 py-2 rounded-lg text-md transition-all duration-200 hover:text-white hover:bg-green-700 '>
+            {/* <button className='flex text-green-700 mt-3 items-center gap-2 border-2 border-green-700 justify-center px-4 py-2 rounded-lg text-md transition-all duration-200 hover:text-white hover:bg-green-700 '>
                 Download full Syllabus Now
-              </button>
+              </button> */}
+              <a href={PythonDoc} download="Python Syllabus" target='_blank' className=" flex text-green-700 mt-3 items-center gap-2 border-2 border-green-700 justify-center px-4 py-2 rounded-lg text-md transition-all duration-200 hover:text-white hover:bg-green-700 "   >Download full Syllabus Now</a>
           </div>
         </div>
    
@@ -283,13 +288,13 @@ const Python = ({ toggle }) => {
             <h2 className={`text-lg font-bold ${toggle === false ? "text-[#12372A]" : "text-white"}`}>Salary of a Python Developer</h2>
             <ul className={` flex flex-col gap-2 list-decimal ${toggle === false ? "text-[#12372A]" : "text-white"} `} >
             <li>
-                <p className={` text-sm ${toggle === false ? "text-[#436860]" : "text-slate-200"} `} >Entry-level : <strong>INR 400,000 per annum </strong> </p>
+                <p className={` text-sm ${toggle === false ? "text-[#436860]" : "text-slate-200"} `} >Entry-level : <strong>₹2.7 lakhs per annum</strong> </p>
               </li>
               <li>
-                <p className={`  text-sm ${toggle === false ? "text-[#436860]" : "text-slate-200"} `} >Mid-level : <strong>INR 9-22 lakhs per annum</strong></p>
+                <p className={`  text-sm ${toggle === false ? "text-[#436860]" : "text-slate-200"} `} >Mid-level : <strong>₹8 lakhs per annum</strong></p>
               </li>
               <li>
-                <p className={`  text-sm ${toggle === false ? "text-[#436860]" : "text-slate-200"} `} >Senior-level : <strong>INR 200.8 lakhs per annum</strong> </p>
+                <p className={`  text-sm ${toggle === false ? "text-[#436860]" : "text-slate-200"} `} >Senior-level : <strong>₹9 lakhs per annum</strong> </p>
               </li>
             </ul>
           </div>

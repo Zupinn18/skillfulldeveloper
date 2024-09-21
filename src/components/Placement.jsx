@@ -23,24 +23,25 @@ const Placement = ({toggle}) => {
 career outcomes and are able to fulfill their professional goals.</p>
 
                 <div className=' w-9/12 grid grid-cols-1 md:grid-cols-4 items-center gap-5 mt-5 ' >
-                    <div className=' bg-[#cae32e] px-6 py-3 rounded-md flex flex-col gap-1 items-center justify-center ' >
+                    <div className=' bg-[#cae32e] md:h-[120px] px-6 py-3 rounded-md flex flex-col gap-1 items-center justify-center ' >
                         <p className=' font-bold text-4xl ' >95%</p>
                         <p className=' text-sm text-center ' >placed within 9 months of graduation</p>
                     </div>
-                    <div className=' bg-[#abed4f] px-6 py-3  rounded-md flex flex-col gap-1 items-center justify-center ' >
-                        <p className=' font-bold text-4xl '>10 LPA</p>
+                    <div className=' bg-[#abed4f] md:h-[120px] px-6 py-3  rounded-md flex flex-col gap-1 items-center justify-center ' >
+                        <p className=' font-bold text-4xl '>12 LPA</p>
                         <p className=' text-sm text-center '>average dream job CTC</p>
                     </div>
-                    <div className=' bg-[#57f49e] px-6 py-3  rounded-md flex flex-col gap-1 items-center justify-center ' >
-                        <p className=' font-bold text-4xl '>81%</p>
+                    <div className=' bg-[#57f49e] md:h-[120px] px-6 py-3  rounded-md flex flex-col gap-1 items-center justify-center ' >
+                        <p className=' font-bold text-4xl '>155%</p>
                         <p className=' text-sm text-center '>Average <br/> Salary Hike</p>
                     </div>
-                    <div className=' bg-[#2df8c5] px-6 py-3  rounded-md flex flex-col gap-1 items-center justify-center ' >
+                    <div className=' bg-[#2df8c5] md:h-[120px] px-6 py-3  rounded-md flex flex-col gap-1 items-center justify-center ' >
                         <p className=' font-bold text-4xl '>1000+</p>
                         <p className=' text-sm text-center '>Hiring <br/> Partners</p>
                     </div>
                 </div>
 
+                <Link to="/enroll-now" onClick={() => window.scrollTo(0, 0)} >
                 <button style={{
                         "cursor":"pointer",
                         }}
@@ -48,6 +49,7 @@ career outcomes and are able to fulfill their professional goals.</p>
                             border-2 text-white hover:bg-[#12372A] mt-5 border-none
                             '
                 >Apply & Start Now</button>
+                </Link>
 
             </div>
 
@@ -56,15 +58,14 @@ career outcomes and are able to fulfill their professional goals.</p>
             {/* section -2 */}
             <div className='flex flex-col justify-between items-center gap-3  ' >
                 <h1 className={`text-xl sm:text-3xl font-bold ${toggle === false ? "text-[#55cea4]" : "text-[#55cea4]"}`} >Our Recruiters</h1>
-                <p className={` text-center text-2xl md:text-5xl font-semibold ${toggle === false ? "text-black" : "text-slate-100"} `} >Top Unicorns, Soonicorns, and <br/>
-Global Tech MNCs hire</p> 
+                <p className={` text-center text-2xl md:text-5xl font-semibold ${toggle === false ? "text-black" : "text-slate-100"} `} >Top Tech Companies Where<br/> You Can Get Job</p> 
                 <p className={` text-center text-lg leading-6 ${toggle === false ? " text-gray-700 " : "text-slate-300"} `} >Recruiters from top companies and hyper-growth startups love working with Skillfull grads</p>
 
                 <div className=' w-10/12 grid grid-cols-1 md:grid-cols-3 items-center justify-center gap-5 mt-5 ' >
                     <img src={googleImg} className=' grayscale transition-all duration-200 hover:grayscale-0 ' />
                     <img src={TcsImg} className=' grayscale transition-all duration-200 hover:grayscale-0 '/>
                     <img src={AmazonImg} className=' grayscale transition-all duration-200 hover:grayscale-0 '/>
-                    <img src={TcsImg} className=' grayscale transition-all duration-200 hover:grayscale-0 '/>
+                    <img src={ItcImg} className=' grayscale transition-all duration-200 hover:grayscale-0 '/>
                     <img src={accentImg} className=' grayscale transition-all duration-200 hover:grayscale-0 '/>
                     <img src={fedImg} className=' grayscale transition-all duration-200 hover:grayscale-0 '/>
                 </div>

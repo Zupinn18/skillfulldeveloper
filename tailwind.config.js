@@ -12,7 +12,18 @@ export default {
     poppins: ["Poppins", "sans-serif"],
     poetsenoneregular: ["Poetsen One", "sans-serif"]
   },
-    extend: {},
+    extend: {
+      keyframes: {
+        'zoom-in-zoom-out': {
+          '0%': { transform: 'scale(1, 1)' },
+          '50%': { transform: 'scale(1.2, 1.2)' },
+          '100%': { transform: 'scale(1, 1)' },
+        },
+      },
+      animation: {
+        'zoom-in-zoom-out': 'zoom-in-zoom-out 2s ease-out infinite',
+      },
+    },
   },
   plugins: [],
 }

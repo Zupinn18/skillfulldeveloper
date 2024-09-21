@@ -30,6 +30,7 @@
     "react-multi-carousel": "^2.8.5",
     "react-router": "^6.24.1",
     "react-router-dom": "^6.24.1",
+    "tw-elements-react": "^1.0.0-alpha-end",
     "typed.js": "^2.1.0"
   },
   "devDependencies": {

@@ -1,7 +1,7 @@
 import * as React from 'react';
 import "./SkillCourse.css";
 import Blob from "../../assets/skill/blob.png";
-import ReactImg from '../../assets/skill/React.png';
+import ReactImg from '../../assets/skill/reactim.png';
 import MongoDB from '../../assets/skill/MongoDB.svg';
 import Express from '../../assets/skill/Express.png';
 import NodeJS from '../../assets/skill/NodeJs.svg';
@@ -16,9 +16,10 @@ import JS from '../../assets/skill/Javascript.svg';
 import C from '../../assets/skill/C.png';
 import Cplus from '../../assets/skill/C++.png';
 import java from '../../assets/skill/java.png';
-import postman from '../../assets/skill/postman.png';
+import postman from '../../assets/skill/postman.svg';
 import python from '../../assets/skill/python.png';
-import sql from '../../assets/skill/mysql.png';
+import sql from '../../assets/skill/mysql.jpg';
+import flutter from '../../assets/skill/flutter.svg';
 import { Link } from 'react-router-dom';
 
 export default function SkillCourse() {
@@ -30,8 +31,8 @@ export default function SkillCourse() {
       <div className='skills font-poppins ' >
             <img className='blob-style  ' src={Blob} />
             <div className=' bg-white w-[180px] h-[190px] px-5 py-3 rounded-md flex flex-col gap-4 items-center font-bold shadow-xl ' >
-              <img className='skills-logo   ' src={C} />
-              <p>C - Programming</p>
+              <img className='skills-logo   ' src={flutter} />
+              <p>Flutter</p>
             </div>
             <div className='bg-white px-5 w-[190px] h-[190px] py-3 rounded-md flex flex-col gap-4 items-center font-bold shadow-xl' >
               <img className='skills-logo ' src={Cplus} />
@@ -42,7 +43,7 @@ export default function SkillCourse() {
               <p>Java</p>
             </div>
             <div className='bg-white px-5 w-[180px] h-[190px] py-3 rounded-md flex flex-col gap-4 items-center font-bold shadow-xl' >
-              <img className='skills-logo' src={ReactImg} />
+              <img className='skills-logo object-cover ' src={ReactImg} />
               <p>React Js</p>
             </div>
             <div className='bg-white px-5 w-[180px] h-[190px] py-3 rounded-md flex flex-col gap-4 items-center font-bold shadow-xl' >
@@ -60,12 +61,12 @@ export default function SkillCourse() {
               </div>
             </Link>
             <div className='bg-white px-5 w-[180px] h-[190px] py-3 rounded-md flex flex-col gap-4 items-center font-bold shadow-xl' >
-              <img className='skills-logo' src={sql} />
+              <img className='skills-logo object-cover ' src={sql} />
               <p>SQL</p>
             </div>
             <Link to="/skill/python" >
             <div className='bg-white px-5 w-[180px] object-cover h-[190px] py-3 rounded-md flex flex-col gap-4 items-center font-bold shadow-xl' >
-              <img className='skills-logo' src={python} />
+              <img className='skills-logo object-cover ' src={python} />
               <p>Python</p>
             </div>
             </Link>
@@ -90,7 +91,7 @@ export default function SkillCourse() {
               <p>Bootstrap CSS</p>
             </div>
             <div className='bg-white px-5 w-[180px] h-[190px] object-cover py-3 rounded-md flex flex-col gap-4 items-center font-bold shadow-xl' >
-              <img className='skills-logo' src={postman} />
+              <img className='skills-logo ' src={postman} />
               <p>Postman</p>
             </div>
             <div className='bg-white px-5 w-[180px] h-[190px] py-3 rounded-md flex flex-col gap-4 items-center font-bold shadow-xl' >

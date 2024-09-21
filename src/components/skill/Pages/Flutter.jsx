@@ -9,6 +9,8 @@ import InterviewImg from "../../../assets/interview.gif";
 import PrepareImg from "../../../assets/prepare.gif";
 import CareerImg from "../../../assets/career.gif";
 import SalaryImg from "../../../assets/salary.gif";
+import FlutterDoc from "../../../assets/courses/flutter.pdf";
+import { Link } from 'react-router-dom';
 
 const Flutter = ({ toggle }) => {
   const skillsGain = [
@@ -89,11 +91,13 @@ const Flutter = ({ toggle }) => {
               <p className={` ${toggle === false ? "text-[#436860]" : "text-slate-200"}`}>Brandon Kenny</p>
             </div> */}
             <div>
-              <button style={{ cursor: "pointer" }}
-                className='cursor-pointer font-semibold px-8 py-3 flex flex-col items-center rounded-lg bg-[#436850] transition-all duration-300 border-2 text-white hover:bg-[#12372A] border-none'>
-                Enroll Now
-                <p className='text-sm font-thin'>Started at 1 Aug</p>
-              </button>
+            <Link to="/enroll-flutter-course" >
+                <button style={{ cursor: "pointer" }}
+                  className='cursor-pointer font-semibold px-8 py-3 flex flex-col items-center rounded-lg bg-[#436850] transition-all duration-300 border-2 text-white hover:bg-[#12372A] border-none'>
+                  Enroll Now
+                  <p className='text-sm font-thin'>Book your slot</p>
+                </button>
+              </Link>
             </div>
             <div className={`bg-white absolute z-50 flex flex-col px-6 py-6 top-5 right-5 rounded-md shadow-2xl`}>
             <p className={`text-justify text-xl font-bold leading-6 ${toggle === false ? "text-[#436860]" : "text-slate-800"}`}>Specialization</p>
@@ -209,9 +213,7 @@ const Flutter = ({ toggle }) => {
                   <li><p className={`text-justify text-md leading-6 ${toggle === false ? "text-[#436860]" : "text-slate-800"}`}>Packaging and Deploying</p> 
                   </li>       
             </ul>
-            <button className='flex text-green-700 mt-3 items-center gap-2 border-2 border-green-700 justify-center px-4 py-2 rounded-lg text-md transition-all duration-200 hover:text-white hover:bg-green-700 '>
-                Download full Syllabus Now
-              </button>
+            <a href={FlutterDoc} download="Flutter Syllabus" target='_blank' className=" flex text-green-700 mt-3 items-center gap-2 border-2 border-green-700 justify-center px-4 py-2 rounded-lg text-md transition-all duration-200 hover:text-white hover:bg-green-700 "   >Download full Syllabus Now</a>
           </div>
         </div>
    

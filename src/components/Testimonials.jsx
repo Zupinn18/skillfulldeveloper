@@ -5,6 +5,11 @@ import Girl2 from "../assets/testimonials/girl2.png";
 import Girl3 from "../assets/testimonials/girl3.jpg";
 import Boy1 from "../assets/testimonials/boy1.jpg";
 import Boy2 from "../assets/testimonials/boy2.jpg";
+import Girl4 from "../assets/testimonials/girl-new-1.jpg";
+import Girl5 from "../assets/testimonials/girl-new2.jpg";
+import Girl6 from "../assets/testimonials/girl-new3.jpg";
+import Boy3 from "../assets/testimonials/boy-new1.png";
+import Boy4 from "../assets/testimonials/boy-new2.jpg";
 
 function InfiniteLoopSlider({ children, speed = 4 }) {
   const baseX = useMotionValue(0);
@@ -45,7 +50,7 @@ function InfiniteLoopSliderRight({ children, speed = 4 }) {
   const x = useTransform(baseX, (v) => `${v}%`);
 
   return (
-    <div className="overflow-hidden whitespace-nowrap">
+    <div className="overflow-hidden whitespace-nowrap ">
       <motion.div className="inline-block text-wrap" style={{ x }}>
         {children}
       </motion.div>
@@ -93,33 +98,33 @@ const Testimonials = ({toggle, setToggle}) => {
       const people2 = [
         {
           name: "Geeta Rana",
-          avatar: Girl2,
+          avatar: Girl5,
           testimony: "Skillfull Developer provided top-notch training and placement assistance. I now work in a role I love, thanks to their team.",
           twitterPseudo: "@geeta_rana"
         },
         {
           name: "Vikas Sharma",
-          avatar: Boy2,
+          avatar: Boy3,
           testimony: "The skill development and job placement process at Skillfull Developer were seamless. I highly recommend their programs.",
           twitterPseudo: "@vikassharma"
         },
         {
           name: "Priya Rawat",
-          avatar: Girl1,
+          avatar: Girl4,
           testimony: "Skillfull Developer's training was exceptional, and their placement support ensured I found a great job quickly.",
           twitterPseudo: "@priyarawat"
         },
         {
           name: "Saurabh Singh",
-          avatar: Boy1,
+          avatar: Boy4,
           testimony: "I am thrilled with the skills I gained and the job I landed through Skillfull Developer. Their program truly works!",
           twitterPseudo: "@saurabhrawat"
         },
         {
-          name: "Pawan Negi",
-          avatar: Boy2,
+          name: "Ipshita",
+          avatar: Girl6,
           testimony: "Skillfull Developer's expert-led training and guaranteed placement made all the difference. I secured a job at a top company.",
-          twitterPseudo: "@pawan_negi"
+          twitterPseudo: "@ipshita"
         },
       ]
       const parters = [
@@ -152,8 +157,7 @@ const Testimonials = ({toggle, setToggle}) => {
     <InfiniteLoopSlider duration={20}>
        {people1.map(person => (
             <li key={person.twitterPseudo} className=" w-[200px] h-[250px]
-            col-span-full sm:col-span-3 lg:col-span-2 py-6 px-4 rounded-xl shadow-lg bg-white 
-            inline-block mx-5 mb-4
+            col-span-full sm:col-span-3 lg:col-span-2 py-6 px-4 rounded-xl shadow-lg bg-white inline-block mx-5 mb-4
             ">
               {/* ::Card header */}
               <div className="flex items-center space-x-3">
@@ -181,11 +185,10 @@ const Testimonials = ({toggle, setToggle}) => {
     </InfiniteLoopSlider>
   </div>
 
-  <div className="flex justify-center items-center ">
+  <div className="flex justify-end items-end ">
     <InfiniteLoopSliderRight duration={20}>
        {people2?.map(person => (
-            <li key={person.twitterPseudo} className="w-[200px] h-[250px]
-             sm:col-span-3 lg:col-span-2 py-6 px-4 rounded-xl shadow-lg bg-white 
+            <li key={person.twitterPseudo} className="w-[200px] h-[250px] col-span-full sm:col-span-3 lg:col-span-2 py-6 px-4 rounded-xl shadow-lg bg-white 
             inline-block mx-5 mb-4
             ">
               {/* ::Card header */}

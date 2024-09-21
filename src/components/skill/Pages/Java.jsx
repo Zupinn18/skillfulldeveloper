@@ -9,6 +9,7 @@ import InterviewImg from "../../../assets/interview.gif";
 import PrepareImg from "../../../assets/prepare.gif";
 import CareerImg from "../../../assets/career.gif";
 import SalaryImg from "../../../assets/salary.gif";
+import { Link } from 'react-router-dom';
 
 const Java = ({ toggle }) => {
 
@@ -87,11 +88,13 @@ const Java = ({ toggle }) => {
               <p className={` ${toggle === false ? "text-[#436860]" : "text-slate-200"}`}>Brandon Kenny</p>
             </div> */}
             <div>
-              <button style={{ cursor: "pointer" }}
-                className='cursor-pointer font-semibold px-8 py-3 flex flex-col items-center rounded-lg bg-[#436850] transition-all duration-300 border-2 text-white hover:bg-[#12372A] border-none'>
-                Enroll Now
-                <p className='text-sm font-thin'>Started at 1 Aug</p>
-              </button>
+            <Link to="/enroll-java-course" >
+                <button style={{ cursor: "pointer" }}
+                  className='cursor-pointer font-semibold px-8 py-3 flex flex-col items-center rounded-lg bg-[#436850] transition-all duration-300 border-2 text-white hover:bg-[#12372A] border-none'>
+                  Enroll Now
+                  <p className='text-sm font-thin'>Book your slot</p>
+                </button>
+              </Link>
             </div>
 
             <div className={`bg-white absolute z-50 flex flex-col px-6 py-6 top-5 right-5 rounded-md shadow-2xl`}>

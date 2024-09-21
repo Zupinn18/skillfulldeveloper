@@ -92,9 +92,11 @@ const Header = ({toggle, setToggle}) => {
             <button onClick={togglePopup} className=' hidden md:block font-semibold px-4 py-2 rounded-lg bg-green-500 transition-all duration-300
              border-2 text-white cursor-pointer hover:bg-green-600 border-none '
             >1:1 Career counseling</button>
-            <button className=' hidden md:block font-semibold px-4 py-2 rounded-lg bg-[#436850] transition-all duration-300
-             border-2 text-white cursor-pointer hover:bg-[#12372A] border-none '
-            >Login</button>
+            <Link to="/login" >
+              <button className=' hidden md:block font-semibold px-4 py-2 rounded-lg bg-[#436850] transition-all duration-300
+              border-2 text-white cursor-pointer hover:bg-[#12372A] border-none '
+              >Login</button>
+            </Link>
         </div>
         </div>
     </div>

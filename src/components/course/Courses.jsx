@@ -88,7 +88,7 @@ const Courses = ({ toggle, setToggle }) => {
                     <p className='font-[500] text-md'>DSA </p>
                   </div>
                 </div>
-                <Link to="/course/python" onClick={() => window.scrollTo(0, 0)} className='font-semibold px-4 py-3 rounded-lg bg-[#436850] transition-all duration-300 border-2 text-white cursor-pointer hover:bg-[#12372A]'>
+                <Link to="/enroll-python-course" onClick={() => window.scrollTo(0, 0)} className='font-semibold px-4 py-3 rounded-lg bg-[#436850] transition-all duration-300 border-2 text-white cursor-pointer hover:bg-[#12372A]'>
                   Enroll Now
                 </Link>
               </div>
@@ -133,7 +133,7 @@ const Courses = ({ toggle, setToggle }) => {
                         <GoInfo />
                         <p>You get a Refund Validity of 2 Years</p>
                     </div> */}
-                    <Link to="/course/node" onClick={() => window.scrollTo(0, 0)} className=' font-semibold px-4 py-3 rounded-lg bg-[#436850] transition-all duration-300
+                    <Link to="/enroll-nodejs-course" onClick={() => window.scrollTo(0, 0)} className=' font-semibold px-4 py-3 rounded-lg bg-[#436850] transition-all duration-300
              border-2 text-white cursor-pointer hover:bg-[#12372A]' >
                     Enroll Now
                     </Link>
@@ -175,7 +175,7 @@ const Courses = ({ toggle, setToggle }) => {
                         <GoInfo />
                         <p>You get a Refund Validity of 2 Years</p>
                     </div> */}
-                    <Link to="/course/mern" onClick={() => window.scrollTo(0, 0)} className=' font-semibold px-4 py-3 rounded-lg bg-[#436850] transition-all duration-300
+                    <Link to="/enroll-mern-stack-course" onClick={() => window.scrollTo(0, 0)} className=' font-semibold px-4 py-3 rounded-lg bg-[#436850] transition-all duration-300
              border-2 text-white cursor-pointer hover:bg-[#12372A]' >
                     Enroll Now
                     </Link>
@@ -217,7 +217,7 @@ const Courses = ({ toggle, setToggle }) => {
                         <GoInfo />
                         <p>You get a Refund Validity of 2 Years</p>
                     </div> */}
-                    <Link to="/course/fullstack" onClick={() => window.scrollTo(0, 0)} className=' font-semibold px-4 py-3 rounded-lg bg-[#436850] transition-all duration-300
+                    <Link to="/enroll-full-stack-course" onClick={() => window.scrollTo(0, 0)} className=' font-semibold px-4 py-3 rounded-lg bg-[#436850] transition-all duration-300
              border-2 text-white cursor-pointer hover:bg-[#12372A]' >
                     Enroll Now
                     </Link>
@@ -258,7 +258,7 @@ const Courses = ({ toggle, setToggle }) => {
                         <GoInfo />
                         <p>You get a Refund Validity of 2 Years</p>
                     </div> */}
-                    <Link to="/course/application-developer" onClick={() => window.scrollTo(0, 0)} className=' font-semibold px-4 py-3 rounded-lg bg-[#436850] transition-all duration-300
+                    <Link to="/enroll-application-development-course" onClick={() => window.scrollTo(0, 0)} className=' font-semibold px-4 py-3 rounded-lg bg-[#436850] transition-all duration-300
              border-2 text-white cursor-pointer hover:bg-[#12372A]' >
                     Enroll Now
                     </Link>

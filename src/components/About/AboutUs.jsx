@@ -110,8 +110,8 @@ At Skillful Developer, we offer a diverse range of coding courses designed to ca
           </div> */}
   
           <div id="fourth" className={`reveal rounded-md ${toggle === false ? "bg-[#12372A]" : "bg-slate-300"} `}>
-          <h2 className={`text-center text-xl mb-5 sm:text-4xl font-edusa font-bold ${toggle === false ? "text-white" : "text-[#12372A]"}`}>Services We Offer</h2>
-            <div id="fourth_cards" className=' flex-col md:flex-row gap-10 md:gap-0 ' >
+          <h2 className={`text-center text-xl mb-5 sm:text-4xl font-edusa font-bold ${toggle === false ? "text-white" : "text-[#12372A]"}`}>Course Categories We Offer</h2>
+            <div id="fourth_cards" className=' flex-col md:flex-row justify-center items-center gap-10 md:gap-0 ' >
               <div>
                 <img
                   src="https://cdn.iconscout.com/icon/premium/png-64-thumb/data-analysis-27-681042.png"
@@ -140,13 +140,13 @@ At Skillful Developer, we offer a diverse range of coding courses designed to ca
                 />
                 <p>Q&A TESTING</p>
               </div>
-              <div>
+              {/* <div>
                 <img
                   src="https://cdn.iconscout.com/icon/premium/png-64-thumb/team-135-386667.png"
                   alt=" "
                 />
                 <p>DEDICATED TEAM</p>
-              </div>
+              </div> */}
             </div>
           </div>
   

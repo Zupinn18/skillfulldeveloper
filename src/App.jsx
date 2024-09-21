@@ -30,6 +30,28 @@ import ReactNative from './components/skill/Pages/ReactNative';
 import DSA from './components/skill/Pages/DSA';
 import Frontend from './components/skill/Pages/Frontend';
 import Backend from './components/skill/Pages/Backend';
+import DBMS from './components/skill/Pages/DBMS';
+import AIML from './components/skill/Pages/AIML';
+import PrivacyPolicy from './components/PrivacyPolicy';
+import EnrollPython from './components/EnrollForms/EnrollPython';
+import EnrollNode from './components/EnrollForms/EnrollNode';
+import EnrollMERN from './components/EnrollForms/EnrollMERN';
+import EnrollFullStack from './components/EnrollForms/EnrollFullStack';
+import EnrollAPP from './components/EnrollForms/EnrollAPP';
+import EnrollJavascript from './components/EnrollForms/EnrollJavascript';
+import EnrollReact from './components/EnrollForms/EnrollReact';
+import EnrollDigital from './components/EnrollForms/EnrollDigital';
+import EnrollAI from './components/EnrollForms/EnrollAI';
+import EnrollExpress from './components/EnrollForms/EnrollExpress';
+import EnrollJava from './components/EnrollForms/EnrollJava';
+import EnrollFlutter from './components/EnrollForms/EnrollFlutter';
+import EnrollSQL from './components/EnrollForms/EnrollSQL';
+import EnrollReactNative from './components/EnrollForms/EnrollReactNative';
+import EnrollDSA from './components/EnrollForms/EnrollDSA';
+import EnrollFrontend from './components/EnrollForms/EnrollFrontend';
+import EnrollBackend from './components/EnrollForms/EnrollBackend';
+import EnrollDBMS from './components/EnrollForms/EnrollDBMS';
+import LoginPage from './components/login/LoginPage';
 
 function App() {
   const [toggle, setToggle] = useState(false);
@@ -55,6 +77,80 @@ function App() {
             <Route path="/course" element={
               <CourseInfo toggle={toggle}/>
             }/>
+             <Route path="/privacy-policy" element={
+              <PrivacyPolicy toggle={toggle}/>
+            }/>
+            <Route path="/login" element={
+              <LoginPage toggle={toggle}/>
+            }/>
+
+
+
+
+
+
+
+
+            {/* ENROLL FORMS ROUTES */}
+            <Route path="/enroll-python-course" element={
+              <EnrollPython toggle={toggle}/>
+            }/>
+            <Route path="/enroll-nodejs-course" element={
+              <EnrollNode toggle={toggle}/>
+            }/>
+            <Route path="/enroll-mern-stack-course" element={
+              <EnrollMERN toggle={toggle}/>
+            }/>
+            <Route path="/enroll-full-stack-course" element={
+              <EnrollFullStack toggle={toggle}/>
+            }/>
+            <Route path="/enroll-application-development-course" element={
+              <EnrollAPP toggle={toggle}/>
+            }/>
+            <Route path="/enroll-javascript-course" element={
+              <EnrollJavascript toggle={toggle}/>
+            }/>
+            <Route path="/enroll-reactjs-course" element={
+              <EnrollReact toggle={toggle}/>
+            }/>
+            <Route path="/enroll-digital-marketing-course" element={
+              <EnrollDigital toggle={toggle}/>
+            }/>
+
+            <Route path="/enroll-express-course" element={
+              <EnrollExpress toggle={toggle}/>
+            }/>
+            <Route path="/enroll-java-course" element={
+              <EnrollJava toggle={toggle}/>
+            }/>
+            <Route path="/enroll-flutter-course" element={
+              <EnrollFlutter toggle={toggle}/>
+            }/>
+            <Route path="/enroll-mysql-course" element={
+              <EnrollSQL toggle={toggle}/>
+            }/>
+            <Route path="/enroll-react-native-course" element={
+              <EnrollReactNative toggle={toggle}/>
+            }/>
+            <Route path="/enroll-dsa-course" element={
+              <EnrollDSA toggle={toggle}/>
+            }/>
+            <Route path="/enroll-frontend-development-course" element={
+              <EnrollFrontend toggle={toggle}/>
+            }/>
+            <Route path="/enroll-backend-development-course" element={
+              <EnrollBackend toggle={toggle}/>
+            }/>
+            <Route path="/enroll-dbms-course" element={
+              <EnrollDBMS toggle={toggle}/>
+            }/>
+            <Route path="/enroll-aiml" element={
+              <EnrollAI toggle={toggle}/>
+            }/>
+
+
+
+            {/* COURSES ROUTES */}
             <Route path="/course/fullstack" element={
               <FullStack toggle={toggle}/>
             }/>
@@ -120,6 +216,12 @@ function App() {
             }/>
             <Route path="/course/backend-development" element={
               <Backend toggle={toggle}/>
+            }/>
+            <Route path="/course/database-management" element={
+              <DBMS toggle={toggle}/>
+            }/>
+            <Route path="/course/ai-ml" element={
+              <AIML toggle={toggle}/>
             }/>
         </Routes>
         <Footer toggle={toggle} setToggle={setToggle}/>

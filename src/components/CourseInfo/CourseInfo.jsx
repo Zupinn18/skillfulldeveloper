@@ -21,6 +21,8 @@ import DSAImg from "../../assets/skills/dsa.jpg";
 import FrontendImg from "../../assets/skills/frontend.png";
 import BackendIMG from "../../assets/skills/backend.jpg";
 import SQLIMG from "../../assets/skills/sql.jpg";
+import DBMSIMG from "../../assets/skills/dbms.jpg";
+import AIMLImg from "../../assets/skills/ai.jpg";
 
 import { Link } from 'react-router-dom';
 
@@ -52,7 +54,7 @@ export default function CourseInfo({toggle}) {
             image:FullImg
         },
         {
-            name:"Application Developement",
+            name:"Application Development",
             description:"Create powerful mobile applications seamlessly.",
             path:'application-developer',
             image:AppImg
@@ -122,6 +124,18 @@ export default function CourseInfo({toggle}) {
   description:"Master Full Backend Development",
   path:'backend-development',
   image:BackendIMG
+},
+{
+  name:"Databse Management System",
+  description:"Interact with Database systems",
+  path:'database-management',
+  image:DBMSIMG
+},
+{
+  name:"AI/ML",
+  description:"Learn Artificial Intelligence and ML",
+  path:'ai-ml',
+  image:AIMLImg
 },
     ]
 

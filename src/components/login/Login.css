@@ -1,0 +1,31 @@
+.image {
+    position: relative;
+    margin-right: 1.4rem;
+    cursor: pointer;
+    color: white;
+    z-index:1;
+  }
+  .image::after{
+    content:"";
+    position:absolute;
+    background: linear-gradient(0deg, rgba(39,38,42,1) 0%, rgba(255,255,255,0)     60%);
+    z-index:2;
+    height:100%;
+    width:100%;
+    top:-50%;
+    left:0;
+    border-bottom-left-radius: 0.5rem;
+  }
+
+  .gradient-img{
+    background: rgba(13,12,12,0.58);
+  }
+  
+  .image__text {
+    font-size: 2rem;
+    position: absolute;
+    bottom: 40%;
+    left: 20%;
+    line-height: 50px;
+    z-index:3
+  }

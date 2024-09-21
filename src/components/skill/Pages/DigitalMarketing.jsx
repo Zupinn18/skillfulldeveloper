@@ -7,6 +7,7 @@ import InterviewImg from "../../../assets/interview.gif";
 import PrepareImg from "../../../assets/prepare.gif";
 import CareerImg from "../../../assets/career.gif";
 import SalaryImg from "../../../assets/salary.gif";
+import { Link } from "react-router-dom";
 
 const DigitalMarketing = ({ toggle }) => {
 
@@ -80,7 +81,7 @@ const DigitalMarketing = ({ toggle }) => {
         <div className='flex md:flex-row flex-col justify-between items-center gap-[50px]'>
           <div className='w-[100%] flex flex-col gap-12 rounded-lg bg-[#55cea4] p-10 relative'>
             <p className={`text-xl sm:text-5xl font-bold ${toggle === false ? "text-white" : "text-white"}`}>Dominate Digital Marketing:<br/> Strategies for Success</p>
-            <p className={` text-justify text-lg leading-6 ${toggle === false ? "text-slate-100" : "text-slate-100"}`}>A strategy focused on using data to achieve successful outcomes in digital marketing</p>
+            <p className={` text-justify text-lg leading-6 ${toggle === false ? "text-slate-100" : "text-slate-100"}`}>A strategy focused on using data to achieve successful outcomes in <br/> digital marketing through efficient techniques</p>
             {/* <div className='flex items-center gap-1'>
               <div className='flex gap-2 items-center'>
                 <img src={img} className='w-[40px]' />
@@ -89,11 +90,13 @@ const DigitalMarketing = ({ toggle }) => {
               <p className={` ${toggle === false ? "text-[#436860]" : "text-slate-200"}`}>Brandon Kenny</p>
             </div> */}
             <div>
-              <button style={{ cursor: "pointer" }}
-                className='cursor-pointer font-semibold px-8 py-3 flex flex-col items-center rounded-lg bg-[#436850] transition-all duration-300 border-2 text-white hover:bg-[#12372A] border-none mt-5 '>
-                Enroll Now
-                <p className='text-sm font-thin'>Started at 1 Aug</p>
-              </button>
+            <Link to="/enroll-digital-marketing-course" >
+                <button style={{ cursor: "pointer" }}
+                  className='cursor-pointer font-semibold px-8 py-3 flex flex-col items-center rounded-lg bg-[#436850] transition-all duration-300 border-2 text-white hover:bg-[#12372A] border-none'>
+                  Enroll Now
+                  <p className='text-sm font-thin'>Book your slot</p>
+                </button>
+              </Link>
             </div>
             <div className={`bg-white absolute z-50 flex flex-col px-6 py-6 top-5 right-5 rounded-md shadow-2xl`}>
             <p className={`text-justify text-xl font-bold leading-6 ${toggle === false ? "text-[#436860]" : "text-slate-800"}`}>Specialization</p>
@@ -245,13 +248,13 @@ const DigitalMarketing = ({ toggle }) => {
         <h2 className={`text-lg font-bold ${toggle === false ? "text-[#12372A]" : "text-white"}`}>Salary of a Digital Marketer</h2>
             <ul className={` flex flex-col gap-2 list-decimal ${toggle === false ? "text-[#12372A]" : "text-white"} `} >
             <li>
-                <p className={` text-sm ${toggle === false ? "text-[#436860]" : "text-slate-200"} `} >Entry-level : <strong>INR 400,000 per annum </strong> </p>
+                <p className={` text-sm ${toggle === false ? "text-[#436860]" : "text-slate-200"} `} >Entry-level : <strong>₹4 lakhs per annum</strong> </p>
               </li>
               <li>
-                <p className={`  text-sm ${toggle === false ? "text-[#436860]" : "text-slate-200"} `} >Mid-level : <strong>INR 9-22 lakhs per annum</strong></p>
+                <p className={`  text-sm ${toggle === false ? "text-[#436860]" : "text-slate-200"} `} >Mid-level : <strong>₹5 lakhs per annum</strong></p>
               </li>
               <li>
-                <p className={`  text-sm ${toggle === false ? "text-[#436860]" : "text-slate-200"} `} >Senior-level : <strong>INR 200.8 lakhs per annum</strong> </p>
+                <p className={`  text-sm ${toggle === false ? "text-[#436860]" : "text-slate-200"} `} >Senior-level : <strong>₹7 lakhs per annum</strong> </p>
               </li>
             </ul>
           </div>
