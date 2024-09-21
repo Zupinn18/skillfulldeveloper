@@ -37,20 +37,19 @@ return (
 }
 
 function InfiniteLoopSliderRight({ children, speed = 4 }) {
-  const baseX = useMotionValue(-100); // Start at -100 to ensure the initial placement is correct
+  const baseX = useMotionValue(-100); // Start at -100 to place the second set of items correctly off-screen
 
   useAnimationFrame((t, delta) => {
-    // Adjust the speed here by changing the multiplier
     baseX.set(baseX.get() + (delta / 1000) * speed);
     if (baseX.get() >= 0) {
-      baseX.set(-100);
+      baseX.set(-100); // Reset to -100 when it goes past 0 to create a loop
     }
   });
 
   const x = useTransform(baseX, (v) => `${v}%`);
 
   return (
-    <div className="overflow-hidden whitespace-nowrap ">
+    <div className="overflow-hidden whitespace-nowrap w-full ">
       <motion.div className="inline-block text-wrap" style={{ x }}>
         {children}
       </motion.div>
@@ -186,7 +185,7 @@ const Testimonials = ({toggle, setToggle}) => {
   </div>
 
   <div className="flex justify-end items-end ">
-    <InfiniteLoopSliderRight duration={20}>
+    <InfiniteLoopSliderRight duration={50}>
        {people2?.map(person => (
             <li key={person.twitterPseudo} className="w-[200px] h-[250px] col-span-full sm:col-span-3 lg:col-span-2 py-6 px-4 rounded-xl shadow-lg bg-white 
             inline-block mx-5 mb-4

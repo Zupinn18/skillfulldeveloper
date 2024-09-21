@@ -21,7 +21,7 @@ import NodeJs from './components/SkillSet/NodeJs';
 import PythonSkill from './components/SkillSet/PythonSkill';
 import Javascript from './components/skill/Pages/Javascript';
 import FullStack from './components/skill/Pages/FullStack';
-import Reactjs from './components/skill/Pages/Reactjs';
+import Reactjs from './components/skill/Pages/ReactJs';
 import Java from './components/skill/Pages/Java';
 import Express from './components/skill/Pages/Express';
 import SQL from './components/skill/Pages/SQL';
