@@ -37,7 +37,7 @@ const Header = ({toggle, setToggle}) => {
   return (
     // bg-gray-50
     <>
-    <div className={` w-full pt-3 pb-3 backdrop-blur-sm  bg-[#12372A]
+    <div className={` w-full pt-3 pb-3 backdrop-blur-sm  bg-[#12372A] font-volkhov
     ${toggle === false && "  "}
     `} >
         <div className=' w-11/12 mx-auto flex items-center justify-between relative ' >

@@ -75,7 +75,7 @@ const handleInputChange = (e) =>{
 
   return (
     <div className='bg-[#12372A] pb-[100px] ' >
-    <div className=' w-[95%] mx-auto md:w-11/12 font-poppins flex flex-col md:flex-row md:items-center md:justify-between gap-10 md:gap-[150px] ' >
+    <div className=' w-[95%] mx-auto md:w-11/12 font-volkhov flex flex-col md:flex-row md:items-center md:justify-between gap-10 md:gap-[150px] ' >
       <div className='w-[50%] mx-auto flex flex-col gap-4 mt-10 md:mt-[0px] ' >
         <div className=' flex flex-col gap-3 ' >
             <p className={`text-[36px] md:text-[42px] leading-[55px] lg:text-[50px] font-extrabold ${toggle === false ? "text-white" : "text-[#fbfada]" }
