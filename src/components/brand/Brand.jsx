@@ -41,7 +41,7 @@ function InfiniteLoopSlider({ children, speed = 5 }) {
 
 export default function Brand() {
   return (
-    <div className="flex justify-center items-center mt-10 ">
+    <div className="flex justify-center items-center mt-[150px] ">
       <InfiniteLoopSlider duration={20}>
         {images.map((src, index) => (
           <img key={index} src={src} alt={`image-${index}`} className="inline-block w-36 mx-10" />

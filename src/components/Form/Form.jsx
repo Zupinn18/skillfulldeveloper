@@ -127,18 +127,30 @@ const Form = ({showPopup,setShowPopup}) => {
              </div>
 
              <div className=' flex items-center gap-2 ' >
-                <label className=" text-gray-700 font-semibold " htmlFor="course">
-                    Course:
-                </label>
-                <input
-                    className=" w-full px-2 py-1 border border-gray-300 rounded-md outline-none "
-                    type="text"
-                    placeholder="Enter Your Course Name"
-                    id="course"
-                    name="course"
-                    required
-                />
-             </div>
+              <label for="course" className={`text-gray-700 font-semibold`}>Course</label>
+               <select id="course" className="w-full px-2 py-1 border border-gray-300 rounded-md outline-none" required >
+               <option value="" >Select Course</option>
+                <option value="Python" >Python</option>
+                <option value="NodeJs" >Nodejs</option>
+                <option value="MERN" >MERN Stack Development</option>
+                <option value="FullStack" >Full Stack Development</option>
+                <option value="AppDevelopment" >App Development</option>
+                <option value="Javascript" >Javascript</option>
+                <option value="Reactjs" >Reactjs</option>
+                <option value="DigitalMarketing" >Digital Marketing</option>
+                <option value="ExpressJS" >ExpressJS</option>
+                <option value="Java" >Java</option>
+                <option value="Flutter" >Flutter</option>
+                <option value="MySQL" >MySQL</option>
+                <option value="ReactNative" >React Native</option>
+                <option value="DSA" >Data Structure and Algorithms</option>
+                <option value="FrontendDevelopment" >Frontend Development</option>
+                <option value="AIML" >AI/ML</option>
+                <option value="DBMS" >Database management systems</option>
+                <option value="BackendDevelopment" >Backend Development</option>
+               </select>
+          </div>
+
              </div>
         
         <div class=" mt-5 relative group cursor-pointer">
