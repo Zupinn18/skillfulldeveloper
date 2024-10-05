@@ -227,21 +227,21 @@ const Testimonials = ({toggle, setToggle}) => {
   </div> */}
 
 
-<<<<<<< HEAD
+
   {/* <div className="flex justify-end items-end ">
     <InfiniteLoopSliderRight duration={50}> */}
 
   {/* <div className="flex justify-end items-end ">
     <InfiniteLoopSliderRight duration={20}>
 
-=======
+
   {/* <div className="flex justify-end items-end ">
     <InfiniteLoopSliderRight duration={20}>
 
   <div className="flex justify-end items-end ">
     <InfiniteLoopSliderRight duration={50}>
 
->>>>>>> eaab5e4fda18dfd75b4823222b6147904ae1f400
+
        {people2?.map(person => (
             <li key={person.twitterPseudo} className="w-[200px] h-[250px] col-span-full sm:col-span-3 lg:col-span-2 py-6 px-4 rounded-xl shadow-lg bg-white 
             inline-block mx-5 mb-4

@@ -10,7 +10,7 @@ const Footer = ({toggle, setToggle}) => {
   return (
     // bg-gray-50
     <>
-    {/* <section className={` py-3  sm:pt-16   ${ toggle === false ? "border-t-2 bg-gray-50 border-t-[#ADBC9F] " : "" } `}>
+    {/* { <section className={` py-3  sm:pt-16   ${ toggle === false ? "border-t-2 bg-gray-50 border-t-[#ADBC9F] " : "" } `}>
     <div class="px-4 mx-auto sm:px-6 lg:px-8 md:mt-[-30px]  ">
         <div class="grid grid-cols-2 md:col-span-3 lg:grid-cols-6 gap-y-12 gap-x-12">
             <div class="col-span-2 md:col-span-3 lg:col-span-2 lg:pr-8">
@@ -22,16 +22,13 @@ const Footer = ({toggle, setToggle}) => {
             </div>
 
             <div>
-<<<<<<< HEAD
                 <p className={`text-sm font-semibold tracking-widest uppercase ${toggle === false ? "text-green-900" :"text-[#fbfada]" } `}>Company</p>
-=======
+
 
                 <p className={`text-sm font-semibold tracking-widest uppercase ${toggle === false ? "text-green-900" :"text-[#fbfada]" } `}>Company</p>
 
-                {/* text-gray-400 */}
+ 
                 <p className={`text-sm font-semibold tracking-widest uppercase mt-10 ${toggle === false ? "text-green-900" :"text-[#fbfada]" } `}>Company</p>
-
->>>>>>> eaab5e4fda18dfd75b4823222b6147904ae1f400
 
                 <ul class="mt-6 space-y-2">
                     <li>
@@ -155,7 +152,7 @@ const Footer = ({toggle, setToggle}) => {
 
         <p className={`text-sm text-center ${toggle === false ? " text-gray-600" :"text-[#fbfada]" }`} >© Copyright 2024, All Rights Reserved by SkillFull Developer</p>
     </div>
-    </section> */}
+    </section> } */}
 
     <div className={` w-full relative mt-[150px] ${ toggle === false ? "border-t-2 bg-gray-50 border-t-[#ADBC9F] " : "" }`} >
 
