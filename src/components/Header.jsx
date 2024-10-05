@@ -37,7 +37,7 @@ const Header = ({toggle, setToggle}) => {
   return (
     // bg-gray-50
     <>
-    <div className={` w-full pt-3 pb-3 backdrop-blur-sm  bg-[#12372A] font-volkhov
+    <div className={` w-full pt-3 pb-3 backdrop-blur-sm font-volkhov
     ${toggle === false && "  "}
     `} >
         <div className=' w-11/12 mx-auto flex items-center justify-between relative ' >
@@ -46,28 +46,28 @@ const Header = ({toggle, setToggle}) => {
         <div className=' flex items-center gap-5 ' >
             {/* 12372A */}
             <img src={logoImg} className=' w-[40px] ' />
-            <p className={` text-lg md:text-xl font-bold ${toggle === false ? "text-[#fbfada]" : "text-[#fbfada]" } `} >Skillfull <span className="text-green-500" > Developer</span> </p>
+            <p className={` text-lg md:text-xl font-bold ${toggle === false ? "text-[#12372A]" : "text-[#fbfada]" } `} >Skillfull <span className="text-green-500" > Developer</span> </p>
         </div>
         </Link>
 
         <div className={`md:flex flex-col md:flex-row items-center gap-[40px] font-semibold  ${ menu === true ? " bg-gray-50 block absolute top-[75px] right-[-5%] px-10 py-5 " : "hidden" } `} >
             <Link to="/" >
-                    <p className={`text-lg transition-all duration-200 ${toggle === false ? "text-white hover:text-green-500 " : "text-[#adbc9f] hover:text-green-300 "} `}>Home</p>
+                    <p className={`text-lg transition-all duration-200 ${toggle === false ? "text-[#436850] hover:text-green-500 " : "text-[#adbc9f] hover:text-green-300 "} `}>Home</p>
                 </Link>
             <Link to="/about-us" >
-                    <p className={`text-lg transition-all duration-200 ${toggle === false ? "text-white hover:text-green-500 " : "text-[#adbc9f] hover:text-green-300 "} `}>About us</p>
+                    <p className={`text-lg transition-all duration-200 ${toggle === false ? "text-[#436850] hover:text-green-500 " : "text-[#adbc9f] hover:text-green-300 "} `}>About us</p>
                 </Link>
                 <Link to="/course" >
-                    <p className={`text-lg transition-all duration-200 ${toggle === false ? "text-white hover:text-green-500" : "text-[#adbc9f] hover:text-green-300 "} `} >
+                    <p className={`text-lg transition-all duration-200 ${toggle === false ? "text-[#436850] hover:text-green-500" : "text-[#adbc9f] hover:text-green-300 "} `} >
                         {/* <DropDown toggle={toggle} /> */}
                         Course
                         </p>
                 </Link>
                 <Link to="/skill" >
-                    <p className={` text-lg transition-all duration-200 ${toggle === false ? "text-white hover:text-green-500" : "text-[#adbc9f] hover:text-green-300 "} `}>Skill</p>
+                    <p className={` text-lg transition-all duration-200 ${toggle === false ? "text-[#436850] hover:text-green-500" : "text-[#adbc9f] hover:text-green-300 "} `}>Skill</p>
                 </Link>
                 <Link to="/placement" >
-                    <p className={` text-lg transition-all duration-200 ${toggle === false ? "text-white hover:text-green-500" : "text-[#adbc9f] hover:text-green-300 "} `}>Placement</p>
+                    <p className={` text-lg transition-all duration-200 ${toggle === false ? "text-[#436850] hover:text-green-500" : "text-[#adbc9f] hover:text-green-300 "} `}>Placement</p>
                 </Link>
                 
         </div>

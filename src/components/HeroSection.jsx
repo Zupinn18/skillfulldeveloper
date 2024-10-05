@@ -74,15 +74,15 @@ const handleInputChange = (e) =>{
 })}
 
   return (
-    <div className='bg-[#12372A] pb-[100px] ' >
+    <div className=' pb-[100px] ' >
     <div className=' w-[95%] mx-auto md:w-11/12 font-volkhov flex flex-col md:flex-row md:items-center md:justify-between gap-10 md:gap-[150px] ' >
       <div className='w-[50%] mx-auto flex flex-col gap-4 mt-10 md:mt-[0px] ' >
         <div className=' flex flex-col gap-3 ' >
-            <p className={`text-[36px] md:text-[42px] leading-[55px] lg:text-[50px] font-extrabold ${toggle === false ? "text-white" : "text-[#fbfada]" }
+            <p className={`text-[36px] md:text-[42px] leading-[55px] lg:text-[50px] font-extrabold ${toggle === false ? "text-green-900" : "text-[#fbfada]" }
              `} >Launch your <span className=' text-green-500 ' >Career</span> in Just 3-Month</p>
               {/* <p className={`text-[36px] md:text-[42px] leading-[55px] lg:text-[50px] font-extrabold ${toggle === false ? "text-green-900" : "text-[#fbfada]" }
              `} >in Just 3-Month </p> */}
-             <p className={`text-sm md:text-lg ${toggle === false ? "text-[#fbfada]" : "text-[#fbfada]" }
+             <p className={`text-sm md:text-lg ${toggle === false ? "text-[#436850]" : "text-[#fbfada]" }
              `} >We want to ensure that our learners achieve the best possible career outcomes and are able to fulfill their professional goals. </p>
              <p className={`text-sm md:text-xl font-extrabold ${toggle === false ? "text-[#d5d52c]" : "text-[#fbfada]" }
              `} >100% Job Placement or your Money Back</p>
@@ -115,7 +115,7 @@ const handleInputChange = (e) =>{
                         <img src={GirlImg2} className=' w-[40px] h-[40px] rounded-full ' />
                       </div>
                     </div>
-                    <p className=' absolute left-[13%] flex gap-2 items-center text-white font-semibold text-[22px] ' > <span className="text-green-500" >10,000+</span> Students 
+                    <p className=' absolute left-[13%] flex gap-2 items-center text-[#436850] font-semibold text-[22px] ' > <span className="text-green-500" >10,000+</span> Students 
                     </p>
                   </div>
 
