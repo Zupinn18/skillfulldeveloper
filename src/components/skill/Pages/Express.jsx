@@ -230,8 +230,9 @@ It is also vastly used in industry and open-source projects, which makes it easy
         <div className='flex flex-col md:flex-row gap-3 flex-wrap items-start ' >
           {
             skillsGain?.map((skill, ind) => (
-              <div key={ind} className='bg-emerald-100 px-3 py-1 rounded-xl ' >
-                <p className=' text-emerald-500 ' >{skill.name}</p>
+              <div key={ind} className='font-semibold px-4 text-sm py-2 rounded-xl bg-green-500
+              border-2 text-white border-none ' >
+                <p >{skill.name}</p>
               </div>
             ))
           }

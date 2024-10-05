@@ -52,6 +52,8 @@ import EnrollFrontend from './components/EnrollForms/EnrollFrontend';
 import EnrollBackend from './components/EnrollForms/EnrollBackend';
 import EnrollDBMS from './components/EnrollForms/EnrollDBMS';
 import LoginPage from './components/login/LoginPage';
+import FAQs from './components/FAQs';
+import ExaminationPolicy from './components/ExaminationPolicy';
 
 function App() {
   const [toggle, setToggle] = useState(false);
@@ -82,6 +84,12 @@ function App() {
             }/>
             <Route path="/login" element={
               <LoginPage toggle={toggle}/>
+            }/>
+            <Route path="/frequently-asked-questions" element={
+              <FAQs toggle={toggle}/>
+            }/>
+            <Route path="/examination-policy" element={
+              <ExaminationPolicy toggle={toggle}/>
             }/>
 
 

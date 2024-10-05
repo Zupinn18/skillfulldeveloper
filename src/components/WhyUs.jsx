@@ -9,7 +9,7 @@ import PlacementImg from "../assets/placement.gif";
 const whyUs = ({toggle}) => {
   return (
     <div className=' w-11/12 mx-auto flex flex-col gap-7 justify-center items-center mt-[70px] ' >
-         <h1 className={`text-[42px] font-semibold text-center ${ toggle === false ? "text-[#12372A]" : "text-[#fbfada]" } `} >Why Students Should Choose SkillFull Developer </h1>
+         <h1 className={`text-[42px] font-semibold text-center ${ toggle === false ? "text-[#12372A]" : "text-[#fbfada]" } `} >Why Students Should Choose SkillFull Developer ?</h1>
          <div className=' w-10/12 mx-auto grid grid-cols-1 lg:grid-cols-3 gap-10 items-center justify-center ' >
                 {/* 12372A */}
                 <div className=' md:h-[500px] flex flex-col gap-5 items-center bg-white px-10 py-8 rounded-md shadow-xl cursor-pointer transition-all duration-200 hover:scale-105 ' >
