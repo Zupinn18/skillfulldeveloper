@@ -26,7 +26,7 @@ const Services = ({toggle, setToggle}) => {
                 </div>
             </div>
             <div className=' w-10/12 mx-auto flex flex-col md:flex-row items-center justify-center gap-10 ' >
-                <div className=' bg-[#436850] rounded-lg px-8 py-6 md:h-[400px] md:w-[30%] flex flex-col gap-1 items-center ' >
+                <div className=' bg-[#fbfada] rounded-lg px-8 py-6 md:h-[400px] md:w-[30%] flex flex-col gap-1 items-center ' >
                     <img src={img1} className=' md:mt-[-5px] w-[260px] h-[200px] object-cover ' />
                     {/* 12372A */}
                     <div className=' flex flex-col gap-2 items-center ' >
@@ -35,14 +35,14 @@ const Services = ({toggle, setToggle}) => {
                         <p className={` text-center font-semibold ${ toggle === false ? "text-[#adbc9f]" : "text-[#adbc9f]" } `} >Gain essential skills with our expertise  to prepare you for a successful career.</p>
                     </div>
                 </div>
-                <div className=' bg-[#436850] rounded-lg px-8 py-6 md:h-[400px] md:w-[30%] flex flex-col gap-1 items-center'>
+                <div className=' bg-[#fbfada] rounded-lg px-8 py-6 md:h-[400px] md:w-[30%] flex flex-col gap-1 items-center'>
                     <img src={img2} className=' w-[300px] h-[200px] object-cover ' />
                     <div  className=' flex flex-col gap-2 items-center '>
                     <p className={`text-xl font-bold uppercase ${ toggle === false ? "text-green-500" : "text-[#fbfada]" } `}>Industrail Projects</p>
                     <p className={`text-center font-semibold ${ toggle === false ? "text-[#adbc9f]" : "text-[#adbc9f]" } `}>Enhance your expertise through hands-on projects and real-world experience, building the confidence needed to excel in your field.</p>
                     </div>
                 </div>
-                <div className=' bg-[#436850] rounded-lg px-8 py-6 md:h-[400px] md:w-[30%] flex flex-col gap-1 items-center'>
+                <div className=' bg-[#fbfada] rounded-lg px-8 py-6 md:h-[400px] md:w-[30%] flex flex-col gap-1 items-center'>
                     <img src={img5} className=' w-[300px] h-[200px] object-cover ' />
                     <div  className=' flex flex-col gap-2 items-center '>
                     <p className={`text-xl font-bold uppercase ${ toggle === false ? "text-green-500" : "text-[#fbfada]" } `}>1-1 Doubt Clearance</p>
@@ -51,14 +51,14 @@ const Services = ({toggle, setToggle}) => {
                 </div>
             </div>
             <div className=' w-10/12 mx-auto flex gap-10 flex-col md:flex-row items-center justify-center ' >
-<div className='bg-[#436850] rounded-lg px-8 py-6 md:h-[400px] md:w-[30%] flex flex-col gap-1 items-center'>
+        <div className='bg-[#fbfada] rounded-lg px-8 py-6 md:h-[400px] md:w-[30%] flex flex-col gap-1 items-center'>
         <img src={img4} className=' w-[300px] h-[200px] object-cover ' />
         <div  className=' flex flex-col gap-2 items-center '>
         <p className={`text-xl font-bold uppercase text-center ${ toggle === false ? "text-green-500" : "text-[#fbfada]" } `}>Internship opportunity</p>
         <p className={`text-center font-semibold ${ toggle === false ? "text-[#adbc9f]" : "text-[#adbc9f]" } `}>Enhance your expertise through hands-on projects and real-world experience, building the confidence needed to excel in your field.</p>
         </div>
     </div>
-    <div className=' bg-[#436850] rounded-lg px-8 py-6 md:h-[400px] md:w-[30%] flex flex-col items-center gap-1'>
+    <div className=' bg-[#fbfada] rounded-lg px-8 py-6 md:h-[400px] md:w-[30%] flex flex-col items-center gap-1'>
         <img src={img3}  className=' h-[200px] object-cover '/>
         <p className={`text-xl font-bold uppercase ${ toggle === false ? "text-green-500" : "text-[#fbfada]" } `}>100% Job Placement</p>
         <p className={`text-center font-semibold ${ toggle === false ? "text-[#adbc9f]" : "text-[#adbc9f]" } `}>Secure your dream job with our 100% placement guarantee, connecting you to top employers ready to hire skilled professionals.</p>
