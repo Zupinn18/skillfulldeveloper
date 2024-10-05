@@ -22,7 +22,12 @@ const Footer = ({toggle, setToggle}) => {
             </div>
 
             <div>
+
                 <p className={`text-sm font-semibold tracking-widest uppercase ${toggle === false ? "text-green-900" :"text-[#fbfada]" } `}>Company</p>
+
+                {/* text-gray-400 */}
+                <p className={`text-sm font-semibold tracking-widest uppercase mt-10 ${toggle === false ? "text-green-900" :"text-[#fbfada]" } `}>Company</p>
+
 
                 <ul class="mt-6 space-y-2">
                     <li>
@@ -46,7 +51,7 @@ const Footer = ({toggle, setToggle}) => {
             </div>
 
             <div>
-                <p className={`text-sm font-semibold tracking-widest uppercase ${toggle === false ? "text-green-900" :"text-[#fbfada]" } `} >Help</p>
+                <p className={`text-sm font-semibold tracking-widest uppercase mt-10 ${toggle === false ? "text-green-900" :"text-[#fbfada]" } `} >Help</p>
 
                 <ul class="mt-6 space-y-2">
                     <li>
@@ -114,7 +119,7 @@ const Footer = ({toggle, setToggle}) => {
                 </ul>
             </div>
 
-            <div class="col-span-2 md:col-span-1 lg:col-span-2 lg:pl-8">
+            <div class="col-span-2 md:col-span-1 lg:col-span-2 lg:pl-8 mt-10">
                 <p className={`text-sm font-semibold tracking-widest uppercase ${toggle === false ? "text-green-900" :"text-[#fbfada]" } `}>Subscribe to newsletter</p>
 
                 <form action="#" method="POST" class="mt-4">
