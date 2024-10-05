@@ -1,6 +1,28 @@
 import React from 'react'
 import "./AboutUs.css";
 import AboutImg from "../../assets/about.gif";
+import Image1 from "../../assets/logos/1.png";
+import Image2 from "../../assets/logos/2.png";
+import Image3 from "../../assets/logos/3.png";
+import Image4 from "../../assets/logos/4.png";
+import Image5 from "../../assets/logos/5.png";
+import Image6 from "../../assets/logos/6.png";
+import Image7 from "../../assets/logos/7.png";
+import Image8 from "../../assets/logos/8.png";
+
+import Image9 from "../../assets/logos/9.png";
+import Image10 from "../../assets/logos/10.png";
+import Image11 from "../../assets/logos/11.png";
+import Image12 from "../../assets/logos/12.png";
+import Image13 from "../../assets/logos/13.png";
+import Image14 from "../../assets/logos/14.png";
+import Image15 from "../../assets/logos/15.png";
+import Image16 from "../../assets/logos/16.png";
+import Image17 from "../../assets/logos/17.png";
+import { PiBrainLight } from "react-icons/pi";
+import { HiMiniComputerDesktop } from "react-icons/hi2";
+import { GrShieldSecurity } from "react-icons/gr";
+import { Link } from 'react-router-dom';
 
 export default function AboutUs({toggle, setToggle}) {
     function fok() {
@@ -71,45 +93,89 @@ export default function AboutUs({toggle, setToggle}) {
             <div className=' w-11/12 mx-auto flex flex-col gap-5 mt-6 mb-10 ' >
             <main>
           <div className=' flex flex-col gap-4 ' >
-          <h2 className={`text-center text-xl sm:text-4xl font-edusa font-bold ${toggle === false ? "text-[#12372A]" : "text-white"}`}>Welcome to Skillfull Developer</h2>
+          <h2 className={`text-center text-xl sm:text-4xl font-edusa font-bold ${toggle === false ? "text-[#12372A]" : "text-white"}`}>About Us</h2>
           <div className=' flex flex-col md:flex-row gap-[50px] items-center mt-10' >
               <p className={` text-justify text-md md:mb-10 leading-6 ${toggle === false ? "text-[#436860]" : "text-slate-200"} `}>
-              Welcome to Skillful Developer, your ultimate destination for mastering coding skills! We are passionate about empowering individuals to become proficient developers in today's fast-paced tech world. Our mission is to provide high-quality, accessible education that equips you with the knowledge and tools needed to succeed in your coding journey.
+              Welcome to Skillfull Developer, the premier platform for mastering coding skills and advancing your tech career! At Skillfull Developer, we are driven by a mission to empower developers to excel in today's fast-paced tech industry. Whether you are an aspiring developer or an experienced professional looking to upskill, we provide the tools and guidance to help you succeed. <br/><br/>
+              Our comprehensive, expert-designed curriculum covers a wide range of in-demand skills and technologies, ensuring you're always ahead of the curve. With personalized 1:1 mentorship from seasoned professionals and a vibrant community of like-minded developers, you’ll gain practical experience, industry insights, and the support needed to thrive.
+              Since our inception, we’ve helped hundreds of developers land roles at leading companies like Google, Microsoft, and Apple. Join us at Skillfull Developer to unlock your potential and build a future in tech!
 
-At Skillful Developer, we offer a diverse range of coding courses designed to cater to various skill levels and career aspirations. Whether you're a beginner looking to learn Python or an experienced programmer aiming to become a Full Stack or MERN Developer, we have the right course for you. Our expertly crafted curriculum is delivered by industry professionals with real-world experience, ensuring you gain practical skills that are in demand.
-                  <br/><br/>
-                  Skillfull Developer provides training in various domains like programming languages, software development, web designing. We deliver a superior brand of training that is practical and relevant to today’s technology demands. Our courses are designed to bridge the gap between academics and industry-requirements with emphasis on hands-on learning concepts and methodologies leading to robust designs and code that translates into an efficient software product or solution.
                   </p>
               <img src={AboutImg} className=' md:w-[50%] ' />
           </div>
           </div>
+
+          <div className=' grid grid-cols-1 md:grid-cols-2 gap-[80px] mb-10 ' >
+              <div className={`relative grid grid-cols-4 gap-5  rounded-lg p-8 bg-white `} >
+              <h2 className={`text-center text-md absolute rounded-lg top-[-15%] left-2 font-bold bg-green-500 text-white px-4 py-2 `}>Established Businesses</h2>
+              <img src={Image1} />
+              <img src={Image2} />
+              <img src={Image3} />
+              <img src={Image4} />
+              <img src={Image5} />
+              <img src={Image6} />
+              <img src={Image7} />
+              <img src={Image8} />
+              </div>
+              <div className={`relative grid grid-cols-4 gap-5 rounded-lg p-8 bg-white `} >
+              <h2 className={`text-center text-md absolute rounded-lg top-[-15%] left-2 font-bold bg-green-500 text-white px-4 py-2 `}>Hypergrowth Startups</h2>
+              <img src={Image9} />
+              <img src={Image10} />
+              <img src={Image11} />
+              <img src={Image12} />
+              <img src={Image13} />
+              <img src={Image14} />
+              <img src={Image15} />
+              <img src={Image16} />
+              </div>
+          </div>
   
-          {/* <div id="first" className="reveal">
-            <img
-              src="https://cdni.iconscout.com/illustration/premium/thumb/growing-business-by-digital-marketing-4217800-3501667.png"
-              alt=""
-            />
-            <div>
-              <h1>We Offer Innovative Technology Solutions</h1>
-              <p className={` text-justify text-md leading-6 ${toggle === false ? "text-[#436860]" : "text-slate-200"} `} >
-              Skillfull Developer provides training in various domains like programming languages, software development, web designing. We deliver a superior brand of training that is practical and relevant to today’s technology demands. Our courses are designed to bridge the gap between academics and industry-requirements with emphasis on hands-on learning concepts and methodologies leading to robust designs and code that translates into an efficient software product or solution.
-              </p>
-              <h2>UI/UX Design (90%)</h2>
-              <div className="comm">
-                <div id="comm1"></div>
-              </div>
-              <h2>APP Developement (85%)</h2>
-              <div className="comm">
-                <div id="comm2"></div>
-              </div>
-              <h2>WEB Developement (70%)</h2>
-              <div className="comm">
-                <div id="comm3"></div>
-              </div>
+          <div className=' mt-10 grid grid-cols-1 md:grid-cols-3 gap-10 ' >
+            <div className=' flex flex-col items-center justify-center gap-3 bg-slate-100 rounded-lg border-dotted border-green-700 border-[2px] px-6 py-6 ' >
+                <div className=' w-[100px] h-[100px] bg-white rounded-full flex justify-center items-center ' ><PiBrainLight className=' w-[70px] h-[70px] text-green-800 ' /></div>
+                <h4 className=' font-bold text-xl text-[#12372A] ' >Why Choose Us?</h4>
+                <p className=' text-center text-[#436850] ' >Skill Full Developer, we focus on practical, hands-on learning designed by industry experts to meet the demands of top product companies. With expert mentorship and real-world projects, we ensure you gain job-ready skills that make an immediate impact. Join us and turn your skills into your greatest asset!</p>
+                <Link to="/enroll-now" onClick={() => window.scrollTo(0, 0)} >
+                <button style={{
+                        "cursor":"pointer",
+                        }}
+                        className='cursor-pointer font-semibold px-8 py-3 rounded-lg bg-[#436850] transition-all duration-300
+                            border-2 text-white hover:bg-[#12372A] mt-5 border-none
+                            '
+                >Start Now</button>
+                </Link>
             </div>
-          </div> */}
+            <div className=' flex flex-col items-center justify-center gap-3 bg-slate-100 rounded-lg border-dotted border-green-700 border-[2px] px-6 py-6 ' >
+                <div className=' w-[100px] h-[100px] bg-white rounded-full flex justify-center items-center ' ><HiMiniComputerDesktop className=' w-[70px] h-[70px] text-green-800 ' /></div>
+                <h4 className=' font-bold text-xl text-[#12372A] ' >Our Mission</h4>
+                <p className=' text-center text-[#436850] ' >Our mission is to empower developers with the practical skills, expert mentorship, and supportive community they need to excel. We strive to help developers become part of the top 1% in their field, equipping them with the tools to thrive and transition into leading product companies globally.</p>
+                <Link to="/enroll-now" onClick={() => window.scrollTo(0, 0)} >
+                <button style={{
+                        "cursor":"pointer",
+                        }}
+                        className='cursor-pointer font-semibold px-8 py-3 rounded-lg bg-[#436850] transition-all duration-300
+                            border-2 text-white hover:bg-[#12372A] mt-5 border-none
+                            '
+                >Start Now</button>
+                </Link>
+            </div>
+            <div className=' flex flex-col items-center justify-center gap-3 bg-slate-100 rounded-lg border-dotted border-green-700 border-[2px] px-6 py-6 ' >
+                <div className=' w-[100px] h-[100px] bg-white rounded-full flex justify-center items-center ' ><GrShieldSecurity className=' w-[70px] h-[70px] text-green-800 ' /></div>
+                <h4 className=' font-bold text-xl text-[#12372A] ' >Our Vision</h4>
+                <p className=' text-center text-[#436850] ' >Our vision is to be the top upskilling platform for tech engineers, empowering them to reach their full potential. We aim to drive innovation and excellence in the tech industry by equipping engineers with the skills and expertise needed to thrive in leading product companies.</p>
+                <Link to="/enroll-now" onClick={() => window.scrollTo(0, 0)} >
+                <button style={{
+                        "cursor":"pointer",
+                        }}
+                        className='cursor-pointer font-semibold px-8 py-3 rounded-lg bg-[#436850] transition-all duration-300
+                            border-2 text-white hover:bg-[#12372A] mt-5 border-none
+                            '
+                >Start Now</button>
+                </Link>
+            </div>
+          </div>
   
-          <div id="fourth" className={`reveal rounded-md ${toggle === false ? "bg-[#12372A]" : "bg-slate-300"} `}>
+          <div id="fourth" className={` mt-10 reveal rounded-md ${toggle === false ? "bg-[#12372A]" : "bg-slate-300"} `}>
           <h2 className={`text-center text-xl mb-5 sm:text-4xl font-edusa font-bold ${toggle === false ? "text-white" : "text-[#12372A]"}`}>Course Categories We Offer</h2>
             <div id="fourth_cards" className=' flex-col md:flex-row justify-center items-center gap-10 md:gap-0 ' >
               <div>

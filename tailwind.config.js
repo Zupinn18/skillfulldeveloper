@@ -10,7 +10,8 @@ export default {
     edusa: ["Edu SA Beginner", "cursive"],
     mono: ["Roboto Mono", "monospace"],
     poppins: ["Poppins", "sans-serif"],
-    poetsenoneregular: ["Poetsen One", "sans-serif"]
+    poetsenoneregular: ["Poetsen One", "sans-serif"],
+    volkhov: ["Volkhov", "serif"],
   },
     extend: {
       keyframes: {

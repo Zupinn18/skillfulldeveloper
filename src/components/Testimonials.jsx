@@ -10,6 +10,9 @@ import Girl5 from "../assets/testimonials/girl-new2.jpg";
 import Girl6 from "../assets/testimonials/girl-new3.jpg";
 import Boy3 from "../assets/testimonials/boy-new1.png";
 import Boy4 from "../assets/testimonials/boy-new2.jpg";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 function InfiniteLoopSlider({ children, speed = 4 }) {
   const baseX = useMotionValue(0);
@@ -93,6 +96,36 @@ const Testimonials = ({toggle, setToggle}) => {
           testimony: "Skillfull Developer's comprehensive program helped me develop crucial skills and secure a great job. I'm grateful for their support.",
           twitterPseudo: "@snehareddy"
         },
+        {
+          name: "Geeta Rana",
+          avatar: Girl5,
+          testimony: "Skillfull Developer provided top-notch training and placement assistance. I now work in a role I love, thanks to their team.",
+          twitterPseudo: "@geeta_rana"
+        },
+        {
+          name: "Vikas Sharma",
+          avatar: Boy3,
+          testimony: "The skill development and job placement process at Skillfull Developer were seamless. I highly recommend their programs.",
+          twitterPseudo: "@vikassharma"
+        },
+        {
+          name: "Priya Rawat",
+          avatar: Girl4,
+          testimony: "Skillfull Developer's training was exceptional, and their placement support ensured I found a great job quickly.",
+          twitterPseudo: "@priyarawat"
+        },
+        {
+          name: "Saurabh Singh",
+          avatar: Boy4,
+          testimony: "I am thrilled with the skills I gained and the job I landed through Skillfull Developer. Their program truly works!",
+          twitterPseudo: "@saurabhrawat"
+        },
+        {
+          name: "Ipshita",
+          avatar: Girl6,
+          testimony: "Skillfull Developer's expert-led training and guaranteed placement made all the difference. I secured a job at a top company.",
+          twitterPseudo: "@ipshita"
+        },
       ]
       const people2 = [
         {
@@ -136,44 +169,53 @@ const Testimonials = ({toggle, setToggle}) => {
           picture: "#icon-monster-image",
         },
       ]
+
+      var settings = {
+        dots: true,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+      };
+
   return (
     // bg-[#12372a]
     <>
        <div className=" relative mx-auto px-4 w-full  text-green-900 "  >
     <div className="flex flex-col items-center ">
 
-      {/* :TITLE CONTAINER */}
+     
       <div className=" px-4 ">
         <h2 className={`text-center text-2xl sm:text-3xl md:text-4xl font-bold text-[52px]
          ${toggle === false ? "text-[#12372A]" :"text-[#fbfada]"}`}>Thousands of Happy Students</h2>
       </div>
-      <div className={`mb-[60px] mt-5  ${toggle === false ? "text-green-900" : "text-[#fbfada]" } `} >
+      <div className={` mt-5  ${toggle === false ? "text-green-900" : "text-[#fbfada]" } `} >
         <p>Certainly! Here are 5 testimonials for Skillfull Developer, with a mix of Indian Names.</p>
       </div>
     </div>
   </div>
-    <div className=" w-full flex justify-center items-center ">
+    {/* <div className=" w-full flex justify-center items-center ">
     <InfiniteLoopSlider duration={20}>
        {people1.map(person => (
             <li key={person.twitterPseudo} className=" w-[200px] h-[250px]
             col-span-full sm:col-span-3 lg:col-span-2 py-6 px-4 rounded-xl shadow-lg bg-white inline-block mx-5 mb-4
             ">
-              {/* ::Card header */}
+             
               <div className="flex items-center space-x-3">
-                {/* :::avatar */}
+                
                 <span className="flex-shrink-0 w-10 h-10 rounded-full overflow-hidden">
                   <img src={person.avatar} alt="" className="object-cover" />
                 </span>
                 <div className="text-left">
-                  {/* :::name */}
+                 
                   <h3 className="text-sm text-black font-semibold ">{person.name}</h3>
-                  {/* :::pseudo twitter */}
+                  
                   <p className="text-[12px] text-gray-400">{person.twitterPseudo}</p>
                 </div>
               </div>
-              {/* ::Card body */}
+            
               <div className=" w-[100%] mt-4 flex text-sm">
-                {/* :::testimony */}
+                
                 <p className="text-sm">
                   {person.testimony}
                 </p>
@@ -182,30 +224,35 @@ const Testimonials = ({toggle, setToggle}) => {
           ))
           }
     </InfiniteLoopSlider>
-  </div>
+  </div> */}
 
-  <div className="flex justify-end items-end ">
-    <InfiniteLoopSliderRight duration={50}>
+
+  {/* <div className="flex justify-end items-end ">
+    <InfiniteLoopSliderRight duration={50}> */}
+
+  {/* <div className="flex justify-end items-end ">
+    <InfiniteLoopSliderRight duration={20}>
+
        {people2?.map(person => (
             <li key={person.twitterPseudo} className="w-[200px] h-[250px] col-span-full sm:col-span-3 lg:col-span-2 py-6 px-4 rounded-xl shadow-lg bg-white 
             inline-block mx-5 mb-4
             ">
-              {/* ::Card header */}
+            
               <div className="flex items-center space-x-3">
-                {/* :::avatar */}
+               
                 <span className="flex-shrink-0 w-10 h-10 rounded-full overflow-hidden">
                   <img src={person.avatar} alt="" className="object-cover" />
                 </span>
                 <div className="text-left">
-                  {/* :::name */}
+                  
                   <h3 className="text-sm text-black font-semibold">{person.name}</h3>
-                  {/* :::pseudo twitter */}
+                 
                   <p className="text-[12px] text-gray-400">{person.twitterPseudo}</p>
                 </div>
               </div>
-              {/* ::Card body */}
+              
               <div className=" w-[100%] mt-4 flex text-sm">
-                {/* :::testimony */}
+               
                 <p className="text-sm">
                   {person.testimony}
                 </p>
@@ -214,7 +261,43 @@ const Testimonials = ({toggle, setToggle}) => {
           ))
           }
     </InfiniteLoopSliderRight>
+  </div> */}
+
+  <div className='w-10/12 m-auto mb-10 ' >
+    <div className=' mt-20 ' >
+    <Slider {...settings}>
+      {
+        people1.map((person)=>(
+          <li key={person.twitterPseudo} className=" w-[150px] h-[250px] py-6 px-4 rounded-xl shadow-lg bg-white inline-block
+          ">
+            {/* ::Card header */}
+            <div className="flex items-center space-x-3">
+              {/* :::avatar */}
+              <span className="flex-shrink-0 w-10 h-10 rounded-full overflow-hidden">
+                <img src={person.avatar} alt="" className="object-cover" />
+              </span>
+              <div className="text-left">
+                {/* :::name */}
+                <h3 className="text-sm text-black font-semibold ">{person.name}</h3>
+                {/* :::pseudo twitter */}
+                <p className="text-[12px] text-gray-400">{person.twitterPseudo}</p>
+              </div>
+            </div>
+            {/* ::Card body */}
+            <div className=" w-[100%] mt-4 flex text-sm">
+              {/* :::testimony */}
+              <p className="text-sm">
+                {person.testimony}
+              </p>
+            </div>
+          </li>
+        ))
+      }
+      </Slider>
+    </div>
   </div>
+
+
 
     {/* :PARTNER BRANDS */}
     <div className="mt-8 w-full mb-[100px] ">
